@@ -1,0 +1,10 @@
+meta:
+targets = {'gml_Object_obj_GhostCoin_Destroy_0','gml_Object_obj_GhostCoinBig_Destroy_0'}
+critical = true
+
+patch:
+find_line_with('global.Money = clamp(global.Money, 0, obj_LvlMGMT.MaxMoney)')
+
+write_replace('
+global.Money = clamp(global.Money, -obj_LvlMGMT.MaxMoney, obj_LvlMGMT.MaxMoney);
+')

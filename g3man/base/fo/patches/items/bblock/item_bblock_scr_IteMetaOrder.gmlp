@@ -1,0 +1,63 @@
+meta:
+targets = 'gml_GlobalScript_scr_ItemMetaOrder'
+critical = true
+
+patch:
+find_line_with('with (ds_list_find_value(_TypeQList, 0))')
+
+write_replace('with(noone)')
+
+write_before('
+with (ds_list_find_value(_TypeQList, 0))
+{
+    var _trigger_count = scr_FO_IncreasedTriggerCount(WhatSlot);
+    
+    if (ds_list_size(ItemQueue) == 0)
+    {
+        repeat (_trigger_count)
+        {
+            ds_list_add(ItemQueue, 1);
+        }
+        
+        alarm_set(0, 1);
+    }
+    else
+    {
+        repeat (_trigger_count)
+        {
+            ds_list_add(ItemQueue, 1);
+        }
+    }
+}
+')
+
+
+
+find_line_with('with (ds_list_find_value(_TypeQList, i))')
+
+write_replace('with(noone)')
+
+write_before('
+with (ds_list_find_value(_TypeQList, i))
+{
+    var _trigger_count = scr_FO_IncreasedTriggerCount(WhatSlot);
+    asset_get_index("obj_ItemMGMT").TrigTickUp += 1;
+    
+    if (ds_list_size(ItemQueue) == 0)
+    {
+        repeat (_trigger_count)
+        {
+            ds_list_add(ItemQueue, 1);
+        }
+        
+        alarm_set(0, asset_get_index("obj_ItemMGMT").TrigTickUp * 3);
+    }
+    else
+    {
+        repeat (_trigger_count)
+        {
+            ds_list_add(ItemQueue, 1);
+        }
+    }
+}
+')

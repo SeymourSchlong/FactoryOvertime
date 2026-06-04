@@ -1,0 +1,10 @@
+meta:
+targets = 'gml_GlobalScript_scr_PegCol'
+critical = true
+
+patch:
+find_all_lines_with('scr_PopPeg(other, arg1, 0);')
+
+write_before('
+scr_AddNumber(other.PegNum, id, "NubUp");
+')

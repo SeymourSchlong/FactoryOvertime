@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"item_beetle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"item_beetle",
+  "parent":{
+    "name":"complete",
+    "path":"folders/Scripts/items/complete.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

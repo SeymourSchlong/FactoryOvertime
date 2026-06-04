@@ -1,0 +1,24 @@
+meta:
+targets = 'gml_GlobalScript_scr_PopPeg'
+critical = true
+
+patch:
+find_line_with('var _StoreHighPeg = -1')
+
+write('
+    var _Lowest = -1;
+
+    for (var i = 0; i < instance_number(obj_ParPeg); i += 1) {
+        var _iTar = instance_find(obj_ParPeg, i);
+        
+        if (instance_exists(_iTar)) {
+            if (_iTar.PegDead == false) {
+                if (_iTar.PegNum < _Lowest || _Lowest == -1)
+                    _Lowest = _iTar.PegNum;
+            }
+        }
+    }
+
+    if (arg0.PegNum == _Lowest || arg0.PegNum == 1)
+        scr_GameEv("LowestPop");
+')

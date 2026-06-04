@@ -1,0 +1,179 @@
+"Passive","[#ffd500]Passive",
+"CorruptTrigger","[#ffd500]Corrupted item force-triggered [spr_ITArrow,0]",
+"ItemFire_Left2","[#ffd500]Item to the left of me triggers twice [spr_ITArrow,0]",
+"LowestPop","[#ffd500]Lowest # peg popped [spr_ITArrow,0]",
+"TargetHit","[#ffd500]Target hit [spr_ITArrow,0]",
+"NubbyLaunchFlupper","[#ffd500]Nubby launched [spr_ITArrow,0]",
+
+
+"food_eat_confirm_geeks","Item given the trigger:{a}{b}",
+"food_eat_confirm_geeks_fail","Could not apply trigger.",
+"food_eat_confirm_littlepea","You got a little pea!",
+"food_eat_confirm_chocolatecoin","Max coin count increased!",
+"food_eat_confirm_redpill","You got red-pilled!",
+
+
+"item_name_geeks","Geeks",
+"item_name_sourgeeks","Sour Geeks",
+"item_desc_geeks","[#ffffff]{a}*Replaces the trigger for the [#ffb3ff]RIGHT-MOST ITEM[#ffffff] with a random weak trigger.{a}*Upgrading the item removes the trigger.{a}*Squid copies do not receive the trigger.",
+"item_upgr_geeks","[#ffffff]{a}*Replaces the trigger for the [#ffb3ff]RIGHT-MOST ITEM[#ffffff] with a random strong trigger.{a}*Upgrading the item removes the trigger.{a}*Squid copies do not receive the trigger.",
+
+"item_name_lunchbag","Lunch Bag",
+"item_desc_lunchbag","[#ffffff]{a}*Has the effect of a random food item.",
+"item_upgr_lunchbag","[#ffffff]{a}*Has the effect of a random upgraded food item.",
+
+"item_name_littlepea","A Little Pea",
+"item_desc_littlepea","[#ffffff]{a}*Refunds half of your next purchase.",
+"item_upgr_littlepea","[#ffffff]{a}*Refunds half of your next 3 purchases.",
+
+"item_name_chocolatecoin","Chocolate Coin",
+"item_desc_chocolatecoin","[#ffffff]{a}*Increases the coin cap by 20 coins.",
+"item_upgr_chocolatecoin","[#ffffff]{a}*Increases the coin cap by 50 coins.",
+
+"item_name_redpill","Red Pill",
+"item_desc_redpill","[#ffffff]{a}*Gives you a Suspicious Key.",
+"item_upgr_redpill","[#ffffff]{a}*Gives you 2 Suspicious Keys.",
+
+
+"item_name_brokenclock","Broken Clock",
+"item_desc_brokenclock","[#ffffff]{a}*Time-based items and perks activate 6% faster.",
+"item_upgr_brokenclock","[#ffffff]{a}*Time-based items and perks activate 13% faster.{a}*The round timer will run for an additional 0.5s after Nubby dies.",
+
+"item_name_toysoldier","Toy Soldier",
+"item_desc_toysoldier","[#ffffff]{a}*Fires one bullet that pierces the first peg it hits.{a}*Bullets pop the first peg, and score 0.5x any other peg.{a}*Shoots an extra bullet for every other Toy Soldier.",
+"item_upgr_toysoldier","[#ffffff]{a}*Fires one bullet that pierces the first two pegs it hits.{a}*Bullets pop the first peg, and score 0.5x any other peg.{a}*Shoots an extra bullet for every other Toy Soldier.",
+
+"item_name_magicwand","Magic Wand",
+"item_desc_magicwand","[#ffffff]{a}*Increases Nubby's size by one.",
+"item_upgr_magicwand","[#ffffff]{a}*Increases Nubby's size by two.",
+
+"item_name_clover","5 Leaf Clover",
+"item_desc_clover","[#ffffff]{a}*Increase the odds of chance-based effects in items and perks by 10%, stacking linearly.{a}(e.g. 50% -> 55%)",
+"item_upgr_clover","[#ffffff]{a}*Increase the odds of chance-based effects in items and perks by 20%, stacking linearly.{a}(e.g. 50% -> 60%){a}*Affects rare and ultra-rare chance as well.",
+
+"item_name_tophat","Top Hat",
+"item_desc_tophat","[#ffffff]{a}*Nubby has a 15% chance to warp to the top of the screen.",
+"item_upgr_tophat","[#ffffff]{a}*Nubby has a 30% chance to warp to the top of the screen.",
+
+"item_name_mysterybox","Mystery Box",
+"item_desc_mysterybox","[#ffffff]{a}*Becomes a random item for the duration of the round.",
+"item_upgr_mysterybox","[#ffffff]{a}*Becomes a random upgraded item for the duration of the round.",
+
+"item_name_pandorasbox","Pandora's Box",
+"item_desc_pandorasbox","[#ffffff]{a}*Becomes a random black market item for the duration of the round.",
+"item_upgr_pandorasbox","[#ffffff]{a}*Becomes a random upgraded black market item for the duration of the round.",
+
+"item_name_bookworm","Bookworm",
+"item_desc_bookworm","[#ffffff]{a}Every 10th round:{a}*Permanently gain a random perk.",
+"item_upgr_bookworm","[#ffffff]{a}Every 5th round:{a}*Permanently gain a random perk.",
+
+"item_name_faultyrocket","Faulty Rocket",
+"item_desc_faultyrocket","[#ffffff]{a}*Multiply score by 1.2x{a}*If this item is force-triggered it disables itself.",
+"item_upgr_faultyrocket","[#ffffff]{a}*Multiply score by 1.5x{a}*If this item is force-triggered it disables itself.",
+
+"item_name_bblock","B-Block",
+"item_desc_bblock","[#ffffff]{a}*Adds +1 to all triggers for the [#ffb3ff]ITEM TO THE RIGHT OF ME[#ffffff].",
+"item_upgr_bblock","[#ffffff]{a}*Adds +1 to all triggers for the [#ffb3ff]ITEM TO THE RIGHT OF ME[#ffffff].{a}*Has a 25% chance to add +1 additional trigger.",
+
+"item_name_nubup","Nub-Up",
+"item_desc_nubup","[#ffffff]{a}*Increases the points given when Nubby pops a peg by +25%.",
+"item_upgr_nubup","[#ffffff]{a}*Increases the points given when Nubby pops a peg by +75%.",
+
+"item_name_mothegg","Moth Egg",
+"item_desc_mothegg","[#ffffff]{a}*+5% chance to {b}critically summon{b}, spawning an extra random summon.",
+"item_upgr_mothegg","[#ffffff]{a}*+15% chance to {b}critically summon{b}, spawning an extra random summon.",
+
+"item_name_piggypurse","Piggy Purse",
+"item_desc_piggypurse","[#ffffff]{a}*Gives 100 points per 1 coin consumed this run.{a}If the right-most item: Consume 1 coin.{a}(Currently gives {b} points)",
+"item_upgr_piggypurse","[#ffffff]{a}*Gives 300 points per 1 coin consumed this run.{a}If the right-most item: Consume 1 coin.{a}(Currently gives {b} points)",
+
+"item_name_arthur","Arthur",
+"item_desc_arthur","[#ffffff]{a}*Score 20% of target score.{a}*10% chance to explode itself, and score 200% target score.{a}*Explode chance is unaffected by Luck.",
+"item_upgr_arthur","[#ffffff]{a}*Score 50% of target score.{a}*5% chance to explode itself, and score 500% target score.{a}*Explode chance is unaffected by Luck.",
+
+"item_name_pocketfrogs","Pocket Frogs",
+"item_desc_pocketfrogs","[#ffffff]{a}*50% chance to pop the highest # peg.",
+"item_upgr_pocketfrogs","[#ffffff]{a}*50% chance to pop the two highest # pegs.",
+
+"item_name_beetle","Beetle",
+"item_desc_beetle","[#ffffff]{a}EVEN SLOT: Halves the lowest # peg.{a}ODD SLOT: Halves the highest # peg.{a}*That peg drops a chunk that doubles the first peg it touches.",
+"item_upgr_beetle","[#ffffff]{a}EVEN SLOT: Halves the two lowest # pegs.{a}ODD SLOT: Halves the two highest # pegs.{a}*Those pegs drop a big chunk that doubles the first peg it touches.",
+
+"item_name_wackomole","Wacko Mole",
+"item_desc_wackomole","[#ffffff]{a}*A mole burrows out of an empty peg slot.{a}*When Nubby hits a mole, it counts as a {b}[#ffd500]Peg fully popped [spr_ITArrow,0][#e6ffe6]{b} trigger.",
+"item_upgr_wackomole","[#ffffff]{a}*Moles burrow out of two empty peg slots.{a}*When Nubby hits a mole, it counts as a {b}[#ffd500]Peg fully popped [spr_ITArrow,0][#e6ffe6]{b} trigger.",
+
+"item_name_gloober","Gloober",
+"item_desc_gloober","[#ffffff]{a}*For each time Nubby bounces during the round, all score gain is multiplied by +0.01",
+"item_upgr_gloober","[#ffffff]{a}*For each time Nubby bounces during the round, all score gain is multiplied by +0.03",
+
+"item_name_boxofnails","Box of Nails",
+"item_desc_boxofnails","[#ffffff]{a}*For each time a peg is fully popped during the round, all score gain is multiplied by +0.05",
+"item_upgr_boxofnails","[#ffffff]{a}*For each time a peg is fully popped during the round, all score gain is multiplied by +0.15",
+
+"item_name_heartmonitor","Heart Monitor",
+"item_desc_heartmonitor","[#ffffff]{a}*For each half second passed during the round, all score gain is multiplied by +0.03",
+"item_upgr_heartmonitor","[#ffffff]{a}*For each half second passed during the round, all score gain is multiplied by +0.1",
+
+"item_name_piyopiyos","Piyo Piyos",
+"item_desc_piyopiyos","[#ffffff]{a}*For every 5 summons during the round, all score gain is multiplied by +0.01",
+"item_upgr_piyopiyos","[#ffffff]{a}*For every 5 summons during the round, all score gain is multiplied by +0.03",
+
+"item_name_flupper","Flupper",
+"item_desc_flupper","[#ffffff]{a}*Temporarily upgrades the item [#ffb3ff]TO THE LEFT OF ME[#ffffff] for the rest of the round.",
+"item_upgr_flupper","[#ffffff]{a}*Temporarily upgrades the items [#ffb3ff]TO THE LEFT AND RIGHT OF ME[#ffffff] for the rest of the round.",
+
+
+"perk_name_parry","The Parry Perk",
+"perk_desc_parry","[#e6ffe6]{a}*Has a 25% chance to force-trigger a random item.",
+
+"perk_name_textbook","The Textbook Perk",
+"perk_desc_textbook","[#e6ffe6]{a}*Force-triggers all {b}doubling{b} items.{a}*Does not force-trigger items that can {b}halve{b}.",
+
+"perk_name_pancake","The Pancake Perk",
+"perk_desc_pancake","[#e6ffe6]{a}*Force-triggers all items in even-numbered slots.",
+
+"perk_name_jittery","The Jittery Perk",
+"perk_desc_jittery","[#e6ffe6]{a}*Has a 20% chance to force-trigger all {c}[#ffd500]Every x seconds [spr_ITArrow,0][#e6ffe6]{c} items.",
+
+"perk_name_pingpong","The Ping Pong Perk",
+"perk_desc_pingpong","[#e6ffe6]{a}*Force-trigger the item in [#ffb3ff]SLOT #2[#e6ffe6] if Nubby is on the left side.{a}*Force-trigger the item in [#ffb3ff]SLOT #6[#e6ffe6] if Nubby is on the right side.",
+
+"perk_name_gmail","The Gmail Perk",
+"perk_desc_gmail","[#e6ffe6]{a}*Force-triggers all items in the digits used in the round number.{a}(Currently triggers slots: {b})",
+
+"perk_name_treasure","The Treasure Perk",
+"perk_desc_treasure","[#e6ffe6]{a}*Force-triggers all rare items once.{a}*Force-triggers all ultra-rare items and twice.",
+
+"perk_name_copycat","The Copycat Perk",
+"perk_desc_copycat","[#e6ffe6]{a}*Force-triggers all duplicate items.",
+
+"altdesc_passive","[#7eca79]PASSIVE ITEM[#ffffff]:{a}*This item's effect is applied while held.{a}*This item does nothing when force-triggered.{a}*This item cannot have its trigger changed.",
+
+"challenge_name_math","{a}Basic Math{a}",
+"challenge_desc_math","*Pegs scale by +1 instead of by x2.{a}*Halving pegs subtracts 1, and doubling adds 1.{a}*Most point-giving items are disabled.",
+
+"supervisor_name_king","King Tony",
+"supervisor_desc_king","*All items appear as Common.{a}*Each item has a 10% chance to appear as its upgraded variant.",
+"upgradeitemodds","Upgrade Odds: {a}%",
+
+"finalboss_fo_name","Critical Error!",	
+"finalboss_fo_desc","Items have a 10% chance to misfire, losing 5% total score.",
+
+
+"food_eat_confirm16","Transformed item!",
+"item_desc20","[#ffffff]{a}*Summon an egg missile that falls from the sky and causes an explosion that pops a row of pegs.",	
+"item_desc88","[#ffffff]{a}*Summon an ostrich-egg missile that falls from the sky an causes an explosion that pops 1 row and 1 column of pegs.",
+"UNUSED_item_desc43","[#ffffff]{a}*Mimics the non-upgraded effect of the item in [#ffb3ff]SLOT #{b}[#ffffff], but keeps its own trigger.{a}*Disables itself for 1.5 seconds.",
+"UNUSED_item_desc111","[#ffffff]{a}*Mimics the upgraded effect of the item in [#ffb3ff]SLOT #{b}[#ffffff], but keeps its own trigger.{a}*Disables itself for a 1 second.",
+"item_desc67","[#ffffff]{a}*When this is triggered, it force-triggers the [#ffb3ff]ITEM TO THE LEFT OF ME[#ffffff].{a}*Has a {c}% chance to add on +1 additional force-trigger.",
+"item_desc135","[#ffffff]{a}*When this is triggered, it force-triggers the [#ffb3ff]ITEM TO THE LEFT OF ME[#ffffff].{a}*Has a {c}% chance to add on +1 additional force-trigger.",
+"item_desc163","[#ffffff]{a}*Fills empty inventory slots with random upgraded items.",
+"item_desc37","[#ffffff]{a}*Doubles {c} random pegs whose # is less than {b}.{a}*If all pegs are bigger than {b}, doubles the lowest # peg.",	
+"item_desc105","[#ffffff]{a}*Doubles {c} random pegs whose # is less than {b}.{a}*If all pegs are bigger than {b}, doubles the lowest # peg twice.",
+"perk_desc13","[#e6ffe6]{a}*If Nubby is still alive, 50% chance to force-trigger the item in [#ffb3ff]SLOT #{b}[#e6ffe6].",
+"perk_desc17","[#e6ffe6]{a}*If the total score is less than 50% of the target score:{a}*Force-trigger all items once.",
+"perk_desc23alt","[#e6ffe6]{a}*Force-triggers the items in [#ffb3ff]SLOTS #1, and #2[#e6ffe6], {b} times each.",
+"PassGoalOdds50","[#ffd500]Pass round goal [spr_ITArrow,0]",
+"supervisordesc_goblin","*You receive +3 coins per restock instead of 1.{a}*Maximum coins limit is raised to {b}.{a}*You lose two lives when you launch Nubby.{a}*If two lives are used, an additional smaller Nubby is launched.",
+"UNUSED_perk_desc19","[#e6ffe6]{a}*Force-triggers the leftmost item {c} times.{a}*Jumbling pegs increases the amount by +{b}.{a}*This value resets after progressing a round.",

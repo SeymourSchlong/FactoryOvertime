@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"item_mysterybox",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"item_mysterybox",
+  "parent":{
+    "name":"unfinished",
+    "path":"folders/Scripts/items/unfinished.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

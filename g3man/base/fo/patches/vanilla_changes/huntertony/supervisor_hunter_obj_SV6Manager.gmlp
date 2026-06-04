@@ -1,0 +1,17 @@
+meta:
+targets = 'gml_Object_obj_SV6Manager_Create_0'
+critical = true
+
+patch:
+move_to_end()
+
+write('
+with (obj_PerkMGMT)
+{
+    PerkTrigger[23] = "TargetHit";
+    PerkTrigText[23] = scr_Text("TargetHit");
+    PerkDescBase[23] = scr_Text("perk_desc23alt", "\\n", 2);
+    var _PerkDesc = string_join("", PerkTrigText[23], PerkDescBase[23]);
+    PerkDesc[23] = _PerkDesc;
+}
+')

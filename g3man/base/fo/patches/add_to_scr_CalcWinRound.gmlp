@@ -1,0 +1,12 @@
+meta:
+targets = 'gml_GlobalScript_scr_CalcWinRound'
+critical = true
+
+patch:
+find_line_with('obj_LvlMGMT.ShopInterval -= 1;')
+
+write('
+scr_GameEv("RoundIncrease");
+asset_get_index("obj_LvlMGMT").JumbleCountRound = 0;
+scr_UpdateDesc("obj_LvlMGMT.JumbleCountRound");
+')

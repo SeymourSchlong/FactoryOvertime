@@ -1,0 +1,10 @@
+meta:
+targets = {'gml_GlobalScript_scr_MakeChargeBar', 'gml_GlobalScript_scr_MutateItem'}
+critical = true
+
+patch:
+find_all_lines_with('ChargeTime =')
+
+write('
+ChargeTime = (30 - scr_FO_ClockCount()) * (ChargeTime / 30);
+')

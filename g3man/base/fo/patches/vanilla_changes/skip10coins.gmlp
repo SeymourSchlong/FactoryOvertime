@@ -1,0 +1,17 @@
+meta:
+targets = 'gml_Object_obj_SkipLootBtn_Alarm_0'
+critical = true
+
+patch:
+find_line_with('var _GCSpd = 40')
+
+write('
+_Amt = 10;
+')
+
+
+find_line_with('_GCSpd -= 5')
+
+write_replace('
+_GCSpd -= 3;
+')

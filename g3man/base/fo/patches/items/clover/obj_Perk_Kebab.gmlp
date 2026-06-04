@@ -1,0 +1,13 @@
+meta:
+targets = 'gml_Object_obj_Perk_Kebab_Alarm_0'
+critical = true
+
+patch:
+find_line_with('if (_Odds == 1)')
+
+write_before('
+if (scr_FO_RandomWithLuck(random(100), 50))
+{
+    _Odds = 1;
+}
+')

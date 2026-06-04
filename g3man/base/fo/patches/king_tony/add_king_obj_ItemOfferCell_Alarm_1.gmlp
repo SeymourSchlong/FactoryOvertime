@@ -1,0 +1,27 @@
+meta:
+targets = {'gml_Object_obj_ItemOfferCell_Alarm_1', 'gml_Object_obj_ItemOfferCellBM_Alarm_1', 'gml_Object_obj_ItemOfferCellCafe_Alarm_1'}
+critical = true
+
+patch:
+find_line_with('if (obj_ItemMGMT.ItemTier[OfferHeldItem] == 1)')
+
+write_before('
+if (obj_ItemMGMT.ItemTier[OfferHeldItem] == 2)
+{
+    RareBord = instance_create_depth(x, y, depth + 1, obj_RareBord);
+    RareBord.sprite_index = spr_UltraRareBord;
+    scr_Part_StreamerCol(x, y, scr_PartAmt(15), scr_PartAmt(3), 16776960, 15, 50);
+    
+    if (!audio_is_playing(au_UltraRareFound))
+    {
+        audio_play_sound(au_UltraRareFound, 1, 0, 0.8);
+    }
+}
+')
+
+
+find_line_with('if (obj_ItemMGMT.ItemTier[OfferHeldItem] == 2)')
+
+write_replace('
+if (scr_FO_is_manager("king") && obj_ItemMGMT.ItemLevel[OfferHeldItem] == 2)
+')

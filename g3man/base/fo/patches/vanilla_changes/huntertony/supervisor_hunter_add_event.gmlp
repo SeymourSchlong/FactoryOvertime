@@ -1,0 +1,10 @@
+meta:
+targets = 'gml_Object_obj_HunterTarget_Alarm_0'
+critical = true
+
+patch:
+find_line_with('DisableTarget = true')
+
+write('
+scr_GameEv("TargetHit");
+')

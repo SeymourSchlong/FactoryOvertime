@@ -1,0 +1,60 @@
+meta:
+targets = 'gml_GlobalScript_scr_AddNumber'
+critical = true
+
+patch:
+find_line_with('case "Explosion":')
+
+write_before('
+case "NubUp":
+    var _MultAmt = scr_FO_NubUpCount();
+    
+    if (_MultAmt == 0)
+    {
+        exit;
+    }
+    
+    if ((asset_get_index("obj_LvlMGMT").PotentialNum + asset_get_index("obj_LvlMGMT").TotalNum + (arg0 * _MultAmt)) < asset_get_index("obj_LvlMGMT").RoundNumCutOff)
+    {
+        arg0 = round(arg0 * _MultAmt);
+    }
+    else
+    {
+        arg0 *= _MultAmt;
+    }
+    
+    break;
+
+case "Half":
+    var _MultAmt = 0.5;
+    
+    if ((asset_get_index("obj_LvlMGMT").PotentialNum + asset_get_index("obj_LvlMGMT").TotalNum + (arg0 * _MultAmt)) < asset_get_index("obj_LvlMGMT").RoundNumCutOff)
+    {
+        arg0 = round(arg0 * _MultAmt);
+    }
+    else
+    {
+        arg0 *= _MultAmt;
+    }
+    
+    break;
+')
+
+
+find_line_with('var _StoreDiv = floor((obj_LvlMGMT.PotentialNum + obj_LvlMGMT.TotalNum) / global.Goal);')
+
+write_before('
+if (scr_FO_GetMultIncrease() > 1)
+{
+    var _MultAmt = scr_FO_GetMultIncrease();
+    
+    if ((asset_get_index("obj_LvlMGMT").PotentialNum + asset_get_index("obj_LvlMGMT").TotalNum + (arg0 * _MultAmt)) < asset_get_index("obj_LvlMGMT").RoundNumCutOff)
+    {
+        arg0 = round(arg0 * _MultAmt);
+    }
+    else
+    {
+        arg0 *= _MultAmt;
+    }
+}
+')

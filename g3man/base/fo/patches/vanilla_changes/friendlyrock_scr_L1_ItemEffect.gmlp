@@ -1,0 +1,12 @@
+meta:
+targets = 'gml_GlobalScript_scr_L1_ItemEffect'
+critical = true
+
+patch:
+find_line_with('switch (ds_list_size(_DoubleList))')
+find_line_with('case 0:')
+
+write('
+var _lowest = scr_FO_GetLowestPeg();
+scr_DoublePeg(_lowest);
+')

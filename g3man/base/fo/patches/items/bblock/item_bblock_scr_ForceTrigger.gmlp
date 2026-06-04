@@ -1,0 +1,26 @@
+meta:
+targets = 'gml_GlobalScript_scr_ForceTrigger'
+critical = true
+
+patch:
+find_line_with('with (_Tar)')
+
+write_replace('with (noone)')
+
+write_before('
+var _trigger_count = scr_FO_IncreasedTriggerCount(arg0);
+
+with (_Tar) {
+    if (ds_list_size(ItemQueue) == 0) {
+        repeat (_trigger_count) {
+            ds_list_add(ItemQueue, 2);
+        }
+        
+        alarm_set(0, 1);
+    } else {
+        repeat (_trigger_count) {
+            ds_list_add(ItemQueue, 2);
+        }
+    }
+}
+')

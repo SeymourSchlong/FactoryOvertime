@@ -1,0 +1,13 @@
+meta:
+targets = 'gml_GlobalScript_scr_UpgrFoodEffect'
+critical = true
+
+patch:
+find_line_with('var _Odds = choose(0, 0, 1, 1, 1, 1, 1, 1, 1, 1)')
+
+write('
+if (scr_FO_RandomWithLuck(random(100), 80))
+{
+    _Odds = 1;
+}
+')

@@ -1,0 +1,22 @@
+meta:
+targets = 'gml_Object_obj_NubbyLauncher_Step_0'
+critical = true
+
+patch:
+find_line_with('if (global.TutSeq == -1 && obj_Debug.GodMode == false)')
+
+write_before('
+if (instance_exists(asset_get_index("obj_SV3Manager")))
+{
+    if (global.Lives >= 2)
+    {
+        var _NewNubbyGob = instance_create_layer(x + lengthdir_x(sprite_width / 2, NubLaunchDir), y + lengthdir_y(sprite_width / 2, NubLaunchDir), "Ent", asset_get_index("obj_NubbyDupe"));
+        
+        with (_NewNubbyGob)
+        {
+            motion_set(asset_get_index("obj_NubbyLauncher").NubLaunchDir + irandom_range(-90, 90), asset_get_index("obj_LvlMGMT").NubbyLaunchSpd);
+            NubbyScale *= 0.75;
+        }
+    }
+}
+')

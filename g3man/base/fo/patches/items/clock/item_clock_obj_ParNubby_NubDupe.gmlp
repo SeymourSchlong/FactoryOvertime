@@ -1,0 +1,17 @@
+meta:
+targets = {'gml_Object_obj_ParNubby_Destroy_0', 'gml_Object_obj_NubbyDupe_Destroy_0'}
+critical = true
+
+patch:
+find_line_with('alarm_set(1, 12)')
+
+write_replace('
+alarm_set(1, 12 + global.fo.clocktime);
+')
+
+
+find_line_with('alarm_set(0, 1)')
+
+write_replace('
+alarm_set(0, 1 + global.fo.clocktime);
+')

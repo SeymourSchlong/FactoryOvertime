@@ -1,0 +1,10 @@
+meta:
+targets = 'gml_Object_obj_NubbyLauncher_Step_0'
+critical = true
+
+patch:
+find_line_with('obj_LvlMGMT.ShotsTaken += 1;')
+
+write('
+scr_FO_ClockPlusTime();
+')

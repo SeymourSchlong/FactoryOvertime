@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"item_magicwand",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"item_magicwand",
+  "parent":{
+    "name":"complete",
+    "path":"folders/Scripts/items/complete.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

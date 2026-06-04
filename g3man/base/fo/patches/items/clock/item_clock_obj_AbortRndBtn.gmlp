@@ -1,0 +1,13 @@
+meta:
+targets = 'gml_Object_obj_AbortRndBtn_Step_0'
+critical = true
+
+patch:
+find_line_with('with (obj_LvlMGMT)')
+
+write_before('
+if (global.fo.clocktime > 0)
+{
+    global.fo.clocktime = 0;
+}
+')

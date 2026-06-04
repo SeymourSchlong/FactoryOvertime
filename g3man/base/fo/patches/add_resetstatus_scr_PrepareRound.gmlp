@@ -1,0 +1,9 @@
+meta:
+targets = 'gml_GlobalScript_scr_PrepareRound'
+critical = true
+
+patch:
+find_line_with('obj_LvlMGMT.PegsHit = 0')
+write('
+scr_FO_ResetMults();
+')

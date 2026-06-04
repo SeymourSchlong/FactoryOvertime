@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"item_clover",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"item_clover",
+  "parent":{
+    "name":"complete",
+    "path":"folders/Scripts/items/complete.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

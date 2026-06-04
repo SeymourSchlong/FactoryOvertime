@@ -1,0 +1,10 @@
+meta:
+targets = {'gml_Object_obj_LvlMGMT_Alarm_5', 'gml_Object_obj_NubbyLauncher_Step_0'}
+critical = true
+
+patch:
+find_line_with('alarm_set(5, 30);')
+
+write_replace('
+alarm_set(5, 30 - scr_FO_ClockCount());
+')

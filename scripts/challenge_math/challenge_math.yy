@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"challenge_math",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"challenge_math",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

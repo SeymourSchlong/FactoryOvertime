@@ -1,0 +1,10 @@
+meta:
+targets = {'gml_Object_obj_ParNubby_Create_0', 'gml_Object_obj_NubbyDupe_Create_0'}
+critical = true
+
+patch:
+find_line_with('NubbyScale = obj_LvlMGMT.NubbyScale;')
+
+write_replace('
+NubbyScale = asset_get_index("obj_LvlMGMT").NubbyScale * scr_FO_WandCount();
+')

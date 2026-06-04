@@ -1,0 +1,39 @@
+meta:
+targets = 'gml_Object_obj_ItemOfferCellBM_Step_0'
+critical = true
+
+patch:
+find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[1], obj_ItemMGMT.ItemY[1], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem)')
+write_replace('
+else if (instance_position(obj_ItemMGMT.ItemX[1], obj_ItemMGMT.ItemY[1], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem && obj_ItemMGMT.ItemLevel[obj_BlackMarketMGMT.BMChosenItem] == 1)
+')
+
+find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[2], obj_ItemMGMT.ItemY[2], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem)')
+write_replace('
+else if (instance_position(obj_ItemMGMT.ItemX[2], obj_ItemMGMT.ItemY[2], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem && obj_ItemMGMT.ItemLevel[obj_BlackMarketMGMT.BMChosenItem] == 1)
+')
+
+find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[3], obj_ItemMGMT.ItemY[3], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem)')
+write_replace('
+else if (instance_position(obj_ItemMGMT.ItemX[3], obj_ItemMGMT.ItemY[3], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem && obj_ItemMGMT.ItemLevel[obj_BlackMarketMGMT.BMChosenItem] == 1)
+')
+
+find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[4], obj_ItemMGMT.ItemY[4], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem)')
+write_replace('
+else if (instance_position(obj_ItemMGMT.ItemX[4], obj_ItemMGMT.ItemY[4], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem && obj_ItemMGMT.ItemLevel[obj_BlackMarketMGMT.BMChosenItem] == 1)
+')
+
+find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[5], obj_ItemMGMT.ItemY[5], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem)')
+write_replace('
+else if (instance_position(obj_ItemMGMT.ItemX[5], obj_ItemMGMT.ItemY[5], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem && obj_ItemMGMT.ItemLevel[obj_BlackMarketMGMT.BMChosenItem] == 1)
+')
+
+find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[6], obj_ItemMGMT.ItemY[6], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem)')
+write_replace('
+else if (instance_position(obj_ItemMGMT.ItemX[6], obj_ItemMGMT.ItemY[6], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem && obj_ItemMGMT.ItemLevel[obj_BlackMarketMGMT.BMChosenItem] == 1)
+')
+
+find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[7], obj_ItemMGMT.ItemY[7], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem)')
+write_replace('
+else if (instance_position(obj_ItemMGMT.ItemX[7], obj_ItemMGMT.ItemY[7], obj_ItemParent).MyItemID == obj_BlackMarketMGMT.BMChosenItem && obj_ItemMGMT.ItemLevel[obj_BlackMarketMGMT.BMChosenItem] == 1)
+')

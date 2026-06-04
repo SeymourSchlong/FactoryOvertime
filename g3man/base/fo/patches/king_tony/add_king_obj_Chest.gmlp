@@ -1,0 +1,19 @@
+meta:
+targets = 'gml_Object_obj_Chest_Step_0'
+critical = true
+
+patch:
+find_line_with('var _ComnOdds = obj_LvlMGMT.PerkComnOdds')
+write_before('
+var _ComnOdds = obj_LvlMGMT.PerkComnOdds;
+var _RareOdds = obj_LvlMGMT.PerkRareOdds;
+var _ChosenTier1 = scr_FO_PerkRarityPicker();
+var _ChosenTier2 = scr_FO_PerkRarityPicker();
+')
+write_before('
+if (false) {
+')
+find_line_with('if (instance_exists(obj_CH3Manager))')
+write_before('
+}
+')

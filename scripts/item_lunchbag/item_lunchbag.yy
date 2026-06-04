@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"item_lunchbag",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"item_lunchbag",
+  "parent":{
+    "name":"unfinished",
+    "path":"folders/Scripts/items/unfinished.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

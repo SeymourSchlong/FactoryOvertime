@@ -1,0 +1,42 @@
+{
+    "mod_id" : "fo",
+    "display_name" : "Factory Overtime",
+    "description" : "Items, Foods, Perks, a challenge, and a supervisor!",
+    "credits" : ["seymour"],
+    "version" : "0.1.0",
+    "target_g3man_version" : 7,
+    "depends" : [],
+    "breaks" : [],
+    "imports": [
+        {
+            "name" : "forgery_9",
+            "contingency_type" : "suggest",
+            "contingency": {
+            "name" : "Nubby's Forgery",
+            "link" : "https://github.com/skirlez/nubbys-forgery/releases/tag/BETA-V9"
+            }
+        }
+    ],
+
+    "patches" : [
+        {
+            "type" : "gmlp",
+            "path" : "patches"
+        }
+    ],
+
+    "custom" : {
+        "forgery" : {
+            "entrypoint_type": "compiled",
+            "entrypoint" : { 
+                "on_load" : "scr_FO_on_load",
+                "on_unload" : "scr_FO_on_unload"
+            },
+            "translations_path" : "trans",
+            "compile_all_code_on_load" : false,
+            "target_version" : 9
+        }
+    },
+
+    "datafile_path" : "mod_data.win"
+}

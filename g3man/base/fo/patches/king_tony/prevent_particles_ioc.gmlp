@@ -1,0 +1,9 @@
+meta:
+targets = 'gml_Object_obj_ItemOfferCell_Alarm_6'
+critical = true
+
+patch:
+find_line_with('if (obj_ItemMGMT.Item[i] == OfferHeldItem)')
+write_replace('
+if (obj_ItemMGMT.Item[i] == OfferHeldItem && obj_ItemMGMT.ItemLevel[obj_ItemMGMT.Item[i]] == 1)
+')

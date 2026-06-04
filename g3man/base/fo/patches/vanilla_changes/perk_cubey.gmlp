@@ -1,0 +1,10 @@
+meta:
+targets = 'gml_Object_obj_Perk_Cubey_Alarm_0'
+critical = true
+
+patch:
+find_line_with('scr_ForceTrigger(4, 4)')
+
+write_replace('
+scr_ForceTrigger(4, 6);
+')

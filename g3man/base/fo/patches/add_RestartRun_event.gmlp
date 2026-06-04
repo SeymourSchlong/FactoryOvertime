@@ -1,0 +1,6 @@
+meta:
+targets = 'gml_Object_obj_RestartRun_Create_0'
+critical = true
+
+patch:
+write('scr_GameEv("RestartRun")')

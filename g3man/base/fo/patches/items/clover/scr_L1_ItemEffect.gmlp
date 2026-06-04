@@ -1,0 +1,104 @@
+meta:
+targets = 'gml_GlobalScript_scr_L1_ItemEffect'
+critical = false
+
+patch:
+find_line_with('case 6:')
+find_line_with('if (_Odds == 1)')
+write_before('
+if (scr_FO_RandomWithLuck(random(100), 50))
+{
+    _Odds = 1;
+}
+')
+
+
+
+find_line_with('case 11:')
+find_line_with('var _Odds = irandom(9)')
+write_replace('var _Odds = random(100);')
+
+find_line_with('if (_Odds <= 3)')
+write_replace('if (scr_FO_RandomWithLuck(_Odds, 40))')
+
+find_line_with('else if (_Odds == 1)')
+write_replace('else if (scr_FO_RandomWithLuck(_Odds, 10))')
+
+
+
+find_line_with('case 22:')
+find_line_with('var _Odds = choose(2, 2, 2, 2, 2, 2, 0, 0, 1, 1)')
+
+write('
+var _Random = random(100);
+var _RateA = 20;
+var _RateB = 40;
+
+if (scr_FO_RandomWithLuck(_Random, _RateA))
+{
+    _Odds = 1;
+}
+else if (scr_FO_RandomWithLuck(_Random, _RateB))
+{
+    _Odds = 0;
+}
+else
+{
+    _Odds = 2;
+}
+')
+
+
+
+find_line_with('case 23:')
+find_line_with('if (_Odds == 1)')
+write_replace('if (scr_FO_RandomWithLuck(random(100), 2))')
+
+
+
+find_line_with('case 40:')
+find_line_with('var _Odds = choose(0, 0, 0, 1)')
+write('
+if (scr_FO_RandomWithLuck(random(100), 25))
+{
+    _Odds = 1;
+}
+')
+
+
+
+find_line_with('case 59:')
+find_line_with('var _Odds = choose(0, 0, 0, 1)')
+write('
+if (scr_FO_RandomWithLuck(random(100), 25))
+{
+    _Odds = 1;
+}
+')
+
+
+
+find_line_with('case 67:')
+find_line_with('var _Odds = choose(0, 0, 0, 0, 0, 1)')
+write('
+if (scr_FO_RandomWithLuck(random(100), 15))
+{
+    _Odds = 1;
+}
+')
+
+
+
+find_line_with('case 149:')
+find_line_with('if (_Proceed == true)')
+write_before('
+if (RndFireNum <= 30)
+{
+    var _Chance = 100 * power(0.8, RndFireNum);
+    
+    if (scr_FO_RandomWithLuck(random(100), _Chance))
+    {
+        _Proceed = true;
+    }
+}
+')

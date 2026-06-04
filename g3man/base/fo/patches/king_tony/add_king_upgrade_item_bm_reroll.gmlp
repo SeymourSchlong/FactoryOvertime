@@ -1,0 +1,12 @@
+meta:
+targets = 'gml_Object_obj_RerollBtnBM_Step_0'
+critical = true
+
+patch:
+find_line_with('var _OfferSlot1 = instance_create_depth(obj_BlackMarketMGMT.IOCXCoordBM[1], obj_BlackMarketMGMT.IOCYCoordBM[1], obj_ItemMGMT.depth - 3, obj_ItemOfferCellBM)')
+
+write_before('
+obj_BlackMarketMGMT.BMItemOfferId1 = scr_FO_KingTonyUpgrade(obj_BlackMarketMGMT.BMItemOfferId1);
+obj_BlackMarketMGMT.BMItemOfferId2 = scr_FO_KingTonyUpgrade(obj_BlackMarketMGMT.BMItemOfferId2);
+obj_BlackMarketMGMT.BMItemOfferId3 = scr_FO_KingTonyUpgrade(obj_BlackMarketMGMT.BMItemOfferId3);
+')

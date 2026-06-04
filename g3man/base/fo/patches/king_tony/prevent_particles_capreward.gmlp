@@ -1,0 +1,9 @@
+meta:
+targets = 'gml_Object_obj_CapRewardPrev_Alarm_2'
+critical = true
+
+patch:
+find_line_with('if (obj_ItemMGMT.Item[i] == RewardPrevItemId)')
+write_replace('
+if (obj_ItemMGMT.Item[i] == RewardPrevItemId && obj_ItemMGMT.ItemLevel[obj_ItemMGMT.Item[i]] == 1)
+')

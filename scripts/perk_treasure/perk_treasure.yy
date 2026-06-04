@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"perk_treasure",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"perk_treasure",
+  "parent":{
+    "name":"perks",
+    "path":"folders/Scripts/perks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

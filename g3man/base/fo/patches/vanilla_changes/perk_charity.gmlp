@@ -1,0 +1,35 @@
+meta:
+targets = 'gml_Object_obj_Perk_Charity_Alarm_0'
+critical = true
+
+patch:
+find_line_with('if (DisablePerk == false && global.GameMode == 1)')
+
+write_replace('
+if (DisablePerk == false && global.GameMode == 1 && false)
+')
+
+write_before('
+if (DisablePerk == false && global.GameMode == 1)
+{
+    var _LessThanHalfGoal = 0;
+    
+    if (obj_LvlMGMT.PotentialNum <= (global.Goal * 0.5))
+    {
+        _LessThanHalfGoal = true;
+    }
+    
+    if (_LessThanHalfGoal == true)
+    {
+        for (var i = 1; i < array_length(obj_ItemMGMT.ItemInst); i += 1)
+        {
+            if (instance_exists(obj_ItemMGMT.ItemInst[i]) && obj_ItemMGMT.ItemInst[i] != -1)
+            {
+                scr_ForceTrigger(i, 1);
+            }
+        }
+    }
+    
+    scr_FX_PerkFire();
+}
+')

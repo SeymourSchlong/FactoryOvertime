@@ -1,0 +1,28 @@
+meta:
+targets = {'gml_GlobalScript_scr_GiveItemBM', 'gml_Object_obj_RerollBtnBM_Step_0'}
+critical = true
+
+patch:
+find_line_with('var _Picker = irandom_range(1, 1000)')
+write_before('
+var _HitPool = scr_FO_ItemRarityPickerBM();
+var _TarList;
+
+switch (_HitPool)
+{
+    case 0:
+        _TarList = _ComnArrayITEM;
+        break;
+    
+    case 1:
+        _TarList = _RareArrayITEM;
+        break;
+}
+')
+write_before('
+if (false) {
+')
+find_line_with('if (_TarList == _RareArrayITEM)')
+write_before('
+}
+')

@@ -1,0 +1,18 @@
+meta:
+targets = 'gml_GlobalScript_scr_GiveItemBM'
+critical = true
+
+patch:
+find_line_with('
+            }
+        }
+        else
+        {
+            obj_BlackMarketMGMT.BMItemOfferId1 = arg0;
+')
+
+write('
+obj_BlackMarketMGMT.BMItemOfferId1 = scr_FO_KingTonyUpgrade(obj_BlackMarketMGMT.BMItemOfferId1);
+obj_BlackMarketMGMT.BMItemOfferId2 = scr_FO_KingTonyUpgrade(obj_BlackMarketMGMT.BMItemOfferId2);
+obj_BlackMarketMGMT.BMItemOfferId3 = scr_FO_KingTonyUpgrade(obj_BlackMarketMGMT.BMItemOfferId3);
+')

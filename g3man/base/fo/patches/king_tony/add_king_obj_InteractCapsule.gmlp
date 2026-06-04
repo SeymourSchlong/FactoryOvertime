@@ -1,0 +1,21 @@
+meta:
+targets = 'gml_Object_obj_InteractCapsule_Destroy_0'
+critical = true
+
+patch:
+find_line_with('if (instance_exists(obj_CH8Manager))')
+write_before('
+if (scr_FO_is_manager("king"))
+{
+    switch (_Result)
+    {
+        case "RareItem":
+            _Result = "CommonItem";
+            break;
+        
+        case "RarePerk":
+            _Result = "CommonPerk";
+            break;
+    }
+}
+')

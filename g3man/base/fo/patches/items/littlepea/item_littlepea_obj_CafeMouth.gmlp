@@ -1,0 +1,22 @@
+meta:
+targets = 'gml_Object_obj_CafeMouth_Step_0'
+critical = true
+
+patch:
+find_line_with('instance_destroy(FromIOC)')
+
+write_before('
+var _reg_obj = get_item_number_from_id("littlepea");
+var _upg_obj = get_item_number_from_id("littlepea_upgrade");
+
+if (HeldPrice > 0 && global.fo.littlepeas > 0 && IOCId != _reg_obj && IOCId != _upg_obj)
+{
+    for (var i = 0; i < floor(HeldPrice / 2); i += 1)
+    {
+        var _NewGC = instance_create_depth(940 + irandom_range(-64, 64), 563 + irandom_range(-64, 64), obj_ItemMGMT.depth - 1, asset_get_index("obj_GhostCoin"));
+        _NewGC.GCSpd = 40;
+    }
+    
+    global.fo.littlepeas -= 1;
+}
+')

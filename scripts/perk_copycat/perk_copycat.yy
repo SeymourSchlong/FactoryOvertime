@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"perk_copycat",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"perk_copycat",
+  "parent":{
+    "name":"perks",
+    "path":"folders/Scripts/perks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,10 @@
+meta:
+targets = {'gml_Object_obj_CafeMGMT_Create_0', 'gml_Object_obj_RerollBtnCafe_Step_0', 'gml_Object_obj_RerollBtn_Step_0'}
+critical = true
+
+patch:
+find_line_with('ds_list_add(_OptionList, _Option)')
+
+write_before('
+_Option = scr_FO_KingTonyUpgrade(_Option);
+')

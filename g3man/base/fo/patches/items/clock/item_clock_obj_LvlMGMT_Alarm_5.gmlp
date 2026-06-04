@@ -1,0 +1,10 @@
+meta:
+targets = 'gml_Object_obj_LvlMGMT_Alarm_5'
+critical = true
+
+patch:
+find_line_with('if (global.GameMode == 1 && instance_exists(obj_ParNubby))')
+
+write_replace('
+if (global.GameMode == 1 && (instance_exists(obj_ParNubby) || global.fo.clocktime > 0))
+')

@@ -1,0 +1,17 @@
+meta:
+targets = 'gml_Object_obj_RarityOddsBox_Draw_0'
+critical = true
+
+patch:
+find_line_with('draw_text(x, y, scr_Text("rareitemodds", string_format(floor(string((obj_LvlMGMT.RareOdds / 1000) * 100)), 1, 0)))')
+
+write_replace('
+if (scr_FO_is_manager("king"))
+{
+    draw_text(x, y, scr_Text("upgradeitemodds", string_format(floor(obj_LvlMGMT.SVManager.UpgradeChance * scr_FO_UpCloverCount()), 1, 0)));
+}
+else
+{
+    draw_text(x, y, scr_Text("rareitemodds", string_format(floor(string(((obj_LvlMGMT.RareOdds * scr_FO_UpCloverCount()) / 1000) * 100)), 1, 0)));
+}
+')

@@ -1,0 +1,157 @@
+meta:
+targets = 'gml_GlobalScript_scr_L2_ItemEffect'
+critical = false
+
+patch:
+find_line_with('case 74:')
+write_replace('case -4:')
+write_before('
+case 74:
+var _Odds = choose(0, 1);
+var _Random = random(100);
+var _RateA = 25;
+var _RateB = 50;
+
+if (scr_FO_RandomWithLuck(_Random, _RateA))
+{
+    with (obj_ParPeg)
+    {
+        if (PegDead == false)
+        {
+            if (global.ItemSfx == true)
+            {
+                if (!audio_is_playing(au_Bonus))
+                {
+                    audio_play_sound(au_Bonus, 1, 0, 0.5, 0, 2);
+                }
+            }
+            
+            scr_DoubleDoublePeg(id);
+        }
+    }
+    
+    scr_Part_ColFireworks(scr_PartAmt(20), 65280);
+}
+else if (scr_FO_RandomWithLuck(_Random, _RateB))
+{
+    with (obj_ParPeg)
+    {
+        if (PegDead == false)
+        {
+            if (global.ItemSfx == true)
+            {
+                if (!audio_is_playing(au_Bonus))
+                {
+                    audio_play_sound(au_Bonus, 1, 0, 0.5, 0, 1.2);
+                }
+            }
+            
+            scr_DoublePeg(id);
+        }
+    }
+}
+
+break;
+')
+
+
+
+find_line_with('case 79:')
+find_line_with('var _Odds = irandom(99)')
+write_replace('var _Odds = random(100);')
+
+find_line_with('if (_Odds <= 65)')
+write_replace('if (scr_FO_RandomWithLuck(_Odds, 65))')
+
+find_line_with('else if (_Odds <= 20)')
+write_replace('else if (scr_FO_RandomWithLuck(_Odds, 20))')
+
+
+
+find_line_with('case 90:')
+find_line_with('var _Odds = choose(2, 2, 2, 2, 0, 0, 0, 1, 1, 1)')
+
+write('
+var _Random = random(100);
+var _RateA = 30;
+var _RateB = 60;
+
+if (scr_FO_RandomWithLuck(_Random, _RateA))
+{
+    _Odds = 1;
+}
+else if (scr_FO_RandomWithLuck(_Random, _RateB))
+{
+    _Odds = 0;
+}
+else
+{
+    _Odds = 2;
+}
+')
+
+
+
+find_line_with('case 91:')
+find_line_with('if (_Odds == 1)')
+write_replace('if (scr_FO_RandomWithLuck(random(100), 2))')
+
+
+
+find_line_with('case 108:')
+find_line_with('var _Odds = choose(0, 1, 1)')
+write('
+if (scr_FO_RandomWithLuck(random(100), 60))
+{
+    _Odds = 1;
+}
+')
+
+
+
+find_line_with('case 109:')
+find_line_with('var _Odds = choose(0, 1)')
+write('
+if (scr_FO_RandomWithLuck(random(100), 50))
+{
+    _Odds = 1;
+}
+')
+
+
+
+find_line_with('case 127:')
+find_line_with('var _Odds = choose(0, 0, 0, 0, 0, 1, 1, 1, 1, 1)')
+write('
+if (scr_FO_RandomWithLuck(random(100), 50))
+{
+    _Odds = 1;
+}
+')
+
+
+
+find_line_with('case 135:')
+find_line_with('var _Odds = choose(0, 0, 1)')
+write('
+if (scr_FO_RandomWithLuck(random(100), 33))
+{
+    _Odds = 1;
+}
+')
+
+
+
+find_line_with('case 150:')
+find_line_with('if (_Proceed == true)')
+write_before('
+if (RndFireNum <= 65)
+{
+    var _Chance = 100 * power(0.9, RndFireNum);
+    
+    if (scr_FO_RandomWithLuck(random(100), _Chance))
+    {
+        _Proceed = true;
+    }
+}
+')

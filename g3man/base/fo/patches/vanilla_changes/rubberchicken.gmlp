@@ -1,0 +1,12 @@
+meta:
+targets = 'gml_GlobalScript_scr_SummonEntity'
+critical = true
+
+patch:
+find_all_lines_with('_EggMsl')
+
+reverse_find_line_with('if (instance_exists(obj_ParNubby))')
+
+write_replace('
+if (true)
+')

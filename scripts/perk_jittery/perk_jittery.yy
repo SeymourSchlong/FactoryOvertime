@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"perk_jittery",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"perk_jittery",
+  "parent":{
+    "name":"perks",
+    "path":"folders/Scripts/perks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

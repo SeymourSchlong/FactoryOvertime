@@ -1,0 +1,11 @@
+meta:
+targets = 'gml_GlobalScript_scr_L1_ItemEffect'
+critical = true
+
+patch:
+find_line_with('if (obj_ItemMGMT.ItemLevel[obj_ItemMGMT.ItemInst[2].MyItemID] == 1)')
+
+write_before('
+scr_DisableItem(id, WhatSlot);
+alarm_set(5, 3 * (30 - scr_FO_ClockCount()));
+')

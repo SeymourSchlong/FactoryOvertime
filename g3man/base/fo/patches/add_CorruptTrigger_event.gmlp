@@ -1,0 +1,11 @@
+meta:
+targets = 'gml_GlobalScript_scr_ForceTrigger'
+critical = true
+
+patch:
+find_line_with('var _ErrIndic = instance_create_depth(_Tar.x, _Tar.y, _Tar.depth - 2, obj_ItemErr);')
+
+write('
+    if (obj_ItemMGMT.ItemAugment[_Tar.MyItemID] == "corrupted")
+        scr_GameEv("CorruptTrigger");
+')

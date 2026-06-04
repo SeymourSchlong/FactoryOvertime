@@ -1,0 +1,74 @@
+meta:
+targets = 'gml_GlobalScript_scr_UpgrFoodEffect'
+critical = true
+
+patch:
+find_line_with('case 163:')
+
+write_replace('
+case -1:
+')
+
+
+write_before('
+case 163:
+    scr_UpdateSeed();
+    var _ValidItems = ds_list_create();
+    ds_list_clear(_ValidItems);
+    
+    for (var i = 0; i < array_length(obj_ItemMGMT.ItemID); i += 1)
+    {
+        if (obj_ItemMGMT.InItemPool[i] == 1 || obj_ItemMGMT.InItemPool[i] == 2 || obj_ItemMGMT.InItemPool[i] == 4)
+        {
+            for (var j = 0; j < array_length(obj_ItemMGMT.ItemInst); j++)
+            {
+                if (i != obj_ItemMGMT.ItemInst[j].MyItemID && i != obj_ItemMGMT.ItemPair[obj_ItemMGMT.ItemInst[j].MyItemID])
+                {
+                    ds_list_add(_ValidItems, i);
+                }
+            }
+        }
+    }
+    
+    ds_list_shuffle(_ValidItems);
+    
+    if (instance_number(obj_ItemParent) > 1)
+    {
+        for (var i = 1; i < array_length(obj_ItemMGMT.ItemInst); i += 1)
+        {
+            if (obj_ItemMGMT.ItemInst[i] == -1)
+            {
+                var _TargetSlot = i;
+                var _NewItemID = ds_list_find_value(_ValidItems, irandom(ds_list_size(_ValidItems) - 1));
+                _NewItemID = obj_ItemMGMT.ItemPair[_NewItemID];
+                var _NewItem = instance_create_layer(obj_ItemMGMT.ItemX[_TargetSlot], obj_ItemMGMT.ItemY[_TargetSlot], "LevelEnt1", obj_ItemMGMT.ItemObj[_NewItemID]);
+                _NewItem.WhatSlot = _TargetSlot;
+                
+                with (_NewItem)
+                {
+                    MyDesc = obj_ItemMGMT.ItemDesc[MyItemID];
+                    scr_Part_Fireworks(scr_PartAmt(25));
+                }
+                
+                obj_ItemMGMT.Item[_TargetSlot] = _NewItemID;
+                obj_ItemMGMT.ItemInst[_TargetSlot] = _NewItem;
+            }
+        }
+    }
+    
+    ds_list_destroy(_ValidItems);
+    obj_ItemMGMT.RecentEatenFoodDisp = obj_ItemMGMT.ItemID[arg0];
+    obj_ItemMGMT.RecentEatenFoodDispID = arg0;
+    obj_ItemMGMT.RecentEatenFood = arg0;
+    
+    if (instance_exists(obj_CafeMouth))
+    {
+        with (obj_CafeMouth)
+        {
+            var _DialogueBox = instance_create_depth(x, y, depth - 1, obj_CafeDialogue);
+            _DialogueBox.CafeDialogueStr = scr_Text("food_eat_confirm10");
+            audio_play_sound(au_FoodEffect, 1, 0, 1, 0, 1);
+        }
+    }
+    break;
+')

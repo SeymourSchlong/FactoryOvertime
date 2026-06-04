@@ -1,0 +1,6 @@
+meta:
+targets = 'gml_Object_obj_SaveAndQuitBtn_Alarm_1'
+critical = true
+
+patch:
+write('scr_GameEv("QuitToTitle")')

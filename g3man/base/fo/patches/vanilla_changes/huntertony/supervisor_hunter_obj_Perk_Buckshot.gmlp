@@ -1,0 +1,15 @@
+meta:
+targets = 'gml_Object_obj_Perk_Buckshot_Alarm_0'
+critical = true
+
+patch:
+find_line_with('if (obj_LvlMGMT.Initial_HighPegNum != -1)')
+
+write_before('
+if (instance_exists(obj_SV6Manager))
+{
+    scr_ForceTrigger(1, 2);
+    scr_ForceTrigger(2, 2);
+}
+else 
+')

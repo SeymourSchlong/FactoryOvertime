@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"supervisor_king",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"supervisor_king",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

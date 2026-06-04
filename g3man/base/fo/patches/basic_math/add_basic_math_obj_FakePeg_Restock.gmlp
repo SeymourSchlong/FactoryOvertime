@@ -1,0 +1,20 @@
+meta:
+targets = 'gml_Object_obj_FakePeg_Restock_Draw_0'
+critical = true
+
+patch:
+find_line_with('draw_sprite_ext(sprite_index, image_index, x, y, 1, 1, 0, image_blend, image_alpha)')
+write('
+if (scr_FO_is_challenge("basicmath"))
+{
+    var _num_string = string(obj_LvlMGMT.PegImgId[FakePegPar.MyPegID] + 1);
+    draw_set_font(scr_LocalEqualFont(fnt_PegNum));
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_set_color(c_black);
+    scr_OutlineText(x, y, 0, 0, _num_string);
+    draw_set_color(#F5F5D7);
+    draw_text(x, y, _num_string);
+    exit;
+}
+')

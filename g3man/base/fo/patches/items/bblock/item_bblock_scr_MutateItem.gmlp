@@ -1,0 +1,37 @@
+meta:
+targets = 'gml_GlobalScript_scr_MutateItem'
+critical = true
+
+patch:
+find_all_lines_with('if (_Valid == true)')
+
+write_and_condition('false')
+
+write_before('
+var _trigger_count = scr_FO_IncreasedTriggerCount(arg0);
+
+if (EvType == "NubbyLaunchItem" || EvType == "NubbyLaunchItem")
+{
+    _Valid = true;
+}
+
+if (_Valid)
+{
+    if (ds_list_size(ItemQueue) == 0)
+    {
+        repeat (_trigger_count)
+        {
+            ds_list_add(ItemQueue, 1);
+        }
+        
+        alarm_set(0, 1);
+    }
+    else
+    {
+        repeat (_trigger_count)
+        {
+            ds_list_add(ItemQueue, 1);
+        }
+    }
+}
+')

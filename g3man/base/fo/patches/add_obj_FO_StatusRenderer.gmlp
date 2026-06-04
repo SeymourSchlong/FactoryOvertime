@@ -1,0 +1,9 @@
+meta:
+targets = 'gml_Object_obj_ItemMGMT_Create_0'
+critical = true
+
+patch:
+move_to_end()
+write_last('
+instance_create_layer(621, 286, "Prompts", asset_get_index("obj_FO_StatusRenderer"));
+')

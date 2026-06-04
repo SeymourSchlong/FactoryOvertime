@@ -1,0 +1,10 @@
+meta:
+targets = 'gml_Object_obj_SkipLootBtn_Draw_0'
+critical = true
+
+patch:
+find_line_with('draw_text_scribble(x, y + 50, scr_Text("btn_skiploot_part2", 4))')
+
+write_replace('
+draw_text_scribble(x, y + 50, scr_Text("btn_skiploot_part2", 10));
+')

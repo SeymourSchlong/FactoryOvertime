@@ -1,0 +1,10 @@
+meta:
+targets = 'gml_GlobalScript_scr_SummonEntity'
+critical = true
+
+patch:
+find_line_with('switch (arg0)')
+
+write_before('
+scr_FO_MothEggRandomSummon();
+')

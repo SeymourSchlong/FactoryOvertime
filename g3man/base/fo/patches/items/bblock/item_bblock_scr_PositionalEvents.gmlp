@@ -1,0 +1,61 @@
+meta:
+targets = 'gml_GlobalScript_scr_PositionalEv'
+critical = true
+
+patch:
+find_line_with('if (WhatSlot != 1)')
+
+write_and_condition('false')
+
+write_before('
+if (WhatSlot != 1)
+{
+    var _trigger_count = scr_FO_IncreasedTriggerCount(WhatSlot);
+    
+    if (ds_list_size(ItemQueue) == 0)
+    {
+        repeat (_trigger_count)
+        {
+            ds_list_add(ItemQueue, 1);
+        }
+        
+        alarm_set(0, 1);
+    }
+    else
+    {
+        repeat (_trigger_count)
+        {
+            ds_list_add(ItemQueue, 1);
+        }
+    }
+}
+')
+
+
+find_line_with('if (WhatSlot != 7)')
+
+write_and_condition('false')
+
+write_before('
+if (WhatSlot != 7)
+{
+    var _trigger_count = scr_FO_IncreasedTriggerCount(WhatSlot);
+    
+    if (ds_list_size(ItemQueue) == 0)
+    {
+        repeat (_trigger_count)
+        {
+            ds_list_add(ItemQueue, 1);
+        }
+        
+        alarm_set(0, 1);
+    }
+    else
+    {
+        repeat (_trigger_count)
+        {
+            ds_list_add(ItemQueue, 1);
+        }
+    }
+}
+')

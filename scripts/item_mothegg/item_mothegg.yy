@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"item_mothegg",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"item_mothegg",
+  "parent":{
+    "name":"complete",
+    "path":"folders/Scripts/items/complete.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

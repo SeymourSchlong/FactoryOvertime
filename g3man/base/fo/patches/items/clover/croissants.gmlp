@@ -1,0 +1,13 @@
+meta:
+targets = {'gml_Object_obj_Perk_Croissant_Alarm_0', 'gml_Object_obj_Perk_CroissantJelly_Alarm_0'}
+critical = true
+
+patch:
+find_line_with('if (_Hit == true)')
+
+write_before('
+if (scr_FO_RandomWithLuck(random(100), _Odds))
+{
+    _Hit = 1;
+}
+')

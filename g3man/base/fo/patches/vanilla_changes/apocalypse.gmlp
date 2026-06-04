@@ -1,0 +1,10 @@
+meta:
+targets = 'gml_Object_obj_FBoss_Apocalypse_Alarm_0'
+critical = true
+
+patch:
+find_line_with('_NewBloodRain')
+
+write_replace('
+var _NewBloodRain = instance_create_layer(irandom_range(650, 1250), -50, "Prompts", obj_BloodRain);
+')
