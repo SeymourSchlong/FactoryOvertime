@@ -22,11 +22,11 @@ function item_littlepea(){
 	global.fo.littlepeas = 0;
 	
 	forgery.register_autosave_save_callback(function(data) {
-		data["littlepeas"] = global.fo.littlepeas;
+		data[$ "littlepeas"] = global.fo.littlepeas;
 	});
 	
 	forgery.register_autosave_load_callback(function(data) {
-		global.fo.littlepeas = data["littlepeas"];
+		global.fo.littlepeas = data[$ "littlepeas"];
 	});
 	
 	

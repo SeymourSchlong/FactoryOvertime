@@ -35,11 +35,11 @@ function item_piggypurse(){
 	global.fo.piggy_coins = 0;
 	
 	forgery.register_autosave_save_callback(function(data) {
-		data["piggy_coins"] = global.fo.piggy_coins;
+		data[$ "piggy_coins"] = global.fo.piggy_coins;
 	});
 	
 	forgery.register_autosave_load_callback(function(data) {
-		global.fo.piggy_coins = data["piggy_coins"];
+		global.fo.piggy_coins = data[$ "piggy_coins"];
 	});
 	
 	
