@@ -48,7 +48,6 @@
   },
   "name":"FactoryOvertime",
   "resources":[
-    {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
     {"id":{"name":"g3man_override_obj_PegNumber","path":"objects/g3man_override_obj_PegNumber/g3man_override_obj_PegNumber.yy",},},
     {"id":{"name":"obj_FO_BigChunk","path":"objects/obj_FO_BigChunk/obj_FO_BigChunk.yy",},},
     {"id":{"name":"obj_FO_Chunk","path":"objects/obj_FO_Chunk/obj_FO_Chunk.yy",},},
