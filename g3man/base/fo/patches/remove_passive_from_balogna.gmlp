@@ -1,0 +1,10 @@
+meta:
+targets = 'gml_Object_obj_SV7Manager_Create_0'
+critical = true
+
+patch:
+find_line_with('if (obj_ItemMGMT.ItemType[i] != 1)')
+
+write_replace('
+if (obj_ItemMGMT.ItemType[i] != 1 && obj_ItemMGMT.GeneralEffect[i] != "passive")
+')
