@@ -42,6 +42,10 @@ function challenge_math(){
 			        obj_ItemMGMT.InItemPool[i] = 0;
 			    }
 			}
+			obj_ItemMGMT.OffsetPrice[38] = -10;
+			obj_ItemMGMT.OffsetPrice[159] = -10;
+			obj_ItemMGMT.ItemPrice[38] = 0;
+			obj_ItemMGMT.ItemPrice[159]	= 0;
 
 			// enabling item pools
 			obj_ItemMGMT.InItemPool[4] = 1;
