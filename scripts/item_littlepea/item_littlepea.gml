@@ -51,6 +51,7 @@ function item_littlepea(){
 	    offset_price: data.price - (data.rarity > RARITY.COMMON ? 10 : 5),
 		pair_id: "fo:" + item_id + "_upgrade",
 		food: true,
+		food_crumb_colors: [ #99e550, #47810e ],
 		on_create: function() {},
 		on_trigger: function(this) {
 			if (instance_exists(obj_CafeMouth))
@@ -81,6 +82,7 @@ function item_littlepea(){
 	    offset_price: data.price - (data.rarity > RARITY.COMMON ? 10 : 5),
 		pair_id: "fo:" + item_id,
 		food: true,
+		food_crumb_colors: [ #50a5e5, #0e5181 ],
 		on_create: function() {},
 		on_trigger: function(this) {
 			if (instance_exists(obj_CafeMouth))
