@@ -78,7 +78,7 @@ function item_toysoldier(){
             }
             
             if (global.ItemSfx == true)
-                audio_play_sound(agi("snd_MOD_Gun"), 1, 0, global.SFXGain, 0, choose(0.9, 1, 1.1));
+                audio_play_sound(agi("snd_MOD_Gun"), 1, 0, global.SFXGain/2, 0, choose(0.9, 1, 1.1));
 		}
 	}, item_id);
 	
@@ -136,7 +136,7 @@ function item_toysoldier(){
             }
             
             if (global.ItemSfx == true)
-                audio_play_sound(snd_MOD_Gun, 1, 0, global.SFXGain, 0, choose(0.9, 1, 1.1));
+                audio_play_sound(snd_MOD_Gun, 1, 0, global.SFXGain/2, 0, choose(0.9, 1, 1.1));
 		}
 	}, item_id + "_upgrade");
 }
