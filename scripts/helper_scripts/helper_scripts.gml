@@ -780,7 +780,7 @@ function scr_FO_PiyoPiyosIncrease()
         {
             if (DisableItem == false)
             {
-                global.fo.scoremult.piyopiyos = 1;
+                global.fo.scoremult.piyopiyos += 0.01;
                 scr_FO_PassiveSparkle(x, y);
             }
         }
@@ -792,7 +792,7 @@ function scr_FO_PiyoPiyosIncrease()
         {
             if (DisableItem == false)
             {
-                global.fo.scoremult.piyopiyos = 1;
+                global.fo.scoremult.piyopiyos += 0.03;
                 scr_FO_PassiveSparkle(x, y);
             }
         }
