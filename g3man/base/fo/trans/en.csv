@@ -52,8 +52,8 @@
 "item_upgr_clover","[#ffffff]{a}*Increase the odds of chance-based effects in items and perks by 20%, stacking linearly.{a}(e.g. 50% -> 60%){a}*Affects rare and ultra-rare chance as well.",
 
 "item_name_tophat","Top Hat",
-"item_desc_tophat","[#ffffff]{a}*Nubby has a 15% chance to warp to the top of the screen.",
-"item_upgr_tophat","[#ffffff]{a}*Nubby has a 30% chance to warp to the top of the screen.",
+"item_desc_tophat","[#ffffff]{a}*Has a 15% chance to spawn a Nubunny at the top of the screen.",
+"item_upgr_tophat","[#ffffff]{a}*Has a 30% chance to spawn a Nubunny at the top of the screen.",
 
 "item_name_mysterybox","Mystery Box",
 "item_desc_mysterybox","[#ffffff]{a}*Becomes a random item for the duration of the round.",
@@ -143,7 +143,7 @@
 "perk_desc_gmail","[#e6ffe6]{a}*Force-triggers all items in the digits used in the round number.{a}(Currently triggers slots: {b})",
 
 "perk_name_treasure","The Treasure Perk",
-"perk_desc_treasure","[#e6ffe6]{a}*Force-triggers all rare items once.{a}*Force-triggers all ultra-rare items and twice.",
+"perk_desc_treasure","[#e6ffe6]{a}*Force-triggers all rare items once.{a}*Force-triggers all ultra-rare items twice.",
 
 "perk_name_copycat","The Copycat Perk",
 "perk_desc_copycat","[#e6ffe6]{a}*Force-triggers all duplicate items.",
@@ -154,7 +154,7 @@
 "challenge_desc_math","*Pegs scale by +1 instead of by x2.{a}*Halving pegs subtracts 1, and doubling adds 1.{a}*Most point-giving items are disabled.",
 
 "supervisor_name_king","King Tony",
-"supervisor_desc_king","*All items appear as Common.{a}*Each item has a 10% chance to appear as its upgraded variant.",
+"supervisor_desc_king","*All items appear as Common.{a}*Each item has a 20% chance to appear as its upgraded variant.",
 "upgradeitemodds","Upgrade Odds: {a}%",
 
 "finalboss_fo_name","Critical Error!",	
