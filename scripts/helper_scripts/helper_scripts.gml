@@ -100,8 +100,8 @@ function scr_FO_vanilla_items() {
 		// corrupt seal
 		ItemAugment[35] = "corrupted";
 		ItemAugment[103] = "corrupted";
-		ItemPool[35] = ITEMPOOL.BLACKMARKET;
-		ItemPool[103] = ITEMPOOL.BLACKMARKET;
+		InItemPool[35] = ITEMPOOL.BLACKMARKET;
+		InItemPool[103] = ITEMPOOL.BLACKMARKET;
 	
 		// uncorrupt pointer and make rare
 		ItemAugment[34] = "none";
