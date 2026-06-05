@@ -3,6 +3,23 @@ targets = {'gml_Object_obj_Perk_Croissant_Alarm_0', 'gml_Object_obj_Perk_Croissa
 critical = true
 
 patch:
+find_line_with('case 0:')
+write('_Odds = 0;')
+
+find_line_with('case 1:')
+write('_Odds = 25;')
+
+find_line_with('case 2:')
+write('_Odds = 50;')
+
+find_line_with('case 3:')
+write('_Odds = 75;')
+
+find_line_with('case 4:')
+write('_Odds = 100;')
+
+
+
 find_line_with('if (_Hit == true)')
 
 write_before('
