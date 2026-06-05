@@ -90,7 +90,6 @@ function scr_FO_on_load() {
 	
 	
 	// passive items
-	//item_bookworm();
 	item_mothegg();
 	item_nubup();
 	item_magicwand();
@@ -101,11 +100,12 @@ function scr_FO_on_load() {
 	item_heartmonitor();
 	item_boxofnails();
 	item_piyopiyos();
+	//item_bookworm();
 	
 	// food items
 	item_chocolatecoin();
-	//item_redpill();
 	item_littlepea();
+	//item_redpill();
 	//item_lunchbag();
 	//item_geeks();
 	
