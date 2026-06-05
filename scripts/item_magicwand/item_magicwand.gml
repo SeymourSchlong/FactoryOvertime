@@ -8,7 +8,7 @@ function item_magicwand(){
 	    sprupgr: "spr_FO_I_S_MagicWand",
 	    type: 0,
 	    rarity: RARITY.COMMON,
-	    augment: "passive",
+	    augment: "none",
 	    category: "passive",
 	    pool: ITEMPOOL.SHOP,
 	    price: 6,

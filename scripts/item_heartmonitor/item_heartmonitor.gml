@@ -8,7 +8,7 @@ function item_heartmonitor(){
 	    sprupgr: "spr_FO_I_S_HeartMonitor",
 	    type: 0,
 	    rarity: RARITY.ULTRARARE,
-	    augment: "passive",
+	    augment: "none",
 	    category: "passive",
 	    pool: ITEMPOOL.SHOP,
 	    price: 15,

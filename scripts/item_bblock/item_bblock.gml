@@ -8,7 +8,7 @@ function item_bblock(){
 	    sprupgr: "spr_FO_I_S_BBlock",
 	    type: 0,
 	    rarity: RARITY.COMMON,
-	    augment: "passive",
+	    augment: "none",
 	    category: "passive",
 	    pool: ITEMPOOL.SHOP,
 	    price: 7,

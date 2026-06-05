@@ -8,7 +8,7 @@ function item_clover(){
 	    sprupgr: "spr_FO_I_S_Clover",
 	    type: 0,
 	    rarity: RARITY.RARE,
-	    augment: "passive",
+	    augment: "none",
 	    category: "passive",
 	    pool: ITEMPOOL.SHOP,
 	    price: 10,

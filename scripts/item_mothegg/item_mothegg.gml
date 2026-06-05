@@ -8,7 +8,7 @@ function item_mothegg(){
 	    sprupgr: "spr_FO_I_S_MothEgg",
 	    type: 0,
 	    rarity: RARITY.COMMON,
-	    augment: "passive",
+	    augment: "none",
 	    category: "passive",
 	    pool: ITEMPOOL.SHOP,
 	    price: 5,

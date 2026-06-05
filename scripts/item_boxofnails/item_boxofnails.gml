@@ -8,7 +8,7 @@ function item_boxofnails(){
 	    sprupgr: "spr_FO_I_S_BoxOfNails",
 	    type: 0,
 	    rarity: RARITY.ULTRARARE,
-	    augment: "passive",
+	    augment: "none",
 	    category: "passive",
 	    pool: ITEMPOOL.SHOP,
 	    price: 15,
