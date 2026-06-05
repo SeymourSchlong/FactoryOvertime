@@ -12,7 +12,7 @@ function item_faultyrocket(){
 	    category: "scoremult",
 	    pool: ITEMPOOL.SHOP,
 	    price: 15,
-	    trig: "5Second",
+	    trig: "4Second",
 	    alttrig: "NubbyDies",
 	    desc: "item_desc_faultyrocket",
 	    upgr: "item_upgr_faultyrocket",
