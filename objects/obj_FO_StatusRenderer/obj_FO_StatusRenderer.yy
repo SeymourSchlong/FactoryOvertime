@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_FO_Status_Gloober",
+    "path":"sprites/spr_FO_Status_Gloober/spr_FO_Status_Gloober.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
