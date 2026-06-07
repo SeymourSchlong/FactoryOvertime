@@ -104,7 +104,6 @@
     {"id":{"name":"perk_pingpong","path":"scripts/perk_pingpong/perk_pingpong.yy",},},
     {"id":{"name":"perk_textbook","path":"scripts/perk_textbook/perk_textbook.yy",},},
     {"id":{"name":"perk_treasure","path":"scripts/perk_treasure/perk_treasure.yy",},},
-    {"id":{"name":"scr_FO_get_item","path":"scripts/scr_FO_get_item/scr_FO_get_item.yy",},},
     {"id":{"name":"supervisor_king","path":"scripts/supervisor_king/supervisor_king.yy",},},
     {"id":{"name":"snd_MOD_Frog","path":"sounds/snd_MOD_Frog/snd_MOD_Frog.yy",},},
     {"id":{"name":"snd_MOD_Gun","path":"sounds/snd_MOD_Gun/snd_MOD_Gun.yy",},},
