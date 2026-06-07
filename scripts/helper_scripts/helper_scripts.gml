@@ -108,6 +108,8 @@ function scr_FO_vanilla_items() {
 		ItemAugment[102] = "none";
 		ItemTier[34] = RARITY.RARE;
 		ItemTier[102] = RARITY.RARE;
+		InItemPool[34] = ITEMPOOL.SHOP;
+		InItemPool[102] = ITEMPOOL.SHOP;
 	
 		// change dolphin trigger
 		ItemTrig[56] = "HalfSecond";
@@ -137,6 +139,12 @@ function scr_FO_vanilla_items() {
 		for (var _i = 0; _i < array_length(_ids); _i++) {
 			MutantTrigText[_ids[_i]] = scr_Text(MutantTrig[_ids[_i]]);
 		}
+	}
+}
+
+function scr_FO_vanilla_perks() {
+	with (obj_PerkMGMT) {
+		PerkTrigger[13] = "PassGoalOdds50";
 	}
 }
 
