@@ -76,55 +76,55 @@ global.fo = {
 
 function scr_FO_on_load() {
 	// items
-	item_pocketfrogs();
-	item_toysoldier();
-	item_wackomole();
-	item_beetle();
-	item_tophat();
-	item_faultyrocket();
-	item_piggypurse();
-	//item_mysterybox();
-	//item_pandorasbox();
-	//item_arthur();		// does not function
-	//item_ash();			// temporary
+	fo_item_pocketfrogs();
+	fo_item_toysoldier();
+	fo_item_wackomole();
+	fo_item_beetle();
+	fo_item_tophat();
+	fo_item_faultyrocket();
+	fo_item_piggypurse();
+	//fo_item_mysterybox();
+	//fo_item_pandorasbox();
+	//fo_item_arthur();			// does not function
+	//fo_item_ash();			// temporary
 	
 	
 	// passive items
-	item_mothegg();
-	item_nubup();
-	item_magicwand();
-	item_bblock();
-	item_brokenclock();
-	item_clover();
-	item_gloober();
-	item_heartmonitor();
-	item_boxofnails();
-	item_piyopiyos();
-	//item_bookworm();
+	fo_item_mothegg();
+	fo_item_nubup();
+	fo_item_magicwand();
+	fo_item_bblock();
+	fo_item_brokenclock();
+	fo_item_clover();
+	fo_item_gloober();
+	fo_item_heartmonitor();
+	fo_item_boxofnails();
+	fo_item_piyopiyos();
+	//fo_item_bookworm();
 	
 	// food items
-	item_chocolatecoin();
-	item_littlepea();
-	//item_redpill();
-	//item_lunchbag();
-	//item_geeks();
+	fo_item_chocolatecoin();
+	fo_item_littlepea();
+	//fo_item_redpill();
+	//fo_item_lunchbag();
+	//fo_item_geeks();
 	
 	
 	// perks
-	perk_pancake();
-	perk_gmail();
-	perk_jittery();
-	perk_parry();
-	perk_pingpong();
-	perk_textbook();
-	perk_treasure();
-	perk_copycat();
+	fo_perk_pancake();
+	fo_perk_gmail();
+	fo_perk_jittery();
+	fo_perk_parry();
+	fo_perk_pingpong();
+	fo_perk_textbook();
+	fo_perk_treasure();
+	fo_perk_copycat();
 	
 	// challenges
-	challenge_math();
+	fo_challenge_math();
 	
 	// supervisors
-	supervisor_king();
+	fo_supervisor_king();
 	
 }
 

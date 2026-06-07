@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"fo_item_brokenclock",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fo_item_brokenclock",
+  "parent":{
+    "name":"complete",
+    "path":"folders/Scripts/items/complete.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

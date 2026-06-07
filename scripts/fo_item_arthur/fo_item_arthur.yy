@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"fo_item_arthur",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fo_item_arthur",
+  "parent":{
+    "name":"unfinished",
+    "path":"folders/Scripts/items/unfinished.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
