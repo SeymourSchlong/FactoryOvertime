@@ -3,7 +3,7 @@
 function fo_item_wackomole(){
 	var item_id = "wackomole";
 	var data = {
-	    name: "item_name_wackomole",
+	    name: "item_name_FO_wackomole",
 	    spr: "spr_FO_I_Mole",
 	    sprupgr: "spr_FO_I_S_Mole",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_wackomole(){
 	    price: 8,
 	    trig: "1andHalfSecond",
 	    alttrig: "PassGoal",
-	    desc: "item_desc_wackomole",
-	    upgr: "item_upgr_wackomole",
+	    desc: "item_desc_FO_wackomole",
+	    upgr: "item_upgr_FO_wackomole",
 	    weight: [5, 5, 5]
 	}
 	

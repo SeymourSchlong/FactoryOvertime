@@ -2,8 +2,8 @@
 function fo_challenge_math(){
 	var challenge_id = "basicmath";
 	var data = {
-		display_name: "challenge_name_math",
-		description: "challenge_desc_math",
+		display_name: "challenge_name_FO_math",
+		description: "challenge_desc_FO_math",
 		sprite: "spr_FO_Challenge",
 		oval_sprite: "spr_FO_Challenge_Prev"
 	}

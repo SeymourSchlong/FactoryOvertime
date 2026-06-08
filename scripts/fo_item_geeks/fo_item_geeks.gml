@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function fo_item_geeks(){
 	var data = {
-	    name: "item_name_geeks",
+	    name: "item_name_FO_geeks",
 	    spr: spr_FO_I_Geeks,
 	    sprupgr: spr_FO_I_S_Geeks,
 	    type: 1,
@@ -13,8 +13,8 @@ function fo_item_geeks(){
 	    price: 13,
 	    trig: "Eat",
 	    alttrig: "",
-	    desc: "item_desc_geeks",
-	    upgr: "item_upgr_geeks",
+	    desc: "item_desc_FO_geeks",
+	    upgr: "item_upgr_FO_geeks",
 	    weight: [0, 0, 0]
 	}
 	

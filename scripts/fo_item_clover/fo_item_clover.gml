@@ -3,7 +3,7 @@
 function fo_item_clover(){
 	var item_id = "clover";
 	var data = {
-	    name: "item_name_clover",
+	    name: "item_name_FO_clover",
 	    spr: "spr_FO_I_Clover",
 	    sprupgr: "spr_FO_I_S_Clover",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_clover(){
 	    price: 10,
 	    trig: "Passive",
 	    alttrig: "",
-	    desc: "item_desc_clover",
-	    upgr: "item_upgr_clover",
+	    desc: "item_desc_FO_clover",
+	    upgr: "item_upgr_FO_clover",
 	    weight: [4, 5, 5]
 	}
 	

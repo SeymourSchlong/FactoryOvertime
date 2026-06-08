@@ -3,7 +3,7 @@
 function fo_perk_pancake(){
 	var perk_id = "pancake";
 	var data = {
-	    name: "perk_name_pancake",
+	    name: "perk_name_FO_pancake",
 	    spr: "spr_FO_Perk_Pancake",
 	    trig: "NubbyDies",
 	    rarity: 0,
@@ -11,7 +11,7 @@ function fo_perk_pancake(){
 	    pool: 1,
 	    colour: 4235519,
 	    augmenteffect: 0,
-	    desc: "perk_desc_pancake"
+	    desc: "perk_desc_FO_pancake"
 	}
 
 	forgery.register_perk({

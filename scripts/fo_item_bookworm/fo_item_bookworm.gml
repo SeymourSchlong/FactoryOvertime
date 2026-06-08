@@ -3,7 +3,7 @@
 function fo_item_bookworm(){
 	var item_id = "bookworm";
 	var data = {
-	    name: "item_name_bookworm",
+	    name: "item_name_FO_bookworm",
 	    spr: "spr_FO_I_Bookworm",
 	    sprupgr: "spr_FO_I_S_Bookworm",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_bookworm(){
 	    price: 25,
 	    trig: "Passive",
 	    alttrig: "",
-	    desc: "item_desc_bookworm",
-	    upgr: "item_upgr_bookworm",
+	    desc: "item_desc_FO_bookworm",
+	    upgr: "item_upgr_FO_bookworm",
 	    weight: [5, 5, 5]
 	}
 	

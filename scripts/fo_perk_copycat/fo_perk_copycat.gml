@@ -3,7 +3,7 @@
 function fo_perk_copycat(){
 	var perk_id = "copycat";
 	var data = {
-	    name: "perk_name_copycat",
+	    name: "perk_name_FO_copycat",
 	    spr: "spr_FO_Perk_Copycat",
 	    trig: "2Second",
 	    rarity: 0,
@@ -11,7 +11,7 @@ function fo_perk_copycat(){
 	    pool: 1,
 	    colour: 0,
 	    augmenteffect: 0,
-	    desc: "perk_desc_copycat"//, "\n", 4)
+	    desc: "perk_desc_FO_copycat"//, "\n", 4)
 	}
 
 	forgery.register_perk({

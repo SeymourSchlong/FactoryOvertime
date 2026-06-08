@@ -3,7 +3,7 @@
 function fo_perk_jittery(){
 	var perk_id = "jittery";
 	var data = {
-	    name: "perk_name_jittery",
+	    name: "perk_name_FO_jittery",
 	    spr: "spr_FO_Perk_Jittery",
 	    trig: "HalfSecond",
 	    rarity: 0,
@@ -11,7 +11,7 @@ function fo_perk_jittery(){
 	    pool: 1,
 	    colour: 0,
 	    augmenteffect: 0,
-	    desc: "perk_desc_jittery",
+	    desc: "perk_desc_FO_jittery",
 	}
 
 	forgery.register_perk({

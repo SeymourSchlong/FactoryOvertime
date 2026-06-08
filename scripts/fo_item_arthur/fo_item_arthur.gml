@@ -3,7 +3,7 @@
 function fo_item_arthur(){
 	var item_id = "arthur";
 	var data = {
-	    name: "item_name_arthur",
+	    name: "item_name_FO_arthur",
 	    spr: "spr_FO_I_Arthur",
 	    sprupgr: "spr_FO_I_S_Arthur",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_arthur(){
 	    price: 6,
 	    trig: "NubbyDies",
 	    alttrig: "20Summoned",
-	    desc: "item_desc_arthur",
-	    upgr: "item_upgr_arthur",
+	    desc: "item_desc_FO_arthur",
+	    upgr: "item_upgr_FO_arthur",
 	    weight: [5, 5, 5]
 	}
 	

@@ -3,7 +3,7 @@
 function fo_item_boxofnails(){
 	var item_id = "boxofnails";
 	var data = {
-	    name: "item_name_boxofnails",
+	    name: "item_name_FO_boxofnails",
 	    spr: "spr_FO_I_BoxOfNails",
 	    sprupgr: "spr_FO_I_S_BoxOfNails",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_boxofnails(){
 	    price: 15,
 	    trig: "Passive",
 	    alttrig: "",
-	    desc: "item_desc_boxofnails",
-	    upgr: "item_upgr_boxofnails",
+	    desc: "item_desc_FO_boxofnails",
+	    upgr: "item_upgr_FO_boxofnails",
 	    weight: [1, 3, 3]
 	}
 	

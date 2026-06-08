@@ -3,7 +3,7 @@
 function fo_perk_parry(){
 	var perk_id = "parry";
 	var data = {
-	    name: "perk_name_parry",
+	    name: "perk_name_FO_parry",
 	    spr: "spr_FO_Perk_Parry",
 	    trig: "CorruptTrigger",
 	    rarity: 1,
@@ -11,7 +11,7 @@ function fo_perk_parry(){
 	    pool: 1,
 	    colour: 0,
 	    augmenteffect: 0,
-	    desc: "perk_desc_parry"//, "\n", 25)
+	    desc: "perk_desc_FO_parry"//, "\n", 25)
 	}
 
 	forgery.register_perk({

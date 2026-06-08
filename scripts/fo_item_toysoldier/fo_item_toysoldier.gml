@@ -3,7 +3,7 @@
 function fo_item_toysoldier(){
 	var item_id = "toysoldier";
 	var data = {
-	    name: "item_name_toysoldier",
+	    name: "item_name_FO_toysoldier",
 	    spr: "spr_FO_I_ToySoldier",
 	    sprupgr: "spr_FO_I_S_ToySoldier",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_toysoldier(){
 	    price: 8,
 	    trig: "HalfSecond",
 	    alttrig: "PegHalve5",
-	    desc: "item_desc_toysoldier",
-	    upgr: "item_upgr_toysoldier",
+	    desc: "item_desc_FO_toysoldier",
+	    upgr: "item_upgr_FO_toysoldier",
 	    weight: [5, 5, 5]
 	}
 	

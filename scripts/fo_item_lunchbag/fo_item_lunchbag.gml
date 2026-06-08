@@ -3,7 +3,7 @@
 function fo_item_lunchbag(){
 	var item_id = "lunchbag";
 	var data = {
-	    name: "item_name_lunchbag",
+	    name: "item_name_FO_lunchbag",
 	    spr: "spr_FO_I_LunchBag",
 	    sprupgr: "spr_FO_I_S_LunchBag",
 	    type: 1,
@@ -14,8 +14,8 @@ function fo_item_lunchbag(){
 	    price: 7,
 	    trig: "Eat",
 	    alttrig: "",
-	    desc: "item_desc_lunchbag",
-	    upgr: "item_upgr_lunchbag",
+	    desc: "item_desc_FO_lunchbag",
+	    upgr: "item_upgr_FO_lunchbag",
 	    weight: [0, 0, 0]
 	}
 	

@@ -3,7 +3,7 @@
 function fo_perk_textbook(){
 	var perk_id = "textbook";
 	var data = {
-	    name: "perk_name_textbook",
+	    name: "perk_name_FO_textbook",
 	    spr: "spr_FO_Perk_Textbook",
 	    trig: "PegHalve5",
 	    rarity: 1,
@@ -11,7 +11,7 @@ function fo_perk_textbook(){
 	    pool: 1,
 	    colour: 3386879,
 	    augmenteffect: 0,
-	    desc: "perk_desc_textbook"//, "\n", "'")
+	    desc: "perk_desc_FO_textbook"//, "\n", "'")
 	}
 
 	forgery.register_perk({

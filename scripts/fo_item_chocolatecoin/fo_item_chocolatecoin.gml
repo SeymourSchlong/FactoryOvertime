@@ -3,7 +3,7 @@
 function fo_item_chocolatecoin(){
 	var item_id = "chocolatecoin";
 	var data = {
-	    name: "item_name_chocolatecoin",
+	    name: "item_name_FO_chocolatecoin",
 	    spr: "spr_FO_I_ChocolateCoin",
 	    sprupgr: "spr_FO_I_S_ChocolateCoin",
 	    type: 1,
@@ -14,8 +14,8 @@ function fo_item_chocolatecoin(){
 	    price: 20,
 	    trig: "Eat",
 	    alttrig: "",
-	    desc: "item_desc_chocolatecoin",
-	    upgr: "item_upgr_chocolatecoin",
+	    desc: "item_desc_FO_chocolatecoin",
+	    upgr: "item_upgr_FO_chocolatecoin",
 	    weight: [0, 0, 0]
 	}
 	

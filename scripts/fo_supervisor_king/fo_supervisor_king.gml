@@ -2,8 +2,8 @@
 function fo_supervisor_king(){
 	var supervisor_id = "king";
 	var data = {
-		display_name: "supervisor_name_king",
-		description: "supervisor_desc_king",
+		display_name: "supervisor_name_FO_king",
+		description: "supervisor_desc_FO_king",
 		sprites: {
 			idle_neutral: agi("spr_SV10IdleNeutral"),
 			preview: agi("spr_SVPrev_Immortal"),

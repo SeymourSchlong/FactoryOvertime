@@ -3,7 +3,7 @@
 function fo_item_mothegg(){
 	var item_id = "mothegg";
 	var data = {
-	    name: "item_name_mothegg",
+	    name: "item_name_FO_mothegg",
 	    spr: "spr_FO_I_MothEgg",
 	    sprupgr: "spr_FO_I_S_MothEgg",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_mothegg(){
 	    price: 5,
 	    trig: "Passive",
 	    alttrig: "",
-	    desc: "item_desc_mothegg",
-	    upgr: "item_upgr_mothegg",
+	    desc: "item_desc_FO_mothegg",
+	    upgr: "item_upgr_FO_mothegg",
 	    weight: [3, 5, 5]
 	}
 	

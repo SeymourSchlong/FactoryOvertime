@@ -2,7 +2,7 @@
 function fo_item_tophat(){
 	var item_id = "tophat";
 	var data = {
-	    name: "item_name_tophat",
+	    name: "item_name_FO_tophat",
 	    spr: "spr_FO_I_TopHat",
 	    sprupgr: "spr_FO_I_S_TopHat",
 	    type: 0,
@@ -13,8 +13,8 @@ function fo_item_tophat(){
 	    price: 7,
 	    trig: "1Second",
 	    alttrig: "PegFullPop",
-	    desc: "item_desc_tophat",
-	    upgr: "item_upgr_tophat",
+	    desc: "item_desc_FO_tophat",
+	    upgr: "item_upgr_FO_tophat",
 	    weight: [5, 5, 5]
 	}
 	

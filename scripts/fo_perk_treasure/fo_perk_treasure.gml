@@ -3,7 +3,7 @@
 function fo_perk_treasure(){
 	var perk_id = "treasure";
 	var data = {
-	    name: "perk_name_treasure",
+	    name: "perk_name_FO_treasure",
 	    spr: "spr_FO_Perk_Treasure",
 	    trig: "30Popped",
 	    rarity: 0,
@@ -11,7 +11,7 @@ function fo_perk_treasure(){
 	    pool: 1,
 	    colour: 0,
 	    augmenteffect: 0,
-	    desc: "perk_desc_treasure"
+	    desc: "perk_desc_FO_treasure"
 	}
 
 	forgery.register_perk({

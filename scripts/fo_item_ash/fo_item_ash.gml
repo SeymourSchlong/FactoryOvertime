@@ -3,7 +3,7 @@
 function fo_item_ash(){
 	var item_id = "ash";
 	var data = {
-	    name: "item_name_ash",
+	    name: "item_name_FO_ash",
 	    spr: "spr_FO_I_Ash",
 	    type: 0,
 	    rarity: RARITY.COMMON,
@@ -13,7 +13,7 @@ function fo_item_ash(){
 	    price: 0,
 	    trig: "",
 	    alttrig: "",
-	    desc: "item_desc_ash",
+	    desc: "item_desc_FO_ash",
 	    weight: [0, 0, 0]
 	}
 	

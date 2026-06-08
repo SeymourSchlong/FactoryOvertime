@@ -3,7 +3,7 @@
 function fo_item_heartmonitor(){
 	var item_id = "heartmonitor";
 	var data = {
-	    name: "item_name_heartmonitor",
+	    name: "item_name_FO_heartmonitor",
 	    spr: "spr_FO_I_HeartMonitor",
 	    sprupgr: "spr_FO_I_S_HeartMonitor",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_heartmonitor(){
 	    price: 15,
 	    trig: "Passive",
 	    alttrig: "",
-	    desc: "item_desc_heartmonitor",
-	    upgr: "item_upgr_heartmonitor",
+	    desc: "item_desc_FO_heartmonitor",
+	    upgr: "item_upgr_FO_heartmonitor",
 	    weight: [1, 3, 3]
 	}
 	

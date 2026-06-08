@@ -3,7 +3,7 @@
 function fo_item_brokenclock(){
 	var item_id = "brokenclock";
 	var data = {
-	    name: "item_name_brokenclock",
+	    name: "item_name_FO_brokenclock",
 	    spr: "spr_FO_I_BrokenClock",
 	    sprupgr: "spr_FO_I_S_BrokenClock",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_brokenclock(){
 	    price: 7,
 	    trig: "Passive",
 	    alttrig: "",
-	    desc: "item_desc_brokenclock",
-	    upgr: "item_upgr_brokenclock",
+	    desc: "item_desc_FO_brokenclock",
+	    upgr: "item_upgr_FO_brokenclock",
 	    weight: [2, 5, 5]
 	}
 	

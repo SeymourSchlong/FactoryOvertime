@@ -134,7 +134,7 @@ function scr_FO_on_unload() {}
 
 /*
 {
-    name: "item_name_flupper",
+    name: "item_name_FO_flupper",
     spr: spr_FO_I_Flupper,
     sprupgr: spr_FO_I_S_Flupper,
     type: 0,
@@ -145,8 +145,8 @@ function scr_FO_on_unload() {}
     price: 10,
     trig: "NubbyLaunchItem",
     alttrig: "",
-    desc: "item_desc_flupper", "\n", "\""),
-    upgr: "item_upgr_flupper", "\n", "\""),
+    desc: "item_desc_FO_flupper", "\n", "\""),
+    upgr: "item_upgr_FO_flupper", "\n", "\""),
     weight: [3, 5, 5]
 }
 */

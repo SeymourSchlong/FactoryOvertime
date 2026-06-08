@@ -3,7 +3,7 @@
 function fo_item_piyopiyos(){
 	var item_id = "piyopiyos";
 	var data = {
-	    name: "item_name_piyopiyos",
+	    name: "item_name_FO_piyopiyos",
 	    spr: "spr_FO_I_PiyoPiyos",
 	    sprupgr: "spr_FO_I_S_PiyoPiyos",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_piyopiyos(){
 	    price: 15,
 	    trig: "Passive",
 	    alttrig: "",
-	    desc: "item_desc_piyopiyos",
-	    upgr: "item_upgr_piyopiyos",
+	    desc: "item_desc_FO_piyopiyos",
+	    upgr: "item_upgr_FO_piyopiyos",
 	    weight: [1, 3, 3]
 	}
 	

@@ -3,7 +3,7 @@
 function fo_perk_pingpong(){
 	var perk_id = "pingpong";
 	var data = {
-	    name: "perk_name_pingpong",
+	    name: "perk_name_FO_pingpong",
 	    spr: "spr_Perk_PingPong",
 	    trig: "HitWall2",
 	    rarity: 0,
@@ -11,7 +11,7 @@ function fo_perk_pingpong(){
 	    pool: 1,
 	    colour: 0,
 	    augmenteffect: 0,
-	    desc: "perk_desc_pingpong"
+	    desc: "perk_desc_FO_pingpong"
 	}
 
 	forgery.register_perk({

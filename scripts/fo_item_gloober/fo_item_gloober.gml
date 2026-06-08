@@ -3,7 +3,7 @@
 function fo_item_gloober(){
 	var item_id = "gloober";
 	var data = {
-	    name: "item_name_gloober",
+	    name: "item_name_FO_gloober",
 	    spr: "spr_FO_I_Gloober",
 	    sprupgr: "spr_FO_I_S_Gloober",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_gloober(){
 	    price: 15,
 	    trig: "Passive",
 	    alttrig: "",
-	    desc: "item_desc_gloober",
-	    upgr: "item_upgr_gloober",
+	    desc: "item_desc_FO_gloober",
+	    upgr: "item_upgr_FO_gloober",
 	    weight: [1, 3, 3]
 	}
 	

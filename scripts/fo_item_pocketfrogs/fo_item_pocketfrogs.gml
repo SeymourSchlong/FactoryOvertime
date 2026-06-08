@@ -2,7 +2,7 @@
 function fo_item_pocketfrogs() {
 	var item_id = "pocketfrogs";
 	var data = {
-	    name: "item_name_pocketfrogs",
+	    name: "item_name_FO_pocketfrogs",
 	    spr: "spr_FO_I_PocketFrogs",
 	    sprupgr: "spr_FO_I_S_PocketFrogs",
 	    type: 0,
@@ -13,8 +13,8 @@ function fo_item_pocketfrogs() {
 	    price: 11,
 	    trig: "LowestPop",
 	    alttrig: "HalfSecond",
-	    desc: "item_desc_pocketfrogs",
-	    upgr: "item_upgr_pocketfrogs",
+	    desc: "item_desc_FO_pocketfrogs",
+	    upgr: "item_upgr_FO_pocketfrogs",
 	    weight: [5, 3, 1]
 	}
 	

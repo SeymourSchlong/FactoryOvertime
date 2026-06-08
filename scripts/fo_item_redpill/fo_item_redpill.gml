@@ -3,7 +3,7 @@
 function fo_item_redpill(){
 	var item_id = "redpill";
 	var data = {
-	    name: "item_name_redpill",
+	    name: "item_name_FO_redpill",
 	    spr: "spr_FO_I_RedPill",
 	    sprupgr: "spr_FO_I_S_RedPill",
 	    type: 1,
@@ -14,8 +14,8 @@ function fo_item_redpill(){
 	    price: 15,
 	    trig: "Eat",
 	    alttrig: "",
-	    desc: "item_desc_redpill",
-	    upgr: "item_upgr_redpill",
+	    desc: "item_desc_FO_redpill",
+	    upgr: "item_upgr_FO_redpill",
 	    weight: [0, 0, 0]
 	}
 	

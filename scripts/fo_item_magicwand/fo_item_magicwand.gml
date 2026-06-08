@@ -3,7 +3,7 @@
 function fo_item_magicwand(){
 	var item_id = "magicwand";
 	var data = {
-	    name: "item_name_magicwand",
+	    name: "item_name_FO_magicwand",
 	    spr: "spr_FO_I_MagicWand",
 	    sprupgr: "spr_FO_I_S_MagicWand",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_magicwand(){
 	    price: 6,
 	    trig: "Passive",
 	    alttrig: "",
-	    desc: "item_desc_magicwand",
-	    upgr: "item_upgr_magicwand",
+	    desc: "item_desc_FO_magicwand",
+	    upgr: "item_upgr_FO_magicwand",
 	    weight: [5, 4, 2]
 	}
 	

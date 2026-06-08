@@ -3,7 +3,7 @@
 function fo_item_nubup(){
 	var item_id = "nubup";
 	var data = {
-	    name: "item_name_nubup",
+	    name: "item_name_FO_nubup",
 	    spr: "spr_FO_I_NubUp",
 	    sprupgr: "spr_FO_I_S_NubUp",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_nubup(){
 	    price: 5,
 	    trig: "Passive",
 	    alttrig: "",
-	    desc: "item_desc_nubup",
-	    upgr: "item_upgr_nubup",
+	    desc: "item_desc_FO_nubup",
+	    upgr: "item_upgr_FO_nubup",
 	    weight: [5, 4, 1]
 	}
 	

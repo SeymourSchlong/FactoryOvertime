@@ -3,7 +3,7 @@
 function fo_item_bblock(){
 	var item_id = "bblock";
 	var data = {
-	    name: "item_name_bblock",
+	    name: "item_name_FO_bblock",
 	    spr: "spr_FO_I_BBlock",
 	    sprupgr: "spr_FO_I_S_BBlock",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_bblock(){
 	    price: 7,
 	    trig: "Passive",
 	    alttrig: "",
-	    desc: "item_desc_bblock",
-	    upgr: "item_upgr_bblock",
+	    desc: "item_desc_FO_bblock",
+	    upgr: "item_upgr_FO_bblock",
 	    weight: [0, 5, 5]
 	}
 	

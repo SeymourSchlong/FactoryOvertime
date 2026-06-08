@@ -34,7 +34,7 @@ function scr_FO_gmail_description() {
 	var _gmail_id = get_perk_number_from_id("gmail");
 	
     var _Part1 = obj_PerkMGMT.PerkTrigText[_gmail_id];
-    var _Part2 = scr_Text("perk_desc_gmail", "\n", _text);
+    var _Part2 = scr_Text("perk_desc_FO_gmail", "\n", _text);
     var _UpdatedDesc = string_concat(_Part1, _Part2);
     obj_PerkMGMT.PerkDesc[_gmail_id] = _UpdatedDesc;
             
@@ -51,7 +51,7 @@ function scr_FO_gmail_description() {
 function fo_perk_gmail(){
 	var perk_id = "gmail";
 	var data = {
-	    name: "perk_name_gmail",
+	    name: "perk_name_FO_gmail",
 	    spr: "spr_FO_Perk_Gmail",
 	    trig: "PegFullPop",
 	    rarity: 1,
@@ -59,7 +59,7 @@ function fo_perk_gmail(){
 	    pool: 1,
 	    colour: 0,
 	    augmenteffect: 0,
-	    desc: "perk_desc_gmail"//, "\n", 1)
+	    desc: "perk_desc_FO_gmail"//, "\n", 1)
 	}
 	
 	forgery.subscribe_to_game_event("RoundIncrease", function(this) {

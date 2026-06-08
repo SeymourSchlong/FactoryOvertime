@@ -16,7 +16,7 @@ function scr_FO_piggy_description(this, mult) {
 function fo_item_piggypurse(){
 	var item_id = "piggy";
 	var data = {
-	    name: "item_name_piggypurse",
+	    name: "item_name_FO_piggypurse",
 	    spr: "spr_FO_I_PiggyPurse",
 	    sprupgr: "spr_FO_I_S_PiggyPurse",
 	    type: 0,
@@ -27,8 +27,8 @@ function fo_item_piggypurse(){
 	    price: 6,
 	    trig: "FirstPop",
 	    alttrig: "NubbyDies",
-	    desc: "item_desc_piggypurse",
-	    upgr: "item_upgr_piggypurse",
+	    desc: "item_desc_FO_piggypurse",
+	    upgr: "item_upgr_FO_piggypurse",
 	    weight: [5, 4, 1]
 	}
 	

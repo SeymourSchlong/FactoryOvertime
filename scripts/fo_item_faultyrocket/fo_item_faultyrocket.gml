@@ -3,7 +3,7 @@
 function fo_item_faultyrocket(){
 	var item_id = "rocket";
 	var data = {
-	    name: "item_name_faultyrocket",
+	    name: "item_name_FO_faultyrocket",
 	    spr: "spr_FO_I_FaultyRocket",
 	    sprupgr: "spr_FO_I_S_FaultyRocket",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_faultyrocket(){
 	    price: 15,
 	    trig: "4Second",
 	    alttrig: "NubbyDies",
-	    desc: "item_desc_faultyrocket",
-	    upgr: "item_upgr_faultyrocket",
+	    desc: "item_desc_FO_faultyrocket",
+	    upgr: "item_upgr_FO_faultyrocket",
 	    weight: [5, 5, 5]
 	}
 	

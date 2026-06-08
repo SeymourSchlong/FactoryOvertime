@@ -3,7 +3,7 @@
 function fo_item_mysterybox(){
 	var item_id = "mysterybox";
 	var data = {
-	    name: "item_name_mysterybox",
+	    name: "item_name_FO_mysterybox",
 	    spr: "spr_FO_I_MysteryBox",
 	    sprupgr: "spr_FO_I_S_MysteryBox",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_mysterybox(){
 	    price: 6,
 	    trig: "NubbyLaunchItem",
 	    alttrig: "",
-	    desc: "item_desc_mysterybox",
-	    upgr: "item_upgr_mysterybox",
+	    desc: "item_desc_FO_mysterybox",
+	    upgr: "item_upgr_FO_mysterybox",
 	    weight: [5, 5, 5]
 	}
 	

@@ -3,7 +3,7 @@
 function fo_item_littlepea(){
 	var item_id = "littlepea";
 	var data = {
-	    name: "item_name_littlepea",
+	    name: "item_name_FO_littlepea",
 	    spr: "spr_FO_I_Little_Pea",
 	    sprupgr: "spr_FO_I_S_Little_Pea",
 	    type: 1,
@@ -14,8 +14,8 @@ function fo_item_littlepea(){
 	    price: 1,
 	    trig: "Eat",
 	    alttrig: "",
-	    desc: "item_desc_littlepea",
-	    upgr: "item_upgr_littlepea",
+	    desc: "item_desc_FO_littlepea",
+	    upgr: "item_upgr_FO_littlepea",
 	    weight: [0, 0, 0]
 	}
 	

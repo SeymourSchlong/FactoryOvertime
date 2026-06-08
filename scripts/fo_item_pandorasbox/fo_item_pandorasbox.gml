@@ -3,7 +3,7 @@
 function fo_item_pandorasbox(){
 	var item_id = "pandorasbox";
 	var data = {
-	    name: "item_name_pandorasbox",
+	    name: "item_name_FO_pandorasbox",
 	    spr: "spr_FO_I_PandorasBox",
 	    sprupgr: "spr_FO_I_S_PandorasBox",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_pandorasbox(){
 	    price: 8,
 	    trig: "NubbyLaunchItem",
 	    alttrig: "",
-	    desc: "item_desc_pandorasbox",
-	    upgr: "item_upgr_pandorasbox",
+	    desc: "item_desc_FO_pandorasbox",
+	    upgr: "item_upgr_FO_pandorasbox",
 	    weight: [5, 5, 5]
 	}
 	

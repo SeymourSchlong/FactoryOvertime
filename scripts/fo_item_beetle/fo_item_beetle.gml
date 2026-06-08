@@ -3,7 +3,7 @@
 function fo_item_beetle(){
 	var item_id = "beetle";
 	var data = {
-	    name: "item_name_beetle",
+	    name: "item_name_FO_beetle",
 	    spr: "spr_FO_I_Beetle",
 	    sprupgr: "spr_FO_I_S_Beetle",
 	    type: 0,
@@ -14,8 +14,8 @@ function fo_item_beetle(){
 	    price: 7,
 	    trig: "1Second",
 	    alttrig: "NubbyBounce5",
-	    desc: "item_desc_beetle",
-	    upgr: "item_upgr_beetle",
+	    desc: "item_desc_FO_beetle",
+	    upgr: "item_upgr_FO_beetle",
 	    weight: [5, 5, 4]
 	}
 	
