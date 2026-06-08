@@ -1,0 +1,10 @@
+meta:
+targets = {'gml_Object_obj_CH8Manager_Create_0'}
+critical = true
+
+patch:
+move_to_end()
+
+write('
+scr_FO_pols_bane();
+')

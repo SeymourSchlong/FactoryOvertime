@@ -65,6 +65,7 @@
     {"id":{"name":"obj_ModMGMT","path":"objects/obj_ModMGMT/obj_ModMGMT.yy",},},
     {"id":{"name":"obj_ParNubby","path":"objects/obj_ParNubby/obj_ParNubby.yy",},},
     {"id":{"name":"g3man_must_exist","path":"rooms/g3man_must_exist/g3man_must_exist.yy",},},
+    {"id":{"name":"disable_items_in","path":"scripts/disable_items_in/disable_items_in.yy",},},
     {"id":{"name":"fo_challenge_math","path":"scripts/fo_challenge_math/fo_challenge_math.yy",},},
     {"id":{"name":"fo_item_arthur","path":"scripts/fo_item_arthur/fo_item_arthur.yy",},},
     {"id":{"name":"fo_item_ash","path":"scripts/fo_item_ash/fo_item_ash.yy",},},

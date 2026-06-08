@@ -6,5 +6,5 @@ patch:
 move_to_end()
 
 write('
-obj_ItemMGMT.InItemPool[get_item_number_from_id("chocolatecoin")] = 0;
+scr_FO_ceo();
 ')

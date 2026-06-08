@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"disable_items_in",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"disable_items_in",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
