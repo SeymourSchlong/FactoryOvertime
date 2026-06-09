@@ -78,6 +78,15 @@ function fo_supervisor_king(){
 			}
 
 		},
+		on_step: function(this) {
+			// make sure that these are never changed.
+			obj_LvlMGMT.ComnOdds = 1000;
+			obj_LvlMGMT.RareOdds = 0;
+			obj_LvlMGMT.UltraRareOdds = 0;
+			obj_LvlMGMT.PerkComnOdds = 1000;
+			obj_LvlMGMT.PerkRareOdds = 0;
+			obj_LvlMGMT.PerkUltraRareOdds = 0;
+		},
 		on_destroy: function(this) {}
 	}, supervisor_id);
 }
