@@ -12,13 +12,13 @@ if (DisablePerk == false && global.GameMode == 1 && false)
 write_before('
 if (DisablePerk == false && global.GameMode == 1)
 {
-    if (instance_exists(obj_ParNubby))
+    if (instance_exists(asset_get_index("obj_ParNubby")))
     {
         if (EvType == "PassGoalOdds50")
         {
             scr_ForceTrigger(3, 1);
         }
-        else if (choose(0, 1) == 1)
+        else if (scr_FO_RandomWithLuck(random(100), 50))
         {
             scr_ForceTrigger(3, 1);
         }
