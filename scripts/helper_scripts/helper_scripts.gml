@@ -94,7 +94,7 @@ function scr_FO_GetPerkID(arg0)
 function scr_FO_vanilla_items() {
 	with (obj_ItemMGMT) {
 		// make noodle common
-		ItemTier[1] = RARITY.COMMON;
+		ItemTier[1]	= RARITY.COMMON;
 		ItemTier[153] = RARITY.COMMON;
 	
 		// corrupt seal
@@ -135,9 +135,19 @@ function scr_FO_vanilla_items() {
 		MutantTrig[149] = "PassGoal";
 		MutantTrig[150] = "PassGoal";
 	
-		var _ids = [27, 95, 47, 115, 54, 122, 56, 124, 67, 135, 149, 150];
+		// Update the trigger text and description
+		var _ids = [56, 124];
 		for (var _i = 0; _i < array_length(_ids); _i++) {
-			MutantTrigText[_ids[_i]] = scr_Text(MutantTrig[_ids[_i]]);
+			ItemTrigText[_ids[_i]] = scr_Text(ItemTrig[_ids[_i]]);
+			
+		    var _ItemDesc = string_join("", ItemTrigText[_ids[_i]], ItemDescBase[_ids[_i]]);
+		    ItemDesc[_ids[_i]] = _ItemDesc;
+		}
+	
+		// Update the alt trigger text
+		var _alt_ids = [27, 95, 47, 115, 54, 122, 56, 124, 67, 135, 149, 150];
+		for (var _i = 0; _i < array_length(_alt_ids); _i++) {
+			MutantTrigText[_alt_ids[_i]] = scr_Text(MutantTrig[_alt_ids[_i]]);
 		}
 	}
 }
@@ -145,6 +155,14 @@ function scr_FO_vanilla_items() {
 function scr_FO_vanilla_perks() {
 	with (obj_PerkMGMT) {
 		PerkTrigger[13] = "PassGoalOdds50";
+	}
+	
+	var _ids = [13];
+	for (var _i = 0; _i < array_length(_ids); _i++) {
+		PerkTrigText[_ids[_i]] = scr_Text(PerkTrigger[_ids[_i]]);
+		
+		var _PerkDesc = string_join("", PerkTrigText[_ids[_i]], PerkDescBase[_ids[_i]]);
+		PerkDesc[_ids[_i]] = _PerkDesc;
 	}
 }
 
@@ -259,6 +277,8 @@ function scr_FO_RandomWithLuck(arg0, arg1, arg2 = true) {
     var _count_reg = 0;
     var _count_upgr = 0;
 	
+	show_debug_message("running random chance: " + string(arg0) + "/" + string(arg1));
+	
 	var _reg_obj = agi(get_object_from_id("clover"));
 	var _upg_obj = agi(get_object_from_id("clover_upgrade"));
     
@@ -281,6 +301,8 @@ function scr_FO_RandomWithLuck(arg0, arg1, arg2 = true) {
     }
     
     var _value = 1 + _count_reg + _count_upgr;
+	
+	show_debug_message(_value);
     
     if (arg0 < arg1)
     {
