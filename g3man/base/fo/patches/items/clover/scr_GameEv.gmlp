@@ -6,12 +6,12 @@ patch:
 find_line_with('var _Odds = irandom_range(1, 20)')
 
 write_replace('
-var _Odds = scr_FO_RandomWithLuck(random(100), 20) ? 2 : 0;
+var _Odds = scr_FO_RandomWithLuck(random(100), 5) ? 2 : 0;
 ')
 
 
 find_line_with('var _Odds = choose(0, 1)')
 
 write_replace('
-var _Odds = scr_FO_RandomWithLuck(random(100), 5) ? 1 : 0;
+var _Odds = scr_FO_RandomWithLuck(random(100), 50) ? 1 : 0;
 ')
