@@ -1,0 +1,12 @@
+meta:
+targets = {'gml_GlobalScript_scr_FoodEffect', 'gml_GlobalScript_scr_UpgrFoodEffect'}
+critical = true
+
+patch:
+find_line_with('if (obj_ItemMGMT.ItemType[obj_ItemMGMT.ItemInst[i].MyItemID] != 1)')
+
+write_before('
+if (asset_get_index("obj_ItemMGMT").ItemTrig[obj_ItemMGMT.ItemInst[i].MyItemID] == "Passive") {
+    continue;
+}
+')
