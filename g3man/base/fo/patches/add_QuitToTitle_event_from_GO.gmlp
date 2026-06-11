@@ -1,0 +1,7 @@
+meta:
+targets = 'gml_Object_obj_GOQ2MBtn_Step_0'
+critical = true
+
+patch:
+find_line_with('instance_destroy(obj_GONewGameBtn)')
+write_before('scr_GameEv("QuitToTitle")')

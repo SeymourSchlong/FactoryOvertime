@@ -1,0 +1,7 @@
+meta:
+targets = 'gml_Object_obj_GONewGameBtn_Step_0'
+critical = true
+
+patch:
+find_line_with('room_restart()')
+write_before('scr_GameEv("QuitToTitle")')
