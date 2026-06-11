@@ -101,7 +101,6 @@ function scr_FO_vanilla_items() {
 		ItemAugment[35] = "corrupted";
 		ItemAugment[103] = "corrupted";
 		InItemPool[35] = ITEMPOOL.BLACKMARKET;
-		InItemPool[103] = ITEMPOOL.BLACKMARKET;
 	
 		// uncorrupt pointer and make rare
 		ItemAugment[34] = "none";
@@ -109,7 +108,6 @@ function scr_FO_vanilla_items() {
 		ItemTier[34] = RARITY.RARE;
 		ItemTier[102] = RARITY.RARE;
 		InItemPool[34] = ITEMPOOL.SHOP;
-		InItemPool[102] = ITEMPOOL.SHOP;
 	
 		// change dolphin trigger
 		ItemTrig[56] = "HalfSecond";
