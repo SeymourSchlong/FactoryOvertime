@@ -5,35 +5,35 @@ critical = true
 patch:
 find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[1], obj_ItemMGMT.ItemY[1], obj_ItemParent).MyItemID == RewardPrevItemId)')
 write_replace('
-else if (instance_position(obj_ItemMGMT.ItemX[1], obj_ItemMGMT.ItemY[1], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1)
+else if (instance_position(obj_ItemMGMT.ItemX[1], obj_ItemMGMT.ItemY[1], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1 && obj_ItemMGMT.ItemAugment[RewardPrevItemId] != "evil")
 ')
 
 find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[2], obj_ItemMGMT.ItemY[2], obj_ItemParent).MyItemID == RewardPrevItemId)')
 write_replace('
-else if (instance_position(obj_ItemMGMT.ItemX[2], obj_ItemMGMT.ItemY[2], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1)
+else if (instance_position(obj_ItemMGMT.ItemX[2], obj_ItemMGMT.ItemY[2], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1 && obj_ItemMGMT.ItemAugment[RewardPrevItemId] != "evil")
 ')
 
 find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[3], obj_ItemMGMT.ItemY[3], obj_ItemParent).MyItemID == RewardPrevItemId)')
 write_replace('
-else if (instance_position(obj_ItemMGMT.ItemX[3], obj_ItemMGMT.ItemY[3], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1)
+else if (instance_position(obj_ItemMGMT.ItemX[3], obj_ItemMGMT.ItemY[3], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1 && obj_ItemMGMT.ItemAugment[RewardPrevItemId] != "evil")
 ')
 
 find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[4], obj_ItemMGMT.ItemY[4], obj_ItemParent).MyItemID == RewardPrevItemId)')
 write_replace('
-else if (instance_position(obj_ItemMGMT.ItemX[4], obj_ItemMGMT.ItemY[4], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1)
+else if (instance_position(obj_ItemMGMT.ItemX[4], obj_ItemMGMT.ItemY[4], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1 && obj_ItemMGMT.ItemAugment[RewardPrevItemId] != "evil")
 ')
 
 find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[5], obj_ItemMGMT.ItemY[5], obj_ItemParent).MyItemID == RewardPrevItemId)')
 write_replace('
-else if (instance_position(obj_ItemMGMT.ItemX[5], obj_ItemMGMT.ItemY[5], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1)
+else if (instance_position(obj_ItemMGMT.ItemX[5], obj_ItemMGMT.ItemY[5], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1 && obj_ItemMGMT.ItemAugment[RewardPrevItemId] != "evil")
 ')
 
 find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[6], obj_ItemMGMT.ItemY[6], obj_ItemParent).MyItemID == RewardPrevItemId)')
 write_replace('
-else if (instance_position(obj_ItemMGMT.ItemX[6], obj_ItemMGMT.ItemY[6], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1)
+else if (instance_position(obj_ItemMGMT.ItemX[6], obj_ItemMGMT.ItemY[6], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1 && obj_ItemMGMT.ItemAugment[RewardPrevItemId] != "evil")
 ')
 
 find_line_with('else if (instance_position(obj_ItemMGMT.ItemX[7], obj_ItemMGMT.ItemY[7], obj_ItemParent).MyItemID == RewardPrevItemId)')
 write_replace('
-else if (instance_position(obj_ItemMGMT.ItemX[7], obj_ItemMGMT.ItemY[7], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1)
+else if (instance_position(obj_ItemMGMT.ItemX[7], obj_ItemMGMT.ItemY[7], obj_ItemParent).MyItemID == RewardPrevItemId && obj_ItemMGMT.ItemLevel[RewardPrevItemId] == 1 && obj_ItemMGMT.ItemAugment[RewardPrevItemId] != "evil")
 ')

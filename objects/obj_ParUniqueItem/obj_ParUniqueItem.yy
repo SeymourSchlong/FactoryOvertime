@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"g3man_override_obj_PegNumber",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_ParUniqueItem",
+  "eventList":[],
   "managed":true,
-  "name":"g3man_override_obj_PegNumber",
+  "name":"obj_ParUniqueItem",
   "overriddenProperties":[],
   "parent":{
-    "name":"overrides",
-    "path":"folders/Objects/overrides.yy",
+    "name":"vanilla",
+    "path":"folders/Objects/vanilla.yy",
   },
   "parentObjectId":null,
   "persistent":false,

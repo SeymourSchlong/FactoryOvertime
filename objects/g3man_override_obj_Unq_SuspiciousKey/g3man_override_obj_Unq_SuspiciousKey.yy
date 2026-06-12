@@ -1,18 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"g3man_override_obj_PegNumber",
+  "%Name":"g3man_override_obj_Unq_SuspiciousKey",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"g3man_override_obj_PegNumber",
+  "name":"g3man_override_obj_Unq_SuspiciousKey",
   "overriddenProperties":[],
   "parent":{
     "name":"overrides",
     "path":"folders/Objects/overrides.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_ParUniqueItem",
+    "path":"objects/obj_ParUniqueItem/obj_ParUniqueItem.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

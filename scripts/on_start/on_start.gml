@@ -25,11 +25,15 @@
 #macro scr_UpdateSeed			asset_get_index("scr_UpdateSeed")
 #macro scr_FoodEffect			asset_get_index("scr_FoodEffect")
 #macro scr_UpgrFoodEffect		asset_get_index("scr_UpgrFoodEffect")
+#macro scr_Part_NewLife			asset_get_index("scr_Part_NewLife")
 
 
 #macro obj_ItemMGMT				asset_get_index("obj_ItemMGMT")
 #macro obj_PerkMGMT				asset_get_index("obj_PerkMGMT")
 #macro obj_LvlMGMT				asset_get_index("obj_LvlMGMT")
+#macro obj_UnqItemMGMT			asset_get_index("obj_UnqItemMGMT")
+#macro obj_EventMGMT			asset_get_index("obj_EventMGMT")
+#macro obj_ChallengesMGMT		asset_get_index("obj_ChallengesMGMT")
 #macro obj_ParPeg				asset_get_index("obj_ParPeg")
 #macro obj_ParNubby				asset_get_index("obj_ParNubby")
 #macro obj_GridCell				asset_get_index("obj_GridCell")
@@ -41,8 +45,7 @@
 #macro obj_CafeMouth			asset_get_index("obj_CafeMouth")
 #macro obj_CafeDialogue			asset_get_index("obj_CafeDialogue")
 #macro obj_UnqItemMove			asset_get_index("obj_UnqItemMove")
-#macro obj_EventMGMT			asset_get_index("obj_EventMGMT")
-#macro obj_ChallengesMGMT		asset_get_index("obj_ChallengesMGMT")
+#macro obj_Unq_SuspiciousKey	asset_get_index("obj_Unq_SuspiciousKey")
 
 #macro au_FoodEffect			asset_get_index("au_FoodEffect")
 
@@ -105,10 +108,13 @@ function scr_FO_on_load() {
 	// food items
 	fo_item_chocolatecoin();
 	fo_item_littlepea();
-	//fo_item_redpill();
+	fo_item_redpill();
 	//fo_item_lunchbag();
 	//fo_item_geeks();
 	
+	// einstony items
+	fo_item_catalyst();
+	//fo_item_acid();
 	
 	// perks
 	fo_perk_pancake();
@@ -125,6 +131,7 @@ function scr_FO_on_load() {
 	
 	// supervisors
 	fo_supervisor_king();
+	fo_supervisor_einstony();
 	
 }
 

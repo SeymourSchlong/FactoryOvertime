@@ -104,20 +104,20 @@
 "item_upgr_FO_wackomole","[#ffffff]{a}*Moles burrow out of two empty peg slots.{a}*When Nubby hits a mole, it counts as a {b}[#ffd500]Peg fully popped [spr_ITArrow,0][#e6ffe6]{b} trigger.",
 
 "item_name_FO_gloober","Gloober",
-"item_desc_FO_gloober","[#ffffff]{a}*For each time Nubby bounces during the round, all score gain is multiplied by +0.01",
-"item_upgr_FO_gloober","[#ffffff]{a}*For each time Nubby bounces during the round, all score gain is multiplied by +0.03",
+"item_desc_FO_gloober","[#ffffff]{a}*For each time Nubby bounces during the round, all score gain is multiplied by +1%.",
+"item_upgr_FO_gloober","[#ffffff]{a}*For each time Nubby bounces during the round, all score gain is multiplied by +3%",
 
 "item_name_FO_boxofnails","Box of Nails",
-"item_desc_FO_boxofnails","[#ffffff]{a}*For each time a peg is fully popped during the round, all score gain is multiplied by +0.05",
-"item_upgr_FO_boxofnails","[#ffffff]{a}*For each time a peg is fully popped during the round, all score gain is multiplied by +0.15",
+"item_desc_FO_boxofnails","[#ffffff]{a}*For each time a peg is fully popped during the round, all score gain is multiplied by +5%.",
+"item_upgr_FO_boxofnails","[#ffffff]{a}*For each time a peg is fully popped during the round, all score gain is multiplied by +15%.",
 
 "item_name_FO_heartmonitor","Heart Monitor",
-"item_desc_FO_heartmonitor","[#ffffff]{a}*For each half second passed during the round, all score gain is multiplied by +0.03",
-"item_upgr_FO_heartmonitor","[#ffffff]{a}*For each half second passed during the round, all score gain is multiplied by +0.1",
+"item_desc_FO_heartmonitor","[#ffffff]{a}*For each half second passed during the round, all score gain is multiplied by +3%.",
+"item_upgr_FO_heartmonitor","[#ffffff]{a}*For each half second passed during the round, all score gain is multiplied by +10%",
 
 "item_name_FO_piyopiyos","Piyo Piyos",
-"item_desc_FO_piyopiyos","[#ffffff]{a}*For every 5 summons during the round, all score gain is multiplied by +0.01",
-"item_upgr_FO_piyopiyos","[#ffffff]{a}*For every 5 summons during the round, all score gain is multiplied by +0.03",
+"item_desc_FO_piyopiyos","[#ffffff]{a}*For every 5 summons during the round, all score gain is multiplied by +1%.",
+"item_upgr_FO_piyopiyos","[#ffffff]{a}*For every 5 summons during the round, all score gain is multiplied by +3%.",
 
 "item_name_FO_flupper","Flupper",
 "item_desc_FO_flupper","[#ffffff]{a}*Temporarily upgrades the item [#ffb3ff]TO THE LEFT OF ME[#ffffff] for the rest of the round.",
@@ -156,6 +156,16 @@
 "supervisor_name_FO_king","King Tony",
 "supervisor_desc_FO_king","*All items appear as Common.{a}*Each item has a 20% chance to appear as its upgraded variant.",
 "upgradeitemodds","Upgrade Odds: {a}%",
+
+"supervisor_name_FO_einstony","Eins-Tony",
+"supervisor_desc_FO_einstony","*All item slots have preset triggers.{a}*Use Catalysts to increase your score!",
+
+"item_name_FO_catalyst","Catalyst",
+"item_desc_FO_catalyst","[#ffffff]{a}*Increases score gain by +100%.{a}*Can only be destroyed by Acid.",
+
+"item_name_FO_acid","Acid",
+"item_desc_FO_acid","[#ffffff]{a}*Consumes the left-most Catalyst, and produces a new trigger for the slot it was in.",
+"item_upgr_FO_acid","[#ffffff]{a}*Consumes all Catalysts, and produces new triggers for each slot a Catalyst was in.",
 
 "finalboss_fo_name","Critical Error!",	
 "finalboss_fo_desc","Items have a 10% chance to misfire, losing 5% total score.",

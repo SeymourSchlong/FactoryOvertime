@@ -10,6 +10,12 @@ if (instance_exists(agi("obj_Unq_SuspiciousKey")))
 
 var _current_y = 0;
     
+if (scr_FO_GetCatalystCount() > 1) {
+    draw_sprite(agi("spr_FO_Status_Catalyst"), image_index, _draw_x + 25, _draw_y + 25 + _current_y);
+    draw_text(_draw_x + 50, _draw_y + 25 + _current_y, "x" + string(scr_FO_GetCatalystCount()));
+    _current_y += 50;
+}
+    
 if (global.fo.scoremult.gloober > 1) {
     draw_sprite(agi("spr_FO_Status_Gloober"), image_index, _draw_x + 25, _draw_y + 25 + _current_y);
     draw_text(_draw_x + 50, _draw_y + 25 + _current_y, "x" + string(global.fo.scoremult.gloober));

@@ -827,7 +827,12 @@ function scr_FO_PiyoPiyosIncrease()
     }
 }
 
+function scr_FO_GetCatalystCount() {
+	var obj = get_object_from_id("catalyst");
+	return 1 + instance_number(obj) * 1;
+}
+
 function scr_FO_GetMultIncrease()
 {
-    return global.fo.scoremult.gloober * global.fo.scoremult.boxofnails * global.fo.scoremult.heartmonitor * global.fo.scoremult.piyopiyos;
+    return global.fo.scoremult.gloober * global.fo.scoremult.boxofnails * global.fo.scoremult.heartmonitor * global.fo.scoremult.piyopiyos * scr_FO_GetCatalystCount();
 }

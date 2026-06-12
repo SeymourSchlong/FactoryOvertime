@@ -7,7 +7,7 @@ function fo_item_redpill(){
 	    spr: "spr_FO_I_RedPill",
 	    sprupgr: "spr_FO_I_S_RedPill",
 	    type: 1,
-	    rarity: RARITY.COMMON,
+	    rarity: RARITY.RARE,
 	    augment: "none",
 	    category: "misc",
 	    pool: ITEMPOOL.CAFE,
