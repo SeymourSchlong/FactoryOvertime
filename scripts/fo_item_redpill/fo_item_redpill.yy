@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"fo_item_redpill",
   "parent":{
-    "name":"unfinished",
-    "path":"folders/Scripts/items/unfinished.yy",
+    "name":"foods",
+    "path":"folders/Scripts/items/foods.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

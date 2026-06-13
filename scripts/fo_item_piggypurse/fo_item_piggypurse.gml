@@ -3,12 +3,12 @@ function scr_FO_piggy_description(this, mult) {
 
 	var part_1 = scr_Text(trigger_condition, "\n");
 
-	// Our perk instance holds the perk struct in the variable `perk`
 	var item = this.item;
 
-	// Get the bottom part of the description filled with the current focused slot
-	var part_2 = scr_Text(item.description, "\n", global.fo.piggy_coins*mult)
-	// Join together
+	var part_2 = scr_Text(item.description, "\n", global.fo.piggy_coins*mult);
+	
+	obj_ItemMGMT.ItemDescBase[this.MyItemID] = part_2;
+
 	return string_concat(part_1, part_2)
 }
 

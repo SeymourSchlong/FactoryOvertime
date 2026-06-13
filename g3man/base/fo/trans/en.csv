@@ -11,6 +11,9 @@
 "food_eat_confirm_littlepea","You got a little pea!",
 "food_eat_confirm_chocolatecoin","Max coin count increased!",
 "food_eat_confirm_redpill","You got red-pilled!",
+"food_eat_confirm_acid_fail","No Catalyst was found!",
+"food_eat_confirm_acid","Slot given the trigger:{a}{b}",
+"food_eat_confirm_acid_plus","Slots given the trigger:{a}{b}",
 
 
 "item_name_FO_geeks","Geeks",
@@ -165,7 +168,7 @@
 
 "item_name_FO_acid","Acid",
 "item_desc_FO_acid","[#ffffff]{a}*Consumes the left-most Catalyst, and produces a new trigger for the slot it was in.",
-"item_upgr_FO_acid","[#ffffff]{a}*Consumes all Catalysts, and produces new triggers for each slot a Catalyst was in.",
+"item_upgr_FO_acid","[#ffffff]{a}*Consumes all Catalysts, and produces a new trigger for each slot a Catalyst was in.",
 
 "finalboss_fo_name","Critical Error!",	
 "finalboss_fo_desc","Items have a 10% chance to misfire, losing 5% total score.",

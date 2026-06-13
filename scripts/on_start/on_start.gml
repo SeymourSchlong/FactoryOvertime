@@ -26,7 +26,7 @@
 #macro scr_FoodEffect			asset_get_index("scr_FoodEffect")
 #macro scr_UpgrFoodEffect		asset_get_index("scr_UpgrFoodEffect")
 #macro scr_Part_NewLife			asset_get_index("scr_Part_NewLife")
-
+#macro scr_TonyEmote			asset_get_index("scr_TonyEmote")
 
 #macro obj_ItemMGMT				asset_get_index("obj_ItemMGMT")
 #macro obj_PerkMGMT				asset_get_index("obj_PerkMGMT")
@@ -34,6 +34,7 @@
 #macro obj_UnqItemMGMT			asset_get_index("obj_UnqItemMGMT")
 #macro obj_EventMGMT			asset_get_index("obj_EventMGMT")
 #macro obj_ChallengesMGMT		asset_get_index("obj_ChallengesMGMT")
+#macro obj_TonyMGMT				asset_get_index("obj_TonyMGMT")
 #macro obj_ParPeg				asset_get_index("obj_ParPeg")
 #macro obj_ParNubby				asset_get_index("obj_ParNubby")
 #macro obj_GridCell				asset_get_index("obj_GridCell")
@@ -46,6 +47,11 @@
 #macro obj_CafeDialogue			asset_get_index("obj_CafeDialogue")
 #macro obj_UnqItemMove			asset_get_index("obj_UnqItemMove")
 #macro obj_Unq_SuspiciousKey	asset_get_index("obj_Unq_SuspiciousKey")
+#macro obj_Cursor				asset_get_index("obj_Cursor")
+#macro obj_Tony					asset_get_index("obj_Tony")
+
+#macro draw_text_scribble		asset_get_index("draw_text_scribble")
+#macro draw_text_scribble_ext	asset_get_index("draw_text_scribble_ext")
 
 #macro au_FoodEffect			asset_get_index("au_FoodEffect")
 
@@ -114,7 +120,7 @@ function scr_FO_on_load() {
 	
 	// einstony items
 	fo_item_catalyst();
-	//fo_item_acid();
+	fo_item_acid();
 	
 	// perks
 	fo_perk_pancake();

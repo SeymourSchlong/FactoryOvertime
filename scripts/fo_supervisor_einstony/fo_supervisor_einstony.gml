@@ -1,3 +1,9 @@
+function scr_FO_remake_description(item, trigger) {
+	var _ItemTrigText = scr_Text(trigger);
+	var _ItemDesc = string_join("", _ItemTrigText, obj_ItemMGMT.ItemDescBase[item]);
+	return _ItemDesc;
+}
+
 
 function fo_supervisor_einstony(){
 	var supervisor_id = "einstony";
@@ -5,16 +11,16 @@ function fo_supervisor_einstony(){
 		display_name: "supervisor_name_FO_einstony",
 		description: "supervisor_desc_FO_einstony",
 		sprites: {
-			idle_neutral: agi("spr_SV10IdleNeutral"),
-			preview: agi("spr_SVPrev_Immortal"),
-			preview_clicked: agi("spr_SVPrev_Immortal_Click"),
-			angry: agi("spr_SV10Angry"),
-			evil: agi("spr_SV10Evil"),
-			head_swivel: agi("spr_SV10HeadSwivel"),
-			scream: agi("spr_SV10Scream"),
-			idle_happy: agi("spr_SV10IdleHappy"),
-			idle_sad: agi("spr_SV10IdleSad"),
-			idle_weird: agi("spr_SV10IdleWeird"),
+			idle_neutral: agi("spr_FO_EinstonyIdleNeutral"),
+			preview: agi("spr_FO_EinstonyPrev"),
+			preview_clicked: agi("spr_FO_EinstonyPrevTalk"),
+			angry: agi("spr_FO_EinstonyAngry"),
+			evil: agi("spr_FO_EinstonyEvil"),
+			head_swivel: agi("spr_FO_EinstonyHeadSwivel"),
+			scream: agi("spr_FO_EinstonyScream"),
+			idle_happy: agi("spr_FO_EinstonyIdleHappy"),
+			idle_sad: agi("spr_FO_EinstonyIdleSad"),
+			talk: agi("spr_FO_EinstonyTalk"),
 		},
 		clicked_sounds: [
 			agi("au_TonyImmortal_VO1"),
@@ -26,8 +32,9 @@ function fo_supervisor_einstony(){
 	}
 	
 	global.fo.einstony_triggers = [
+		"",
 		"HitWall3",
-		"20Popped",
+		"15Popped",
 		"2Second",
 		"FirstPop",
 		"NubbyDies",
@@ -46,8 +53,9 @@ function fo_supervisor_einstony(){
 	
 	forgery.subscribe_to_game_event("RestartRun", function(this) {
 		global.fo.einstony_triggers = [
+			"",
 			"HitWall3",
-			"20Popped",
+			"15Popped",
 			"2Second",
 			"FirstPop",
 			"NubbyDies",
@@ -57,8 +65,9 @@ function fo_supervisor_einstony(){
 	});
 	forgery.subscribe_to_game_event("QuitToTitle", function(this) {
 		global.fo.einstony_triggers = [
+			"",
 			"HitWall3",
-			"20Popped",
+			"15Popped",
 			"2Second",
 			"FirstPop",
 			"NubbyDies",
@@ -77,7 +86,7 @@ function fo_supervisor_einstony(){
 		cost: 0,
 		on_create: function(this) {
 			obj_ItemMGMT.InItemPool[get_item_number_from_id("catalyst")] = ITEMPOOL.SHOP;
-			//obj_ItemMGMT.InItemPool[get_item_number_from_id("acid")] = ITEMPOOL.CAFE;
+			obj_ItemMGMT.InItemPool[get_item_number_from_id("acid")] = ITEMPOOL.CAFE;
 
 			with (obj_ItemMGMT) {
 				// iterate through every available item
@@ -94,6 +103,8 @@ function fo_supervisor_einstony(){
 				    ItemDesc[_i] = _ItemDesc;
 			    }
 			}
+			
+			instance_create_layer(0, 0, "UnderCursor", agi("obj_FO_EinstonyHelper"));
 		},
 		on_step: function(this) {},
 		on_destroy: function(this) {}
