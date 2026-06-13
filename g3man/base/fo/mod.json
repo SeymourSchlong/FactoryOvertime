@@ -1,9 +1,9 @@
 {
     "mod_id" : "fo",
     "display_name" : "Factory Overtime",
-    "description" : "Items, Foods, Perks, a challenge, and a supervisor!",
+    "description" : "Items, Foods, Perks, a challenge, and two supervisors!",
     "credits" : ["seymour"],
-    "version" : "0.1.1",
+    "version" : "0.2.0",
     "target_g3man_version" : 7,
     "depends" : [],
     "breaks" : [],

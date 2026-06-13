@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_MOD_Frog",
+  "%Name":"snd_FO_Frog",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":0.314195,
-  "name":"snd_MOD_Frog",
+  "name":"snd_FO_Frog",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MOD_Frog.ogg",
+  "soundFile":"snd_FO_Frog.ogg",
   "type":0,
   "volume":1.0,
 }

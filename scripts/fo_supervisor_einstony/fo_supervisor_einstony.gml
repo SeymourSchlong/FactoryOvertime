@@ -23,11 +23,11 @@ function fo_supervisor_einstony(){
 			talk: agi("spr_FO_EinstonyTalk"),
 		},
 		clicked_sounds: [
-			agi("au_TonyImmortal_VO1"),
-			agi("au_TonyImmortal_VO2"),
-			agi("au_TonyImmortal_VO3")
+			agi("snd_FO_EinstonyTalk1"),
+			agi("snd_FO_EinstonyTalk2"),
+			agi("snd_FO_EinstonyTalk3")
 		],
-		go_sound: agi("au_TonyImmortal_VOGo"),
+		go_sound: agi("snd_FO_EinstonyGo"),
 		name_color: int64(#000000),
 	}
 	

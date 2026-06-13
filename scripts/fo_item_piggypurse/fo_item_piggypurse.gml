@@ -95,7 +95,7 @@ function fo_item_piggypurse(){
                     
                     if (global.ItemSfx == true)
                     {
-                        audio_play_sound(agi("snd_MOD_Pig"), 1, 0, global.SFXGain, 0, choose(0.9, 1, 1.1));
+                        audio_play_sound(agi("snd_FO_Pig"), 1, 0, global.SFXGain, 0, choose(0.9, 1, 1.1));
                     }
                 }
             }
@@ -152,7 +152,7 @@ function fo_item_piggypurse(){
                     
                     if (global.ItemSfx == true)
                     {
-                        audio_play_sound(agi("snd_MOD_Pig"), 1, 0, global.SFXGain, 0, choose(0.9, 1, 1.1));
+                        audio_play_sound(agi("snd_FO_Pig"), 1, 0, global.SFXGain, 0, choose(0.9, 1, 1.1));
                     }
                 }
             }

@@ -45,7 +45,7 @@ function fo_item_pocketfrogs() {
             
             if (_Odds == 1) {
                 if (global.ItemSfx == true)
-                    audio_play_sound(agi("snd_MOD_Frog"), 1, 0, global.SFXGain, 0, choose(0.9, 1, 1.1));
+                    audio_play_sound(agi("snd_FO_Frog"), 1, 0, global.SFXGain, 0, choose(0.9, 1, 1.1));
                 
                 var _Target = -1;
                 var _StoreGCell = 0;
@@ -105,7 +105,7 @@ function fo_item_pocketfrogs() {
             
             if (_Odds == 1) {
                 if (global.ItemSfx == true)
-                    audio_play_sound(agi("snd_MOD_Frog"), 1, 0, global.SFXGain, 0, choose(0.9, 1, 1.1));
+                    audio_play_sound(agi("snd_FO_Frog"), 1, 0, global.SFXGain, 0, choose(0.9, 1, 1.1));
                 
                 var _Target1 = -1;
                 var _StoreGCell1 = 0;

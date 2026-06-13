@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_MOD_Gun",
+  "%Name":"snd_FO_EinstonyTalk1",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.5459637,
-  "name":"snd_MOD_Gun",
+  "duration":2.8212245,
+  "name":"snd_FO_EinstonyTalk1",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_MOD_Gun.ogg",
+  "soundFile":"snd_FO_EinstonyTalk1.ogg",
   "type":0,
   "volume":1.0,
 }
