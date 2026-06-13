@@ -363,7 +363,7 @@ function fo_item_acid(){
 			
 			for (var i = 0; i < array_length(acid_triggers); i++) {
 				repeat(acid_triggers[i].weight) {
-                    ds_list_add(acid_triggers[i].trigger, 0);
+                    ds_list_add(weight_pool, acid_triggers[i].trigger);
 				}
 			}
 			
@@ -381,11 +381,11 @@ function fo_item_acid(){
 				ds_list_add(weight_pool, $"S{slot}Trigger{5}");
 				ds_list_add(weight_pool, $"S{slot}Trigger{10}");
 			}
-			if (catalyst_slot != 1) {
+			if (array_contains(catalyst_slots, 1)) {
 				ds_list_add(weight_pool, "ItemFire_Left");
 				ds_list_add(weight_pool, "ItemFire_Left");
 			}
-			if (catalyst_slot != 7) {
+			if (array_contains(catalyst_slots, 7)) {
 				ds_list_add(weight_pool, "ItemFire_Right");
 				ds_list_add(weight_pool, "ItemFire_Right");
 			}
@@ -414,7 +414,7 @@ function fo_item_acid(){
                     _mouth_x = x;
                     _mouth_y = y;
                     var _DialogueBox = instance_create_depth(x, y, depth - 1, obj_CafeDialogue);
-	                _DialogueBox.CafeDialogueStr = scr_Text("food_eat_confirm_acid", "\n", scr_Text(new_trigger));
+	                _DialogueBox.CafeDialogueStr = scr_Text("food_eat_confirm_acid_plus", "\n", scr_Text(new_trigger));
 	                audio_play_sound(au_FoodEffect, 1, 0, 1, 0, 1.3);
                 }
             }

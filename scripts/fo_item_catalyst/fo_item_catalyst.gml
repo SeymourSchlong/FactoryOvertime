@@ -11,7 +11,7 @@ function fo_item_catalyst(){
 	    price: 10,
 	    trig: "Passive",
 	    desc: "item_desc_FO_catalyst",
-	    weight: [5, 5, 5]
+	    weight: [10, 10, 10]
 	}
 	
 	forgery.register_item({
