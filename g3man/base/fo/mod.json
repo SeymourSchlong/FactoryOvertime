@@ -3,7 +3,7 @@
     "display_name" : "Factory Overtime",
     "description" : "Items, Foods, Perks, a challenge, and two supervisors!",
     "credits" : ["seymour"],
-    "version" : "0.2.0",
+    "version" : "0.2.1",
     "target_g3man_version" : 7,
     "depends" : [],
     "breaks" : [],
