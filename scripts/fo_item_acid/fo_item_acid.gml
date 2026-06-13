@@ -8,7 +8,7 @@ function fo_item_acid(){
 	    rarity: RARITY.COMMON,
 	    augment: "none",
 	    category: "misc",
-	    pool: ITEMPOOL.CAFE,
+	    pool: ITEMPOOL.NONE,
 	    price: 5,
 	    trig: "Eat",
 	    alttrig: "",
