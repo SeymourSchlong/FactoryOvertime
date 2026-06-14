@@ -12,15 +12,15 @@ function fo_item_boxofnails(){
 	    category: "passive",
 	    pool: ITEMPOOL.SHOP,
 	    price: 15,
-	    trig: "Passive",
-	    alttrig: "",
+	    trig: "PegFullPop",
+	    alttrig: "PegFullPop",
 	    desc: "item_desc_FO_boxofnails",
 	    upgr: "item_upgr_FO_boxofnails",
 	    weight: [1, 3, 3]
 	}
 	
 	forgery.subscribe_to_game_event("PegFullPop", function() {
-		scr_FO_BoxOfNailsIncrease();
+		//scr_FO_BoxOfNailsIncrease();
 	});
 	
 	forgery.register_item({
@@ -40,7 +40,9 @@ function fo_item_boxofnails(){
 		odds_weight_mid: data.weight[1], 
 		odds_weight_end: data.weight[2],
 		on_create: function() {},
-		on_trigger: function(this) {}
+		on_trigger: function(this) {
+            global.fo.scoremult.boxofnails += 0.05;
+		}
 	}, item_id);
 	
 	forgery.register_item({
@@ -60,6 +62,8 @@ function fo_item_boxofnails(){
 		odds_weight_mid: 0, 
 		odds_weight_end: 0,
 		on_create: function() {},
-		on_trigger: function(this) {}
+		on_trigger: function(this) {
+            global.fo.scoremult.boxofnails += 0.15;
+		}
 	}, item_id + "_upgrade");
 }

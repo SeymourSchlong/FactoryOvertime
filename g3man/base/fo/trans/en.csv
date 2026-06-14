@@ -107,20 +107,20 @@
 "item_upgr_FO_wackomole","[#ffffff]{a}*Moles burrow out of two empty peg slots.{a}*When Nubby hits a mole, it counts as a {b}[#ffd500]Peg fully popped [spr_ITArrow,0][#e6ffe6]{b} trigger.",
 
 "item_name_FO_gloober","Gloober",
-"item_desc_FO_gloober","[#ffffff]{a}*For each time Nubby bounces during the round, all score gain is multiplied by +1%.",
-"item_upgr_FO_gloober","[#ffffff]{a}*For each time Nubby bounces during the round, all score gain is multiplied by +3%",
+"item_desc_FO_gloober","[#ffffff]{a}*Increases Gloober value, which increases all score gain by +1%.",
+"item_upgr_FO_gloober","[#ffffff]{a}*Increases Gloober value, which increases all score gain by +3%",
 
 "item_name_FO_boxofnails","Box of Nails",
-"item_desc_FO_boxofnails","[#ffffff]{a}*For each time a peg is fully popped during the round, all score gain is multiplied by +5%.",
-"item_upgr_FO_boxofnails","[#ffffff]{a}*For each time a peg is fully popped during the round, all score gain is multiplied by +15%.",
+"item_desc_FO_boxofnails","[#ffffff]{a}*Increases Nails value, which increases all score gain by +5%.",
+"item_upgr_FO_boxofnails","[#ffffff]{a}*Increases Nails value, which increases all score gain by +15%.",
 
 "item_name_FO_heartmonitor","Heart Monitor",
-"item_desc_FO_heartmonitor","[#ffffff]{a}*For each half second passed during the round, all score gain is multiplied by +3%.",
-"item_upgr_FO_heartmonitor","[#ffffff]{a}*For each half second passed during the round, all score gain is multiplied by +10%",
+"item_desc_FO_heartmonitor","[#ffffff]{a}*Increases Heart value, which increases all score gain by +3%.",
+"item_upgr_FO_heartmonitor","[#ffffff]{a}*Increases Heart value, which increases all score gain by +10%",
 
-"item_name_FO_piyopiyos","Piyo Piyos",
-"item_desc_FO_piyopiyos","[#ffffff]{a}*For every 5 summons during the round, all score gain is multiplied by +1%.",
-"item_upgr_FO_piyopiyos","[#ffffff]{a}*For every 5 summons during the round, all score gain is multiplied by +3%.",
+"item_name_FO_piyopiyos","Piyos",
+"item_desc_FO_piyopiyos","[#ffffff]{a}*Increases Piyo value, which increases all score gain by +1%.",
+"item_upgr_FO_piyopiyos","[#ffffff]{a}*Increases Piyo value, which increases all score gain by +3%.",
 
 "item_name_FO_flupper","Flupper",
 "item_desc_FO_flupper","[#ffffff]{a}*Temporarily upgrades the item [#ffb3ff]TO THE LEFT OF ME[#ffffff] for the rest of the round.",

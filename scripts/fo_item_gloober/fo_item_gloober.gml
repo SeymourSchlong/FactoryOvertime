@@ -12,15 +12,15 @@ function fo_item_gloober(){
 	    category: "passive",
 	    pool: ITEMPOOL.SHOP,
 	    price: 15,
-	    trig: "Passive",
-	    alttrig: "",
+	    trig: "NubbyBounce",
+	    alttrig: "NubbyBounce5",
 	    desc: "item_desc_FO_gloober",
 	    upgr: "item_upgr_FO_gloober",
 	    weight: [1, 3, 3]
 	}
 	
 	forgery.subscribe_to_game_event("NubbyBounce", function() {
-		scr_FO_GlooberIncrease();
+		//scr_FO_GlooberIncrease();
 	});
 	
 	forgery.register_item({
@@ -40,7 +40,9 @@ function fo_item_gloober(){
 		odds_weight_mid: data.weight[1], 
 		odds_weight_end: data.weight[2],
 		on_create: function() {},
-		on_trigger: function(this) {}
+		on_trigger: function(this) {
+			global.fo.scoremult.gloober += 0.01;
+		}
 	}, item_id);
 	
 	forgery.register_item({
@@ -60,6 +62,8 @@ function fo_item_gloober(){
 		odds_weight_mid: 0, 
 		odds_weight_end: 0,
 		on_create: function() {},
-		on_trigger: function(this) {}
+		on_trigger: function(this) {
+			global.fo.scoremult.gloober += 0.03;
+		}
 	}, item_id + "_upgrade");
 }

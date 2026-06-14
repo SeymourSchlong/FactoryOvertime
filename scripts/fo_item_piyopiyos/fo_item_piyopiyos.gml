@@ -12,15 +12,15 @@ function fo_item_piyopiyos(){
 	    category: "passive",
 	    pool: ITEMPOOL.SHOP,
 	    price: 15,
-	    trig: "Passive",
-	    alttrig: "",
+	    trig: "5Summoned",
+	    alttrig: "12Summoned", // wip for now
 	    desc: "item_desc_FO_piyopiyos",
 	    upgr: "item_upgr_FO_piyopiyos",
 	    weight: [1, 3, 3]
 	}
 	
 	forgery.subscribe_to_game_event("5Summoned", function() {
-		scr_FO_PiyoPiyosIncrease();
+		//scr_FO_PiyoPiyosIncrease();
 	});
 	
 	forgery.register_item({
@@ -40,7 +40,9 @@ function fo_item_piyopiyos(){
 		odds_weight_mid: data.weight[1], 
 		odds_weight_end: data.weight[2],
 		on_create: function() {},
-		on_trigger: function(this) {}
+		on_trigger: function(this) {
+			global.fo.scoremult.piyopiyos += 0.01;
+		}
 	}, item_id);
 	
 	forgery.register_item({
@@ -60,6 +62,8 @@ function fo_item_piyopiyos(){
 		odds_weight_mid: 0, 
 		odds_weight_end: 0,
 		on_create: function() {},
-		on_trigger: function(this) {}
+		on_trigger: function(this) {
+			global.fo.scoremult.piyopiyos += 0.03;
+		}
 	}, item_id + "_upgrade");
 }
