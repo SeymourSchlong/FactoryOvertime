@@ -132,6 +132,12 @@ function scr_FO_on_load() {
 	fo_perk_treasure();
 	fo_perk_copycat();
 	
+	// passive perks
+	fo_perk_nubup();
+	fo_perk_magicwand();
+	fo_perk_brokenclock();
+	fo_perk_clover();
+	
 	// challenges
 	fo_challenge_math();
 	

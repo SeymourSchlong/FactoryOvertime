@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"fo_perk_clover",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fo_perk_clover",
+  "parent":{
+    "name":"perks",
+    "path":"folders/Scripts/perks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -267,15 +267,28 @@ function scr_FO_NubUpCount()
             }
         }
     }
+	
+	var _perk_obj = agi(get_perk_from_id("nubup"));
+	var _count_perk = 0;
+	if (instance_exists(_perk_obj))
+	{
+		with (_perk_obj)
+		{
+			if (DisablePerk == false)
+			{
+				_count_perk++;
+			}
+		}
+	}
     
-    return (_count_reg * 0.25) + (_count_upgr * 0.75);
+    return (_count_perk * 0.20) + (_count_reg * 0.25) + (_count_upgr * 0.75);
 }
 
 function scr_FO_RandomWithLuck(arg0, arg1, arg2 = true) {
     var _count_reg = 0;
     var _count_upgr = 0;
 	
-	show_debug_message("running random chance: " + string(arg0) + "/" + string(arg1));
+	//show_debug_message("running random chance: " + string(arg0) + "/" + string(arg1));
 	
 	var _reg_obj = agi(get_object_from_id("clover"));
 	var _upg_obj = agi(get_object_from_id("clover_upgrade"));
@@ -297,16 +310,29 @@ function scr_FO_RandomWithLuck(arg0, arg1, arg2 = true) {
                 _count_upgr += 0.2;
         }
     }
+	
+	var _perk_obj = agi(get_perk_from_id("clover"));
+	var _count_perk = 0;
+	if (instance_exists(_perk_obj))
+	{
+		with (_perk_obj)
+		{
+			if (DisablePerk == false)
+			{
+				_count_perk++;
+			}
+		}
+	}
     
     var _value = 1 + _count_reg + _count_upgr;
 	
-	show_debug_message(_value);
+	//show_debug_message(_value);
     
-    if (arg0 < arg1)
+    if (arg0 < arg1 + _count_perk)
     {
         return true;
     }
-    else if (arg0 < (arg1 * _value))
+    else if (arg0 < ((arg1 + _count_perk) * _value))
     {
         if (arg2)
         {
@@ -471,8 +497,21 @@ function scr_FO_ClockCount()
             }
         }
     }
+	
+	var _perk_obj = agi(get_perk_from_id("brokenclock"));
+	var _count_perk = 0;
+	if (instance_exists(_perk_obj))
+	{
+		with (_perk_obj)
+		{
+			if (DisablePerk == false)
+			{
+				_count_perk++;
+			}
+		}
+	}
     
-    var _total_reduction = (_count_reg * 2) + (_count_upgr * 5);
+    var _total_reduction = (_count_reg * 2) + (_count_upgr * 5) + (_count_perk * 1);
     return min(_total_reduction, 29);
 }
 
@@ -533,8 +572,21 @@ function scr_FO_WandCount()
         if (obj_ItemMGMT.Item[i] == _wand_id || obj_ItemMGMT.Item[i] == obj_ItemMGMT.ItemPair[_wand_id])
             _last_wand = true;
     }
+	
+	var _perk_obj = agi(get_perk_from_id("magicwand"));
+	var _count_perk = 0;
+	if (instance_exists(_perk_obj))
+	{
+		with (_perk_obj)
+		{
+			if (DisablePerk == false)
+			{
+				_count_perk++;
+			}
+		}
+	}
     
-    var _value = _count_reg + (2 * _count_upgr);
+    var _value = (_count_perk * 0.5) + _count_reg + (2 * _count_upgr);
     var _hyper = 1 + (2 * (0.8 - power(0.8, 1 + _value)));
     return min(_hyper, 2.5);
 }

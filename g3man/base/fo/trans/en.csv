@@ -174,6 +174,19 @@
 "finalboss_fo_desc","Items have a 10% chance to misfire, losing 5% total score.",
 
 
+"perk_name_FO_clover","The 5 Leaf Clover Perk",
+"perk_desc_FO_clover","[#ffffff]{a}*Increase the odds of chance-based effects in items and perks by adding +2% to its odds.{a}(total from perks: {b}%)",
+
+"perk_name_FO_brokenclock","The Broken Clock Perk",
+"perk_desc_FO_brokenclock","[#ffffff]{a}*Time-based items and perks activate 3% faster.{a}(total from perks: {b}%)",
+
+"perk_name_FO_nubup","The Nub-Up Perk",
+"perk_desc_FO_nubup","[#ffffff]{a}*Increases the points given when Nubby pops a peg by +20%.{a}(total from perks: {b}%)",
+
+"perk_name_FO_magicwand","The Magic Wand Perk",
+"perk_desc_FO_magicwand","[#ffffff]{a}*Increases Nubby's size a little bit.",
+
+
 "food_eat_confirm16","Transformed item!",
 "item_desc20","[#ffffff]{a}*Summon an egg missile that falls from the sky and causes an explosion that pops a row of pegs.",	
 "item_desc88","[#ffffff]{a}*Summon an ostrich-egg missile that falls from the sky an causes an explosion that pops 1 row and 1 column of pegs.",
