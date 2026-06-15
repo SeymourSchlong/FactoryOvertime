@@ -1,5 +1,5 @@
 meta:
-targets = {'gml_Object_obj_CafeMGMT_Create_0', 'gml_Object_obj_RerollBtnCafe_Step_0', 'gml_Object_obj_RerollBtn_Step_0'}
+targets = {'gml_GlobalScript_scr_GiveItem', 'gml_Object_obj_CafeMGMT_Create_0', 'gml_Object_obj_RerollBtnCafe_Step_0', 'gml_Object_obj_RerollBtn_Step_0'}
 critical = true
 
 patch:
