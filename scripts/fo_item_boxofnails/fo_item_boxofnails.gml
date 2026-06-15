@@ -13,7 +13,7 @@ function fo_item_boxofnails(){
 	    pool: ITEMPOOL.SHOP,
 	    price: 15,
 	    trig: "PegFullPop",
-	    alttrig: "PegFullPop",
+	    alttrig: "30Popped",
 	    desc: "item_desc_FO_boxofnails",
 	    upgr: "item_upgr_FO_boxofnails",
 	    weight: [1, 3, 3]
