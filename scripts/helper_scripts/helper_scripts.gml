@@ -288,8 +288,6 @@ function scr_FO_RandomWithLuck(arg0, arg1, arg2 = true) {
     var _count_reg = 0;
     var _count_upgr = 0;
 	
-	//show_debug_message("running random chance: " + string(arg0) + "/" + string(arg1));
-	
 	var _reg_obj = agi(get_object_from_id("clover"));
 	var _upg_obj = agi(get_object_from_id("clover_upgrade"));
     
@@ -325,8 +323,6 @@ function scr_FO_RandomWithLuck(arg0, arg1, arg2 = true) {
 	}
     
     var _value = 1 + _count_reg + _count_upgr;
-	
-	//show_debug_message(_value);
     
     if (arg0 < arg1 + _count_perk*5)
     {

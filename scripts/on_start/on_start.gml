@@ -2,7 +2,7 @@
 #macro agi asset_get_index
 #macro mod_id "fo"
 
-show_debug_log(true);
+//show_debug_log(true);
 
 // vanilla game stuff
 #macro scr_Text					asset_get_index("scr_Text")
