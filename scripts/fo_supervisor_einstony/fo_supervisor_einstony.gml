@@ -59,8 +59,8 @@ function fo_supervisor_einstony(){
 			"2Second",
 			"FirstPop",
 			"NubbyDies",
-			"PegFullPop",
-			"PassGoal"
+			"5Summoned",
+			"HitWall2"
 		];
 	});
 	forgery.subscribe_to_game_event("QuitToTitle", function(this) {
@@ -71,8 +71,8 @@ function fo_supervisor_einstony(){
 			"2Second",
 			"FirstPop",
 			"NubbyDies",
-			"PegFullPop",
-			"PassGoal"
+			"5Summoned",
+			"HitWall2"
 		];
 	});
 	
