@@ -2,6 +2,7 @@
 #macro agi asset_get_index
 #macro mod_id "fo"
 
+show_debug_log(true);
 
 // vanilla game stuff
 #macro scr_Text					asset_get_index("scr_Text")
@@ -54,8 +55,6 @@
 #macro draw_text_scribble_ext	asset_get_index("draw_text_scribble_ext")
 
 #macro au_FoodEffect			asset_get_index("au_FoodEffect")
-
-//show_debug_log(true);
 
 // item enums
 enum RARITY {
@@ -117,6 +116,7 @@ function scr_FO_on_load() {
 	fo_item_redpill();
 	//fo_item_lunchbag();
 	//fo_item_geeks();
+	fo_item_turkey();
 	
 	// einstony items
 	fo_item_catalyst();

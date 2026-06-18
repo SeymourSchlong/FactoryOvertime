@@ -281,7 +281,7 @@ function scr_FO_NubUpCount()
 		}
 	}
     
-    return (_count_perk * 0.20) + (_count_reg * 0.25) + (_count_upgr * 0.75);
+    return (_count_perk * 0.25) + (_count_reg * 0.25) + (_count_upgr * 0.75);
 }
 
 function scr_FO_RandomWithLuck(arg0, arg1, arg2 = true) {
@@ -328,11 +328,11 @@ function scr_FO_RandomWithLuck(arg0, arg1, arg2 = true) {
 	
 	//show_debug_message(_value);
     
-    if (arg0 < arg1 + _count_perk)
+    if (arg0 < arg1 + _count_perk*5)
     {
         return true;
     }
-    else if (arg0 < ((arg1 + _count_perk) * _value))
+    else if (arg0 < ((arg1 + _count_perk*5) * _value))
     {
         if (arg2)
         {
@@ -511,7 +511,7 @@ function scr_FO_ClockCount()
 		}
 	}
     
-    var _total_reduction = (_count_reg * 2) + (_count_upgr * 5) + (_count_perk * 1);
+    var _total_reduction = (_count_reg * 2) + (_count_upgr * 5) + (_count_perk * 2);
     return min(_total_reduction, 29);
 }
 
@@ -651,7 +651,6 @@ function scr_FO_BookWormEffect()
     //    ds_list_destroy(_ValidPerkList);
     //}
 }
-
 
 function scr_FO_GivePerk(arg0, arg1 = 950, arg2 = 540)
 {

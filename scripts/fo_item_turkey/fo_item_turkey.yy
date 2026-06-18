@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"fo_item_turkey",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fo_item_turkey",
+  "parent":{
+    "name":"foods",
+    "path":"folders/Scripts/items/foods.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

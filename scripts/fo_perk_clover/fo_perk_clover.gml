@@ -2,8 +2,7 @@ function fo_perk_clover(){
 	var perk_id = "clover";
 	var data = {
 	    name: "perk_name_FO_clover",
-	    //spr: "spr_FO_Perk_Clover",
-		spr: "spr_FO_I_Clover",
+	    spr: "spr_FO_Perk_Clover",
 	    trig: "Passive",
 	    rarity: 2,
 	    type: 0,
@@ -23,7 +22,19 @@ function fo_perk_clover(){
 		pool: data.pool,
 		trigger_fx_color: int64(data.colour),
 		additional_info_type: 0,
-		on_create: function() {},
+		on_create: function(this) {
+			// update description for this perk type
+			with (obj_PerkMGMT.PerkObj[this.MyPerkID]) {
+				var trigger_condition = obj_PerkMGMT.PerkTrigger[MyPerkID];
+				var perk = this.perk;
+				var perk_count = instance_number(obj_PerkMGMT.PerkObj[MyPerkID]);
+				var part_1 = scr_Text(trigger_condition, "\n");
+				var part_2 = scr_Text("perk_desc_FO_clover", "\n", perk_count*5);
+				obj_PerkMGMT.PerkDescBase[MyPerkID] = part_2;
+				
+				MyDesc = string_concat(part_1, part_2);
+			}
+		},
 		on_trigger: function() {}
 	}, perk_id);
 }

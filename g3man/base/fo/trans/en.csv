@@ -14,6 +14,8 @@
 "food_eat_confirm_acid_fail","No Catalyst was found!",
 "food_eat_confirm_acid","Slot given the trigger:{a}{b}",
 "food_eat_confirm_acid_plus","Slots given the trigger:{a}{b}",
+"food_eat_confirm_turkey","Valid passive items converted to perks!",
+"food_eat_confirm_turkey_fail","No valid passive items!",
 
 
 "item_name_FO_geeks","Geeks",
@@ -36,6 +38,10 @@
 "item_name_FO_redpill","Red Pill",
 "item_desc_FO_redpill","[#ffffff]{a}*Gives you a Suspicious Key.",
 "item_upgr_FO_redpill","[#ffffff]{a}*Gives you 2 Suspicious Keys.",
+
+"item_name_FO_turkey","Turkey",
+"item_desc_FO_turkey","[#ffffff]{a}*Converts all valid passive items into permanent perk variants.{a}(Valid items are Nub-Up, Broken Clock, 5 Leaf Clover, and Magic Wand)",
+"item_upgr_FO_turkey","[#ffffff]{a}*Converts all valid passive items into twice as many permanent perk variants.{a}(Valid items are Nub-Up, Broken Clock, 5 Leaf Clover, and Magic Wand)",
 
 
 "item_name_FO_brokenclock","Broken Clock",
@@ -175,13 +181,13 @@
 
 
 "perk_name_FO_clover","The 5 Leaf Clover Perk",
-"perk_desc_FO_clover","[#ffffff]{a}*Increase the odds of chance-based effects in items and perks by adding +2% to its odds.{a}(total from perks: {b}%)",
+"perk_desc_FO_clover","[#ffffff]{a}*Increase the odds of chance-based effects in items and perks by adding +5% to its odds.{a}(total from perks: {b}%)",
 
 "perk_name_FO_brokenclock","The Broken Clock Perk",
-"perk_desc_FO_brokenclock","[#ffffff]{a}*Time-based items and perks activate 3% faster.{a}(total from perks: {b}%)",
+"perk_desc_FO_brokenclock","[#ffffff]{a}*Time-based items and perks activate 6% faster.{a}(total from perks: {b}%)",
 
 "perk_name_FO_nubup","The Nub-Up Perk",
-"perk_desc_FO_nubup","[#ffffff]{a}*Increases the points given when Nubby pops a peg by +20%.{a}(total from perks: {b}%)",
+"perk_desc_FO_nubup","[#ffffff]{a}*Increases the points given when Nubby pops a peg by +25%.{a}(total from perks: {b}%)",
 
 "perk_name_FO_magicwand","The Magic Wand Perk",
 "perk_desc_FO_magicwand","[#ffffff]{a}*Increases Nubby's size a little bit.",

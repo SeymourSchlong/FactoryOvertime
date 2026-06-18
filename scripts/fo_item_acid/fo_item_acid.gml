@@ -108,15 +108,11 @@ function fo_item_acid(){
 					weight: 8,
 				},
 				{ 
-					trigger: "PassGoal",
-					weight: 15,
-				},
-				{ 
 					trigger: "PassGoalOnce",
 					weight: 12,
 				},
 				{ 
-					trigger: "12Summons",
+					trigger: "12Summoned",
 					weight: 10,
 				},
 				{ 
@@ -179,10 +175,14 @@ function fo_item_acid(){
 				ds_list_add(weight_pool, $"S{slot}Trigger{10}");
 			}
 			if (catalyst_slot != 1) {
-				ds_list_add(weight_pool, "ItemFire_Left");
+				repeat (5) {
+					ds_list_add(weight_pool, "ItemFire_Left");
+				}
 			}
 			if (catalyst_slot != 7) {
-				ds_list_add(weight_pool, "ItemFire_Right");
+				repeat (5) {
+					ds_list_add(weight_pool, "ItemFire_Right");
+				}
 			}
 			
 			ds_list_shuffle(weight_pool);
@@ -309,15 +309,11 @@ function fo_item_acid(){
 					weight: 2,
 				},
 				{ 
-					trigger: "PassGoal",
-					weight: 15,
-				},
-				{ 
 					trigger: "PassGoalOnce",
 					weight: 2,
 				},
 				{ 
-					trigger: "12Summons",
+					trigger: "12Summoned",
 					weight: 10,
 				},
 				{ 
@@ -382,12 +378,14 @@ function fo_item_acid(){
 				ds_list_add(weight_pool, $"S{slot}Trigger{10}");
 			}
 			if (array_contains(catalyst_slots, 1)) {
-				ds_list_add(weight_pool, "ItemFire_Left");
-				ds_list_add(weight_pool, "ItemFire_Left");
+				repeat (10) {
+					ds_list_add(weight_pool, "ItemFire_Left");
+				}
 			}
 			if (array_contains(catalyst_slots, 7)) {
-				ds_list_add(weight_pool, "ItemFire_Right");
-				ds_list_add(weight_pool, "ItemFire_Right");
+				repeat (10) {
+					ds_list_add(weight_pool, "ItemFire_Right");
+				}
 			}
 			
 			ds_list_shuffle(weight_pool);

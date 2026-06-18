@@ -38,8 +38,8 @@ function fo_supervisor_einstony(){
 		"2Second",
 		"FirstPop",
 		"NubbyDies",
-		"PegFullPop",
-		"PassGoal"
+		"5Summoned",
+		"HitWall2"
 	];
 	
 	forgery.register_autosave_save_callback(function(data) {
