@@ -5,7 +5,7 @@ function scr_FO_piggy_description(this, mult) {
 
 	var item = this.item;
 
-	var part_2 = scr_Text(item.description, "\n", global.fo.piggy_coins*mult);
+	var part_2 = scr_Text(item.description, "\n", mult, global.fo.piggy_coins*mult);
 	
 	obj_ItemMGMT.ItemDescBase[this.MyItemID] = part_2;
 
@@ -100,9 +100,16 @@ function fo_item_piggypurse(){
                 }
             }
             
-            scr_AddNumber(global.fo.piggy_coins * 100, this, -1);
-			with (this.object_index) {
-				self.MyDesc = scr_FO_piggy_description(self.id, 100);
+			if (!scr_FO_is_challenge("basicmath")) {
+	            scr_AddNumber(global.fo.piggy_coins * 100, this, -1);
+				with (this.object_index) {
+					self.MyDesc = scr_FO_piggy_description(self.id, 100);
+				}
+			} else {
+	            scr_AddNumber(global.fo.piggy_coins * 5, this, -1);
+				with (this.object_index) {
+					self.MyDesc = scr_FO_piggy_description(self.id, 5);
+				}
 			}
 		}
 	}, item_id);
@@ -157,10 +164,19 @@ function fo_item_piggypurse(){
                 }
             }
             
-            scr_AddNumber(global.fo.piggy_coins * 300, this, -1);
-			with (this.object_index) {
-				self.MyDesc = scr_FO_piggy_description(self.id, 300);
+            
+			if (!scr_FO_is_challenge("basicmath")) {
+	            scr_AddNumber(global.fo.piggy_coins * 300, this, -1);
+				with (this.object_index) {
+					self.MyDesc = scr_FO_piggy_description(self.id, 300);
+				}
+			} else {
+	            scr_AddNumber(global.fo.piggy_coins * 15, this, -1);
+				with (this.object_index) {
+					self.MyDesc = scr_FO_piggy_description(self.id, 15);
+				}
 			}
+            
 		}
 	}, item_id + "_upgrade");
 }

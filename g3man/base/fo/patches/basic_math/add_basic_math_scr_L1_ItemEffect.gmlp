@@ -3,6 +3,31 @@ targets = 'gml_GlobalScript_scr_L1_ItemEffect'
 critical = true
 
 patch:
+find_line_with('case 23')
+find_line_with('var _Amt = 5')
+
+write('
+if (scr_FO_is_challenge("basicmath"))
+{
+    _Amt = 3;
+}
+')
+
+
+
+find_line_with('case 28')
+find_line_with('var _Amt = 3')
+
+write('
+if (scr_FO_is_challenge("basicmath"))
+{
+    _Amt = 1;
+}
+')
+
+
+
+find_line_with('case 29')
 find_line_with('_Amt = round(PegNum * 0.15)')
 
 write('

@@ -92,8 +92,8 @@
 "item_upgr_FO_mothegg","[#ffffff]{a}*+15% chance to {b}critically summon{b}, spawning an extra random summon.",
 
 "item_name_FO_piggypurse","Piggy Purse",
-"item_desc_FO_piggypurse","[#ffffff]{a}*Gives 100 points per 1 coin consumed this run.{a}If the right-most item: Consume 1 coin.{a}(Currently gives {b} points)",
-"item_upgr_FO_piggypurse","[#ffffff]{a}*Gives 300 points per 1 coin consumed this run.{a}If the right-most item: Consume 1 coin.{a}(Currently gives {b} points)",
+"item_desc_FO_piggypurse","[#ffffff]{a}*Gives {b} points per 1 coin consumed this run.{a}If the right-most item: Consume 1 coin.{a}(Currently gives {c} points)",
+"item_upgr_FO_piggypurse","[#ffffff]{a}*Gives {b} points per 1 coin consumed this run.{a}If the right-most item: Consume 1 coin.{a}(Currently gives {c} points)",
 
 "item_name_FO_arthur","Arthur",
 "item_desc_FO_arthur","[#ffffff]{a}*Score 10% of target score.{a}*10% chance to explode itself, and score 150% target score.{a}*Explode chance is unaffected by Luck.",
@@ -162,7 +162,7 @@
 "altdesc_passive","[#7eca79]PASSIVE ITEM[#ffffff]:{a}*This item's effect is applied while held.{a}*This item does nothing when force-triggered.{a}*This item cannot have its trigger changed.",
 
 "challenge_name_FO_math","{a}Basic Math{a}",
-"challenge_desc_FO_math","*Pegs scale by +1 instead of by x2.{a}*Halving pegs subtracts 1, and doubling adds 1.{a}*Most point-giving items are disabled.",
+"challenge_desc_FO_math","*Pegs scale by +1 instead of by x2.{a}*Halving pegs subtracts 1, and doubling adds 1.{a}*Most point-giving items are modified or disabled.",
 
 "supervisor_name_FO_king","King Tony",
 "supervisor_desc_FO_king","*All items appear as Common.{a}*Each item has a 20% chance to appear as its upgraded variant.",
