@@ -44,11 +44,11 @@ function fo_item_arthur(){
 				    scr_AddNumber(global.Goal * 2, this, -1);
 					scr_FX_ItemExplosion(1);
 					
-					with (obj_ItemMGMT.ItemInst[this.WhatSlot]) {
-						instance_destroy(id);
-					}
-				    obj_ItemMGMT.Item[this.WhatSlot] = -1;
-					//scr_MutateItem(0, get_item_number_from_id("ash"));
+					forgery.run_delayed(3, this, function(item) {
+						with (item) {
+							scr_MutateItem(0, get_item_number_from_id("ash"));
+						}
+					});
 				}
 			}
 		}
@@ -72,14 +72,20 @@ function fo_item_arthur(){
 		odds_weight_end: 0,
 		on_create: function() {},
 		on_trigger: function(this) {
-			scr_AddNumber(global.Goal * 0.5, this, -1);
+			with (this) {
+				scr_AddNumber(global.Goal * 0.5, this, -1);
             
-            if (irandom(19) == 1) {
-                scr_AddNumber(global.Goal * 5, this, -1);
-                scr_FX_ItemExplosion(1);
-                obj_ItemMGMT.Item[this.WhatSlot] = -1;
-                instance_destroy(this);
-            }
+	            if (irandom(19) == 1 || true) {
+	                scr_AddNumber(global.Goal * 5, this, -1);
+	                scr_FX_ItemExplosion(1);
+				
+					forgery.run_delayed(3, this, function(item) {
+						with (item) {
+							scr_MutateItem(0, get_item_number_from_id("ash"));
+						}
+					});
+	            }
+			}
 		}
 	}, item_id + "_upgrade");
 }

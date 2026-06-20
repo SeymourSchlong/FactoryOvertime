@@ -28,6 +28,7 @@
 #macro scr_UpgrFoodEffect		asset_get_index("scr_UpgrFoodEffect")
 #macro scr_Part_NewLife			asset_get_index("scr_Part_NewLife")
 #macro scr_TonyEmote			asset_get_index("scr_TonyEmote")
+#macro scr_Part_Fireworks		asset_get_index("scr_Part_Fireworks")
 
 #macro obj_ItemMGMT				asset_get_index("obj_ItemMGMT")
 #macro obj_PerkMGMT				asset_get_index("obj_PerkMGMT")
@@ -55,6 +56,7 @@
 #macro draw_text_scribble_ext	asset_get_index("draw_text_scribble_ext")
 
 #macro au_FoodEffect			asset_get_index("au_FoodEffect")
+#macro au_Squid					asset_get_index("au_Squid")
 
 // item enums
 enum RARITY {
@@ -91,6 +93,7 @@ function scr_FO_on_load() {
 	fo_item_tophat();
 	fo_item_faultyrocket();
 	fo_item_piggypurse();
+	fo_item_flupper();
 	//fo_item_mysterybox();
 	//fo_item_pandorasbox();
 	//fo_item_arthur();			// does not function
@@ -148,24 +151,3 @@ function scr_FO_on_load() {
 }
 
 function scr_FO_on_unload() {}
-
-
-
-/*
-{
-    name: "item_name_FO_flupper",
-    spr: spr_FO_I_Flupper,
-    sprupgr: spr_FO_I_S_Flupper,
-    type: 0,
-    rarity: RARITY.RARE,
-    augment: "none",
-    category: "misc",
-    pool: ITEMPOOL.SHOP,
-    price: 10,
-    trig: "NubbyLaunchItem",
-    alttrig: "",
-    desc: "item_desc_FO_flupper", "\n", "\""),
-    upgr: "item_upgr_FO_flupper", "\n", "\""),
-    weight: [3, 5, 5]
-}
-*/
