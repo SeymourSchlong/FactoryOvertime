@@ -11,7 +11,7 @@ function fo_item_ash(){
 	    category: "misc",
 	    pool: ITEMPOOL.NONE,
 	    price: 0,
-	    trig: "",
+	    trig: "Passive",
 	    alttrig: "",
 	    desc: "item_desc_FO_ash",
 	    weight: [0, 0, 0]
