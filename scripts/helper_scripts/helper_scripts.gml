@@ -589,63 +589,69 @@ function scr_FO_WandCount()
 
 function scr_FO_BookWormEffect()
 {
-	//return;
+	var _reg_obj = agi(get_object_from_id("bookworm"));
+	var _upg_obj = agi(get_object_from_id("bookworm_upgrade"));
 	
-	//var _reg_obj = agi(get_object_from_id("bookworm"));
-	//var _upg_obj = agi(get_object_from_id("bookworm_upgrade"));
-	
-    //var _perks_to_give = 0;
+    var _perks_to_give = 0;
     
-    //if ((global.CurrentRnd % 10) == 0)
-    //{
-    //    if (instance_exists(_reg_obj))
-    //    {
-    //        with (_reg_obj)
-    //            _perks_to_give++;
-    //    }
-    //}
+    if ((global.CurrentRnd % 10) == 0)
+    {
+        if (instance_exists(_reg_obj))
+        {
+            with (_reg_obj)
+                _perks_to_give++;
+        }
+    }
     
-    //if ((global.CurrentRnd % 5) == 0)
-    //{
-    //    if (instance_exists(_upg_obj))
-    //    {
-    //        with (_upg_obj)
-    //            _perks_to_give++;
-    //    }
-    //}
+    if ((global.CurrentRnd % 5) == 0)
+    {
+        if (instance_exists(_upg_obj))
+        {
+            with (_upg_obj)
+                _perks_to_give++;
+        }
+    }
     
-    //if (_perks_to_give > 0)
-    //{
-    //    var _ValidPerkList = ds_list_create();
-    //    ds_list_clear(_ValidPerkList);
+    if (_perks_to_give > 0)
+    {
+        var _ValidPerkList = ds_list_create();
+        ds_list_clear(_ValidPerkList);
         
-    //    for (var i = 0; i < array_length(obj_PerkMGMT.PerkTrigger); i += 1)
-    //    {
-    //        if (obj_PerkMGMT.InPerkItemPool[i] == 1 && i != 1 && i != 20)
-    //            ds_list_add(_ValidPerkList, i);
-    //    }
+        for (var i = 0; i < array_length(obj_PerkMGMT.PerkTrigger); i += 1)
+        {
+            if (obj_PerkMGMT.InPerkItemPool[i] == 1 && i != 1 && i != 20)
+                ds_list_add(_ValidPerkList, i);
+        }
         
-    //    ds_list_add(_ValidPerkList, 2);
-    //    ds_list_add(_ValidPerkList, 30);
+        ds_list_add(_ValidPerkList, 2);
+        ds_list_add(_ValidPerkList, 30);
         
-    //    ds_list_shuffle(_ValidPerkList);
-	//	var _selected_perk = ds_list_find_value(_ValidPerkList, 0);
+        ds_list_shuffle(_ValidPerkList);
+		var _selected_perk = ds_list_find_value(_ValidPerkList, 0);
 		
-	//	//forgery.run_delayed(1, undefined, scr_FO_GivePerk(_selected_perk));
-	//	//forgery.run_delayed(10, undefined, scr_FO_GivePerk(_selected_perk));
-    //    //repeat (_perks_to_give)
-    //    //{
-    //    //    scr_FO_GivePerk(_selected_perk);
-    //    //}
+		var _perk_queue = [];
+		repeat (_perks_to_give) {
+			array_push(_perk_queue, _selected_perk);
+		}
+		
+		var _perk_giver = noone;
+		
+		if (instance_exists(agi("obj_FO_PerkHelper"))) {
+			_perk_giver = instance_find(agi("obj_fO_PerkHelper"), 0);
+		} else {
+			_perk_giver = instance_create_depth(0, 0, obj_ItemMGMT.depth, agi("obj_FO_PerkHelper"));
+		}
+			
+		with (_perk_giver) {
+			for (var i = 0; i < array_length(_perk_queue); i++) {
+				//_perks_to_give
+				array_push(queue, _perk_queue[i]);
+			}
+		}
+		
         
-    //    //repeat (_perks_to_give)
-    //    //{
-    //    //    ds_list_shuffle(_ValidPerkList);
-    //    //    scr_FO_GivePerk(ds_list_find_value(_ValidPerkList, 0));
-    //    //}
-        
-    //    ds_list_destroy(_ValidPerkList);
-    //}
+        ds_list_destroy(_ValidPerkList);
+    }
 }
 
 function scr_FO_GivePerk(arg0, arg1 = 950, arg2 = 540)

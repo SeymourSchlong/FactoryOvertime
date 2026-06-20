@@ -111,7 +111,7 @@ function scr_FO_on_load() {
 	fo_item_heartmonitor();
 	fo_item_boxofnails();
 	fo_item_piyopiyos();
-	//fo_item_bookworm();
+	fo_item_bookworm();
 	
 	// food items
 	fo_item_chocolatecoin();
