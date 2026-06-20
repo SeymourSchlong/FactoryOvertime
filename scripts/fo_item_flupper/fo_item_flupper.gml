@@ -49,6 +49,8 @@ function fo_item_flupper(){
 	            if (global.ItemSfx == true) {
 	                audio_play_sound(au_Squid, 1, 0, 1);
 	            }
+                
+				scr_ItemEffectUpFX(obj_ItemMGMT.ItemX[_target_slot], y, id, 1);
             
 	            with (_target_inst) {
 	                if (ItemTemporary) {
@@ -57,8 +59,7 @@ function fo_item_flupper(){
 	                else {
 	                    scr_MutateItem(1, obj_ItemMGMT.ItemPair[_target_id]);
 	                }
-                
-					scr_ItemEffectUpFX(x, y, id, 1);
+
 	                scr_Part_Fireworks(scr_PartAmt(5));
 	            }
 			}
@@ -112,8 +113,7 @@ function fo_item_flupper(){
 	                        else {
 	                            scr_MutateItem(1, obj_ItemMGMT.ItemPair[_target_id]);
 	                        }
-                        
-							scr_ItemEffectUpFX(x, y, id, 1);
+							
 	                        scr_Part_Fireworks(scr_PartAmt(5));
 	                    }
 	                }
@@ -137,7 +137,6 @@ function fo_item_flupper(){
 	                            scr_MutateItem(1, obj_ItemMGMT.ItemPair[_target_id]);
 	                        }
                         
-							scr_ItemEffectUpFX(x, y, id, 1);
 	                        scr_Part_Fireworks(scr_PartAmt(5));
 	                    }
 	                }
