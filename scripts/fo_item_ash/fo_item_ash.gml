@@ -29,7 +29,7 @@ function fo_item_ash(){
 	    effect: data.category,
 	    pool: real(data.pool),
 	    offset_price: data.price - (data.rarity > RARITY.COMMON ? 10 : 5),
-		pair_id: "fo:arthur",
+		pair_id: "fo:arthur_upgrade",
 		odds_weight_early: data.weight[0], 
 		odds_weight_mid: data.weight[1], 
 		odds_weight_end: data.weight[2],

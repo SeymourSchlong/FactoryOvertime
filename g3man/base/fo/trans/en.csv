@@ -3,7 +3,6 @@
 "ItemFire_Left2","[#ffd500]Item to the left of me triggers twice [spr_ITArrow,0]",
 "LowestPop","[#ffd500]Lowest # peg popped [spr_ITArrow,0]",
 "TargetHit","[#ffd500]Target hit [spr_ITArrow,0]",
-"NubbyLaunchFlupper","[#ffd500]Nubby launched [spr_ITArrow,0]",
 
 
 "food_eat_confirm_geeks","Item given the trigger:{a}{b}",
@@ -97,8 +96,11 @@
 "item_upgr_FO_piggypurse","[#ffffff]{a}*Gives 300 points per 1 coin consumed this run.{a}If the right-most item: Consume 1 coin.{a}(Currently gives {b} points)",
 
 "item_name_FO_arthur","Arthur",
-"item_desc_FO_arthur","[#ffffff]{a}*Score 20% of target score.{a}*10% chance to explode itself, and score 200% target score.{a}*Explode chance is unaffected by Luck.",
-"item_upgr_FO_arthur","[#ffffff]{a}*Score 50% of target score.{a}*5% chance to explode itself, and score 500% target score.{a}*Explode chance is unaffected by Luck.",
+"item_desc_FO_arthur","[#ffffff]{a}*Score 10% of target score.{a}*10% chance to explode itself, and score 150% target score.{a}*Explode chance is unaffected by Luck.",
+"item_upgr_FO_arthur","[#ffffff]{a}*Score 30% of target score.{a}*5% chance to explode itself, and score 250% target score.{a}*Explode chance is unaffected by Luck.",
+
+"item_name_FO_ash","Ash",
+"item_desc_FO_ash","[#ffffff]{a}*Does nothing.{a}*Can be upgraded to create Arthur+.",
 
 "item_name_FO_pocketfrogs","Pocket Frogs",
 "item_desc_FO_pocketfrogs","[#ffffff]{a}*50% chance to pop the highest # peg.",

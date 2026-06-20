@@ -8,10 +8,10 @@ function fo_item_arthur(){
 	    sprupgr: "spr_FO_I_S_Arthur",
 	    type: 0,
 	    rarity: RARITY.COMMON,
-	    augment: "corrupted",
+	    augment: "none",
 	    category: "pointgiver",
-	    pool: ITEMPOOL.BLACKMARKET,
-	    price: 6,
+	    pool: ITEMPOOL.SHOP,
+	    price: 7,
 	    trig: "NubbyDies",
 	    alttrig: "20Summoned",
 	    desc: "item_desc_FO_arthur",
@@ -38,13 +38,17 @@ function fo_item_arthur(){
 		on_create: function() {},
 		on_trigger: function(this) {
 			with (this) {
-				scr_AddNumber(global.Goal * 0.2, this, -1);
+				var _explode = irandom(9) == 1;
+				
+				if (!_explode) {
+					scr_AddNumber(global.Goal * 0.1, this, -1);
+				}
             
-				if (irandom(9) == 1 || true) {
-				    scr_AddNumber(global.Goal * 2, this, -1);
+				if (_explode) {
+				    scr_AddNumber(global.Goal * 1.5, this, -1);
 					scr_FX_ItemExplosion(1);
 					
-					forgery.run_delayed(3, this, function(item) {
+					forgery.run_delayed(2, this, function(item) {
 						with (item) {
 							scr_MutateItem(0, get_item_number_from_id("ash"));
 						}
@@ -73,13 +77,17 @@ function fo_item_arthur(){
 		on_create: function() {},
 		on_trigger: function(this) {
 			with (this) {
-				scr_AddNumber(global.Goal * 0.5, this, -1);
+				var _explode = irandom(19) == 1;
+				
+				if (!_explode) {
+					scr_AddNumber(global.Goal * 0.3, this, -1);
+				}
             
-	            if (irandom(19) == 1 || true) {
-	                scr_AddNumber(global.Goal * 5, this, -1);
+	            if (_explode) {
+	                scr_AddNumber(global.Goal * 2.5, this, -1);
 	                scr_FX_ItemExplosion(1);
 				
-					forgery.run_delayed(3, this, function(item) {
+					forgery.run_delayed(2, this, function(item) {
 						with (item) {
 							scr_MutateItem(0, get_item_number_from_id("ash"));
 						}

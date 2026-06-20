@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"fo_item_ash",
   "parent":{
-    "name":"unfinished",
-    "path":"folders/Scripts/items/unfinished.yy",
+    "name":"complete",
+    "path":"folders/Scripts/items/complete.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
