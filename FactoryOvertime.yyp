@@ -86,6 +86,7 @@
     {"id":{"name":"fo_item_chocolatecoin","path":"scripts/fo_item_chocolatecoin/fo_item_chocolatecoin.yy",},},
     {"id":{"name":"fo_item_clover","path":"scripts/fo_item_clover/fo_item_clover.yy",},},
     {"id":{"name":"fo_item_faultyrocket","path":"scripts/fo_item_faultyrocket/fo_item_faultyrocket.yy",},},
+    {"id":{"name":"fo_item_flupper","path":"scripts/fo_item_flupper/fo_item_flupper.yy",},},
     {"id":{"name":"fo_item_geeks","path":"scripts/fo_item_geeks/fo_item_geeks.yy",},},
     {"id":{"name":"fo_item_gloober","path":"scripts/fo_item_gloober/fo_item_gloober.yy",},},
     {"id":{"name":"fo_item_heartmonitor","path":"scripts/fo_item_heartmonitor/fo_item_heartmonitor.yy",},},
