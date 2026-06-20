@@ -29,6 +29,7 @@
 #macro scr_Part_NewLife			asset_get_index("scr_Part_NewLife")
 #macro scr_TonyEmote			asset_get_index("scr_TonyEmote")
 #macro scr_Part_Fireworks		asset_get_index("scr_Part_Fireworks")
+#macro scr_ItemEffectUpFX		asset_get_index("scr_ItemEffectUpFX")
 
 #macro obj_ItemMGMT				asset_get_index("obj_ItemMGMT")
 #macro obj_PerkMGMT				asset_get_index("obj_PerkMGMT")
@@ -94,10 +95,14 @@ function scr_FO_on_load() {
 	fo_item_faultyrocket();
 	fo_item_piggypurse();
 	fo_item_flupper();
+	fo_item_gloober();
+	fo_item_heartmonitor();
+	fo_item_boxofnails();
+	fo_item_piyopiyos();
+	fo_item_arthur();
+	fo_item_ash();
 	//fo_item_mysterybox();
 	//fo_item_pandorasbox();
-	//fo_item_arthur();			// does not function
-	//fo_item_ash();			// temporary
 	
 	
 	// passive items
@@ -107,10 +112,6 @@ function scr_FO_on_load() {
 	fo_item_bblock();
 	fo_item_brokenclock();
 	fo_item_clover();
-	fo_item_gloober();
-	fo_item_heartmonitor();
-	fo_item_boxofnails();
-	fo_item_piyopiyos();
 	fo_item_bookworm();
 	
 	// food items
