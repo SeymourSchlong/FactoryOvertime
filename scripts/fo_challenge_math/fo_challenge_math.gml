@@ -45,6 +45,9 @@ function fo_challenge_math(){
 				OffsetPrice[159] = -10;
 				ItemPrice[38] = 0;
 				ItemPrice[159]	= 0;
+				
+				var _piggy = get_item_number_from_id("piggy");
+				var _piggy_s = get_item_number_from_id("piggy_upgrade")
 
 				// enabling item pools
 				InItemPool[4] = 1;  // lobster claw
@@ -53,44 +56,57 @@ function fo_challenge_math(){
 				InItemPool[15] = 2;	// fly agaric
 				InItemPool[23] = 1;	// squirmy
 				InItemPool[29] = 1;	// yeti
+				InItemPool[44] = 1; // cheese house
 				InItemPool[47] = 2;	// wingless fly
 				InItemPool[52] = 1;	// laser pointer
+				InItemPool[65] = 1; // poop butt
 				InItemPool[get_item_number_from_id("piggy")] = 1;
+				InItemPool[get_item_number_from_id("arthur")] = 1;
 			
 				/* total removed point givers:
-				* [ 16/ 84]	finger puppet		(1)			/ (2)
-				* [ 44/112]	cheese house		(300/3000)	/ (750/7500)
-				* [ 55/123]	two headed turtle	(1000/10x)	/ (2000/20x)
-				* [ 65/133]	poop butt			(15)		/ (40)
-				* [ ??/ ??]	piggy purse			(100/per)	/ (300/per)
+				* [ 55/123]	two headed turtle	(1000/10x)	/ (2000/20x) -> turn into (60) 5x / (120) 10x
 				*/
 				
-				var desc_update = [16, 23, 28, 29, 37, 44, 55, 65, get_item_number_from_id("piggy")];
+				var desc_update = [16, 23, 28, 29, 37, 44, 55, 65, _piggy];
 			
+				// sea cucumber
+				ItemTier[12] = RARITY.ULTRARARE;
+				ItemTier[80] = RARITY.ULTRARARE;
+				// finger puppet
+				ItemTier[16] = RARITY.RARE;
+				ItemTier[84] = RARITY.RARE;
 				// squirmy
-				// adjust the value in the description to say "3" instead of "5" / "5" instead of "10"
 				OddsWeightEarly[23] = 4;
 				ItemDescBase[23] = scr_Text("item_desc29", "\n", 3);
 				ItemDescBase[91] = scr_Text("item_desc97", "\n", 5);
 				// flutty
-				// adjust the value in the description to say "1" instead of "3" / "3" instead of "5"
 				ItemDescBase[28] = scr_Text("item_desc28", "\n", 1);
 				ItemDescBase[96] = scr_Text("item_desc96", "\n", 3);
 				// yeti
-				// adjust the value in the description to say "25%" instead of "15%" / "50%" instead of "30%"
 				ItemDescBase[29] = scr_Text("item_desc29", "\n", 25);
 				ItemDescBase[97] = scr_Text("item_desc97", "\n", 50);
 				// friendly rock
-				// adjust the value in the description to say "6" instead of "32" / "9" instead of "256"
 				ItemDescBase[37] = scr_Text("item_desc37", "\n", 6, 4);
 				ItemDescBase[105] = scr_Text("item_desc105", "\n", 9, 4);
+				// cheese house
+				ItemDescBase[44] = scr_Text("item_desc44", "\n", 30, 100, 30);
+				ItemDescBase[112] = scr_Text("item_desc112", "\n", 75, 250, 30);
+				// two headed turtle
+				ItemTier[55] = RARITY.RARE;
+				ItemTier[123] = RARITY.RARE;
+				ItemDescBase[55] = scr_Text("item_desc55", "\n", 5, 60, 11);
+				ItemDescBase[123] = scr_Text("item_desc123", "\n", 10, 120, 11);
+				// poop butt
+				ItemDescBase[65] = scr_Text("item_desc65", "\n", 1);
+				ItemDescBase[133] = scr_Text("item_desc133", "\n", 4);
 				// piggy purse
-				// adjust the value in the descirption to say "5" instead of "100" / "15" instead of "300"
-				OddsWeightEarly[get_item_number_from_id("piggy")] = 1;
-				OddsWeightMid[get_item_number_from_id("piggy")] = 3;
-				OddsWeightEnd[get_item_number_from_id("piggy")] = 5;
-				ItemDescBase[get_item_number_from_id("piggy")] = scr_Text("item_desc_FO_piggypurse", "\n", 5, 0);
-				ItemDescBase[get_item_number_from_id("piggy_upgrade")] = scr_Text("item_upgr_FO_piggypurse", "\n", 15, 0);
+				OddsWeightEarly[_piggy] = 2;
+				OddsWeightMid[_piggy] = 3;
+				OddsWeightEnd[_piggy] = 5;
+				ItemTier[_piggy] = RARITY.RARE;
+				ItemTier[_piggy_s] = RARITY.RARE;
+				ItemDescBase[_piggy] = scr_Text("item_desc_FO_piggypurseBM", "\n", 5, 0);
+				ItemDescBase[_piggy_s] = scr_Text("item_upgr_FO_piggypurseBM", "\n", 15, 0);
 				
 				for (var i = 0; i < array_length(desc_update); i++) {
 					var _id = desc_update[i];

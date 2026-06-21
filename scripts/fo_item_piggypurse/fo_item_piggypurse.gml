@@ -1,13 +1,16 @@
-function scr_FO_piggy_description(this, mult) {
-	var trigger_condition = obj_ItemMGMT.ItemTrig[this.MyItemID]
+function scr_FO_piggy_description(item_id, mult) {
+	var trigger_condition = obj_ItemMGMT.ItemTrig[item_id]
 
 	var part_1 = scr_Text(trigger_condition, "\n");
-
-	var item = this.item;
-
-	var part_2 = scr_Text(item.description, "\n", mult, global.fo.piggy_coins*mult);
 	
-	obj_ItemMGMT.ItemDescBase[this.MyItemID] = part_2;
+	var desc = "item_desc_FO_piggypurse"
+
+	if (obj_ItemMGMT.ItemLevel[item_id] == 2)
+		desc = "item_upgr_FO_piggypurse";
+
+	var part_2 = scr_Text(desc, "\n", mult, global.fo.piggy_coins*mult);
+	
+	obj_ItemMGMT.ItemDescBase[item_id] = part_2;
 
 	return string_concat(part_1, part_2)
 }
@@ -68,7 +71,7 @@ function fo_item_piggypurse(){
 		odds_weight_end: data.weight[2],
 		on_create: function(this) {
 			forgery.run_delayed(1, this, function(this) {
-				this.MyDesc = scr_FO_piggy_description(this, 100);
+				this.MyDesc = scr_FO_piggy_description(this.MyItemID, 100);
 			});
 		},
 		on_trigger: function(this) {
@@ -91,7 +94,6 @@ function fo_item_piggypurse(){
                 {
                     global.Money -= 1;
                     global.fo.piggy_coins += 1;
-                    //scr_UpdateDesc("Piggy");
                     
                     if (global.ItemSfx == true)
                     {
@@ -103,12 +105,12 @@ function fo_item_piggypurse(){
 			if (!scr_FO_is_challenge("basicmath")) {
 	            scr_AddNumber(global.fo.piggy_coins * 100, this, -1);
 				with (this.object_index) {
-					self.MyDesc = scr_FO_piggy_description(self.id, 100);
+					self.MyDesc = scr_FO_piggy_description(self.MyItemID, 100);
 				}
 			} else {
 	            scr_AddNumber(global.fo.piggy_coins * 5, this, -1);
 				with (this.object_index) {
-					self.MyDesc = scr_FO_piggy_description(self.id, 5);
+					self.MyDesc = scr_FO_piggy_description(self.MyItemID, 5);
 				}
 			}
 		}
@@ -132,7 +134,7 @@ function fo_item_piggypurse(){
 		odds_weight_end: 0,
 		on_create: function(this) {
 			forgery.run_delayed(1, this, function(this) {
-				this.MyDesc = scr_FO_piggy_description(this, 300);
+				this.MyDesc = scr_FO_piggy_description(this.MyItemID, 300);
 			});
 		},
 		on_trigger: function(this) {
@@ -155,7 +157,6 @@ function fo_item_piggypurse(){
                 {
                     global.Money -= 1;
                     global.fo.piggy_coins += 1;
-                    //scr_UpdateDesc("Piggy");
                     
                     if (global.ItemSfx == true)
                     {
@@ -168,12 +169,12 @@ function fo_item_piggypurse(){
 			if (!scr_FO_is_challenge("basicmath")) {
 	            scr_AddNumber(global.fo.piggy_coins * 300, this, -1);
 				with (this.object_index) {
-					self.MyDesc = scr_FO_piggy_description(self.id, 300);
+					self.MyDesc = scr_FO_piggy_description(self.MyItemID, 300);
 				}
 			} else {
 	            scr_AddNumber(global.fo.piggy_coins * 15, this, -1);
 				with (this.object_index) {
-					self.MyDesc = scr_FO_piggy_description(self.id, 15);
+					self.MyDesc = scr_FO_piggy_description(self.MyItemID, 15);
 				}
 			}
             

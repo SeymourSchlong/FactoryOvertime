@@ -92,8 +92,10 @@
 "item_upgr_FO_mothegg","[#ffffff]{a}*+15% chance to {b}critically summon{b}, spawning an extra random summon.",
 
 "item_name_FO_piggypurse","Piggy Purse",
-"item_desc_FO_piggypurse","[#ffffff]{a}*Gives {b} points per 1 coin consumed this run.{a}If the right-most item: Consume 1 coin.{a}(Currently gives {c} points)",
-"item_upgr_FO_piggypurse","[#ffffff]{a}*Gives {b} points per 1 coin consumed this run.{a}If the right-most item: Consume 1 coin.{a}(Currently gives {c} points)",
+"item_desc_FO_piggypurse","[#ffffff]{a}*Gives 100 points per 1 coin consumed this run.{a}If the right-most item: Consume 1 coin.{a}(Currently gives {c} points)",
+"item_upgr_FO_piggypurse","[#ffffff]{a}*Gives 300 points per 1 coin consumed this run.{a}If the right-most item: Consume 1 coin.{a}(Currently gives {c} points)",
+"item_desc_FO_piggypurseBM","[#ffffff]{a}*Gives {b} points per 1 coin consumed this run.{a}If the right-most item: Consume 1 coin.{a}(Currently gives {c} points)",
+"item_upgr_FO_piggypurseBM","[#ffffff]{a}*Gives {b} points per 1 coin consumed this run.{a}If the right-most item: Consume 1 coin.{a}(Currently gives {c} points)",
 
 "item_name_FO_arthur","Arthur",
 "item_desc_FO_arthur","[#ffffff]{a}*Score 10% of target score.{a}*10% chance to explode itself, and score 150% target score.{a}*Explode chance is unaffected by Luck.",
@@ -206,7 +208,7 @@
 "item_desc37","[#ffffff]{a}*Doubles {c} random pegs whose # is less than {b}.{a}*If all pegs are bigger than {b}, doubles the lowest # peg.",	
 "item_desc105","[#ffffff]{a}*Doubles {c} random pegs whose # is less than {b}.{a}*If all pegs are bigger than {b}, doubles the lowest # peg twice.",
 "perk_desc13","[#e6ffe6]{a}*If Nubby is still alive, 50% chance to force-trigger the item in [#ffb3ff]SLOT #{b}[#e6ffe6].",
-"perk_desc17","[#e6ffe6]{a}*If the total score is less than 50% of the target score:{a}*Force-trigger all items once.",
+"perk_desc17","[#e6ffe6]{a}If the total score is less than 50% of the target score:{a}*Force-trigger all items once.",
 "perk_desc23alt","[#e6ffe6]{a}*Force-triggers the items in [#ffb3ff]SLOTS #1, and #2[#e6ffe6], {b} times each.",
 "PassGoalOdds50","[#ffd500]Pass round goal [spr_ITArrow,0]",
 "supervisordesc_goblin","*You receive +3 coins per restock instead of 1.{a}*Maximum coins limit is raised to {b}.{a}*You lose two lives when you launch Nubby.{a}*If two lives are used, an additional smaller Nubby is launched.",

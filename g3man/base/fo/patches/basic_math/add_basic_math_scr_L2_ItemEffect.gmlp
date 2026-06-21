@@ -46,3 +46,51 @@ if (scr_FO_is_challenge("basicmath"))
     _Amt = PegNum * 0.5;
 }
 ')
+
+
+
+find_line_with('case 112')
+write('
+if (scr_FO_is_challenge("basicmath")) {
+    if (global.CurrentRnd < 30)
+    {
+        scr_AddNumber(75, id, -1);
+    }
+    else
+    {
+        scr_AddNumber(250, id, -1);
+    }
+} else
+')
+
+
+
+find_line_with('case 123')
+find_line_with('if (PegNum > 64)')
+write_before('
+if (scr_FO_is_challenge("basicmath")) {
+    if (PegNum > 11)
+    {
+        var _Mult = 5;
+        var _Amt = PegNum * _Mult;
+        scr_AddNumber(_Amt, id, -1);
+    }
+    else
+    {
+        var _Amt = 60;
+        scr_AddNumber(_Amt, id, -1);
+    }
+}
+else
+')
+
+
+
+find_line_with('case 133')
+find_line_with('var _Amt = 40')
+write('
+if (scr_FO_is_challenge("basicmath"))
+{
+    _Amt = 4;
+}
+')
