@@ -1,0 +1,19 @@
+meta:
+targets = 'gml_Object_obj_CMPlayBtn_Step_0'
+critical = true
+
+patch:
+find_line_with('global.Money -= CMPrice')
+
+write_before('
+if (global.fo.littlepeas > 0)
+{
+    repeat (3)
+    {
+        var _NewGC = instance_create_depth(940 + irandom_range(-64, 64), 563 + irandom_range(-64, 64), obj_ItemMGMT.depth - 1, asset_get_index("obj_GhostCoin"));
+        _NewGC.GCSpd = 40;
+    }
+    
+    global.fo.littlepeas -= 1;
+}
+')
