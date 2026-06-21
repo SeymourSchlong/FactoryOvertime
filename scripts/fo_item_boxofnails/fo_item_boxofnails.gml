@@ -9,7 +9,7 @@ function fo_item_boxofnails(){
 	    type: 0,
 	    rarity: RARITY.ULTRARARE,
 	    augment: "none",
-	    category: "passive",
+	    category: "misc",
 	    pool: ITEMPOOL.SHOP,
 	    price: 15,
 	    trig: "PegFullPop",
