@@ -42,6 +42,7 @@ function fo_item_bblock(){
 	forgery.register_item({
 	    display_name: data.name,
 		description: data.upgr,
+		description_args: ["\n", 25],
 		sprite: agi(data.sprupgr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,

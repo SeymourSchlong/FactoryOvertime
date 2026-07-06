@@ -15,6 +15,7 @@ function fo_perk_brokenclock(){
 	forgery.register_perk({
 		display_name: data.name,
 		description: data.desc,
+		description_args: ["\n", 6],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 		tier: data.rarity,
@@ -25,11 +26,12 @@ function fo_perk_brokenclock(){
 		on_create: function(this) {
 			// update description for this perk type
 			with (obj_PerkMGMT.PerkObj[this.MyPerkID]) {
+				var _strength = 6;
 				var trigger_condition = obj_PerkMGMT.PerkTrigger[MyPerkID];
 				var perk = this.perk;
 				var perk_count = instance_number(obj_PerkMGMT.PerkObj[MyPerkID]);
 				var part_1 = scr_Text(trigger_condition, "\n");
-				var part_2 = scr_Text("perk_desc_FO_brokenclock", "\n", min(perk_count*6, 99));
+				var part_2 = scr_Text("perk_desc_FO_brokenclock", "\n", _strength, min(perk_count*_strength, 99));
 				obj_PerkMGMT.PerkDescBase[MyPerkID] = part_2;
 				
 				MyDesc = string_concat(part_1, part_2);

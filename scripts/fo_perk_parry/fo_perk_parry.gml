@@ -11,12 +11,13 @@ function fo_perk_parry(){
 	    pool: 1,
 	    colour: 0,
 	    augmenteffect: 0,
-	    desc: "perk_desc_FO_parry"//, "\n", 25)
+	    desc: "perk_desc_FO_parry"
 	}
 
 	forgery.register_perk({
 		display_name: data.name,
 		description: data.desc,
+		description_args: ["\n", 25],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 		tier: data.rarity,

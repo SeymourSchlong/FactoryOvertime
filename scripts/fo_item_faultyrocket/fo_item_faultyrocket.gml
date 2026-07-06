@@ -22,6 +22,7 @@ function fo_item_faultyrocket(){
 	forgery.register_item({
 		display_name: data.name,
 		description: data.desc,
+		description_args: ["\n", 1.2],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,
@@ -46,6 +47,7 @@ function fo_item_faultyrocket(){
 	forgery.register_item({
 	    display_name: data.name,
 		description: data.upgr,
+		description_args: ["\n", 1.5],
 		sprite: agi(data.sprupgr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,

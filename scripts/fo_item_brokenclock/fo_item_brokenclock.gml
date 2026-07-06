@@ -22,6 +22,7 @@ function fo_item_brokenclock(){
 	forgery.register_item({
 		display_name: data.name,
 		description: data.desc,
+		description_args: ["\n", 6],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,
@@ -42,6 +43,7 @@ function fo_item_brokenclock(){
 	forgery.register_item({
 	    display_name: data.name,
 		description: data.upgr,
+		description_args: ["\n", 13, 0.5],
 		sprite: agi(data.sprupgr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,

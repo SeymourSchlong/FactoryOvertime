@@ -28,6 +28,7 @@ function fo_supervisor_king(){
 	forgery.register_supervisor({
 		display_name: data.display_name,
 		description: data.description,
+		description_args: ["\n", 20],
 		sprites: data.sprites,
 		clicked_sounds: data.clicked_sounds,
 		go_sound: data.go_sound,

@@ -17,6 +17,7 @@ function fo_item_catalyst(){
 	forgery.register_item({
 		display_name: data.name,
 		description: data.desc,
+		description_args: ["\n", 100],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 	    alt_game_event: "",

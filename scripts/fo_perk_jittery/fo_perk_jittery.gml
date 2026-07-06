@@ -17,6 +17,7 @@ function fo_perk_jittery(){
 	forgery.register_perk({
 		display_name: data.name,
 		description: data.desc,
+		description_args: ["\n", 20, "\""],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 		tier: data.rarity,

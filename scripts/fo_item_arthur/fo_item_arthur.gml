@@ -22,6 +22,7 @@ function fo_item_arthur(){
 	forgery.register_item({
 		display_name: data.name,
 		description: data.desc,
+		description_args: ["\n", 10, 10, 150],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,
@@ -61,6 +62,7 @@ function fo_item_arthur(){
 	forgery.register_item({
 	    display_name: data.name,
 		description: data.upgr,
+		description_args: ["\n", 30, 5, 250],
 		sprite: agi(data.sprupgr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,

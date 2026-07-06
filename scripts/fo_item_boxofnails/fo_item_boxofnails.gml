@@ -19,13 +19,10 @@ function fo_item_boxofnails(){
 	    weight: [1, 3, 3]
 	}
 	
-	forgery.subscribe_to_game_event("PegFullPop", function() {
-		//scr_FO_BoxOfNailsIncrease();
-	});
-	
 	forgery.register_item({
 		display_name: data.name,
 		description: data.desc,
+		description_args: ["\n", 5],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,
@@ -48,6 +45,7 @@ function fo_item_boxofnails(){
 	forgery.register_item({
 	    display_name: data.name,
 		description: data.upgr,
+		description_args: ["\n", 15],
 		sprite: agi(data.sprupgr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,

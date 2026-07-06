@@ -11,12 +11,13 @@ function fo_perk_textbook(){
 	    pool: 1,
 	    colour: 3386879,
 	    augmenteffect: 0,
-	    desc: "perk_desc_FO_textbook"//, "\n", "'")
+	    desc: "perk_desc_FO_textbook"
 	}
 
 	forgery.register_perk({
 		display_name: data.name,
 		description: data.desc,
+		description_args: ["\n", "\""],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 		tier: data.rarity,

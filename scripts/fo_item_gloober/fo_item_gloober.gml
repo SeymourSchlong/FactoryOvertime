@@ -19,13 +19,10 @@ function fo_item_gloober(){
 	    weight: [1, 3, 3]
 	}
 	
-	forgery.subscribe_to_game_event("NubbyBounce", function() {
-		//scr_FO_GlooberIncrease();
-	});
-	
 	forgery.register_item({
 		display_name: data.name,
 		description: data.desc,
+		description_args: ["\n", 1],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,
@@ -48,6 +45,7 @@ function fo_item_gloober(){
 	forgery.register_item({
 	    display_name: data.name,
 		description: data.upgr,
+		description_args: ["\n", 3],
 		sprite: agi(data.sprupgr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,

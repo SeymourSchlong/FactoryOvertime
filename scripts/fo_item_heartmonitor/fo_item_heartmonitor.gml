@@ -19,13 +19,10 @@ function fo_item_heartmonitor(){
 	    weight: [1, 3, 3]
 	}
 	
-	forgery.subscribe_to_game_event("HalfSecond", function() {
-		//scr_FO_HeartMonitorIncrease();
-	});
-	
 	forgery.register_item({
 		display_name: data.name,
 		description: data.desc,
+		description_args: ["\n", 3],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,
@@ -48,6 +45,7 @@ function fo_item_heartmonitor(){
 	forgery.register_item({
 	    display_name: data.name,
 		description: data.upgr,
+		description_args: ["\n", 10],
 		sprite: agi(data.sprupgr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,

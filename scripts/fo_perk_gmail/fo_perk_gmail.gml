@@ -59,7 +59,7 @@ function fo_perk_gmail(){
 	    pool: 1,
 	    colour: 0,
 	    augmenteffect: 0,
-	    desc: "perk_desc_FO_gmail"//, "\n", 1)
+	    desc: "perk_desc_FO_gmail"
 	}
 	
 	forgery.subscribe_to_game_event("RoundIncrease", function(this) {
@@ -69,6 +69,7 @@ function fo_perk_gmail(){
 	forgery.register_perk({
 		display_name: data.name,
 		description: data.desc,
+		description_args: ["\n", 1],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 		tier: data.rarity,

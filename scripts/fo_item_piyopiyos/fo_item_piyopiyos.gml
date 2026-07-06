@@ -13,19 +13,16 @@ function fo_item_piyopiyos(){
 	    pool: ITEMPOOL.SHOP,
 	    price: 15,
 	    trig: "5Summoned",
-	    alttrig: "12Summoned", // wip for now
+	    alttrig: "12Summoned",
 	    desc: "item_desc_FO_piyopiyos",
 	    upgr: "item_upgr_FO_piyopiyos",
 	    weight: [1, 3, 3]
 	}
 	
-	forgery.subscribe_to_game_event("5Summoned", function() {
-		//scr_FO_PiyoPiyosIncrease();
-	});
-	
 	forgery.register_item({
 		display_name: data.name,
 		description: data.desc,
+		description_args: ["\n", 1],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,
@@ -49,6 +46,7 @@ function fo_item_piyopiyos(){
 	forgery.register_item({
 	    display_name: data.name,
 		description: data.upgr,
+		description_args: ["\n", 3],
 		sprite: agi(data.sprupgr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,

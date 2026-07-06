@@ -53,6 +53,10 @@ function fo_item_piggypurse(){
 		global.fo.piggy_coins = 0;
 	});
 	
+	forgery.subscribe_to_game_event("fo:PiggyCoin", function(this) {
+		// update all pig descriptions
+	});
+	
 	forgery.register_item({
 		display_name: data.name,
 		description: data.desc,
@@ -101,17 +105,14 @@ function fo_item_piggypurse(){
                     }
                 }
             }
+			
+			var _mult = 100;
+			if (scr_FO_is_challenge("basicmath")) _mult = 5;
+			scr_GameEv("fo:PiggyCoin");
             
-			if (!scr_FO_is_challenge("basicmath")) {
-	            scr_AddNumber(global.fo.piggy_coins * 100, this, -1);
-				with (this.object_index) {
-					self.MyDesc = scr_FO_piggy_description(self.MyItemID, 100);
-				}
-			} else {
-	            scr_AddNumber(global.fo.piggy_coins * 5, this, -1);
-				with (this.object_index) {
-					self.MyDesc = scr_FO_piggy_description(self.MyItemID, 5);
-				}
+	        scr_AddNumber(global.fo.piggy_coins * _mult, this, -1);
+			with (this.object_index) {
+				self.MyDesc = scr_FO_piggy_description(self.MyItemID, _mult);
 			}
 		}
 	}, item_id);
@@ -165,17 +166,14 @@ function fo_item_piggypurse(){
                 }
             }
             
+			
+			var _mult = 300;
+			if (scr_FO_is_challenge("basicmath")) _mult = 15;
             
-			if (!scr_FO_is_challenge("basicmath")) {
-	            scr_AddNumber(global.fo.piggy_coins * 300, this, -1);
-				with (this.object_index) {
-					self.MyDesc = scr_FO_piggy_description(self.MyItemID, 300);
-				}
-			} else {
-	            scr_AddNumber(global.fo.piggy_coins * 15, this, -1);
-				with (this.object_index) {
-					self.MyDesc = scr_FO_piggy_description(self.MyItemID, 15);
-				}
+	        scr_AddNumber(global.fo.piggy_coins * _mult, this, -1);
+			scr_GameEv("fo:PiggyCoin");
+			with (this.object_index) {
+				self.MyDesc = scr_FO_piggy_description(self.MyItemID, _mult);
 			}
             
 		}
