@@ -39,6 +39,7 @@ function fo_item_piyopiyos(){
 		odds_weight_early: data.weight[0], 
 		odds_weight_mid: data.weight[1], 
 		odds_weight_end: data.weight[2],
+		tags: ["forgery:mystery_box_friendly"],
 		on_create: function() {},
 		on_trigger: function(this) {
 			global.fo.scoremult.piyopiyos += 0.01;
