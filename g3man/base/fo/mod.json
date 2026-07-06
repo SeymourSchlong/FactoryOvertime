@@ -3,7 +3,7 @@
     "display_name" : "Factory Overtime",
     "description" : "Items, Foods, Perks, a challenge, and two supervisors!",
     "credits" : ["seymour"],
-    "version" : "1.0.0",
+    "version" : "1.0.1",
     "target_g3man_version" : 7,
     "depends" : [],
     "breaks" : [],
@@ -13,7 +13,7 @@
             "contingency_type" : "suggest",
             "contingency": {
             "name" : "Nubby's Forgery",
-            "link" : "https://github.com/skirlez/nubbys-forgery/releases/tag/BETA-V9"
+            "link" : "https://github.com/skirlez/nubbys-forgery/releases/tag/10.0.0"
             }
         }
     ],
