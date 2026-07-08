@@ -64,4 +64,5 @@ g3man/out
 g3man/out.zip
 g3man/frida-user-config.jsonc
 g3man/__pycache__
+g3man/base/forgery
 vanilla.win
