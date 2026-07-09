@@ -4,7 +4,7 @@
     "description" : "Items, Foods, Perks, a challenge, and two supervisors!",
     "credits" : ["seymour"],
     "version" : "1.0.1",
-    "target_g3man_version" : 7,
+    "target_g3man_version" : 9,
     "depends" : [],
     "breaks" : [],
     "imports": [
