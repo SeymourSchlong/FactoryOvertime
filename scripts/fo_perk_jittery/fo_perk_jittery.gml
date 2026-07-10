@@ -31,7 +31,7 @@ function fo_perk_jittery(){
 				var _Odds = random(100);
 			    var _Rate = 20;
     
-			    if (scr_FO_RandomWithLuck(_Odds, _Rate)) {
+			    if (nnf.random_chance(_Odds, _Rate)) {
 			        for (var i = 1; i < array_length(obj_ItemMGMT.ItemInst); i += 1) {
 			            if (instance_exists(obj_ItemMGMT.ItemInst[i]) && obj_ItemMGMT.ItemInst[i] != -1) {
 			                switch (obj_ItemMGMT.ItemInst[i].EvType) {

@@ -28,7 +28,7 @@ function fo_perk_parry(){
 		on_create: function() {},
 		on_trigger: function(this) {
 			with (this) {
-				if (scr_FO_RandomWithLuck(random(100), 25)) {
+				if (nnf.random_chance(random(100), 25)) {
 			        if (instance_number(obj_ItemParent) > 0) {
 			            var _TarItem = instance_find(obj_ItemParent, irandom(instance_number(obj_ItemParent) - 1));
 			            scr_ForceTrigger(_TarItem.WhatSlot, 1);
