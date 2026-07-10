@@ -40,7 +40,7 @@
 		// Mod order/priority
 		// You should put the ID of your mod and its dependencies here.
 		// Earlier in the list means higher priority.		
-		"mod_order": ["forgery", "fo"],
+		"mod_order": ["forgery", "nnfunctions", "fo"],
 	},
 
 	// Don't change this number.

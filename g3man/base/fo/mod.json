@@ -15,6 +15,14 @@
             "name" : "Nubby's Forgery",
             "link" : "https://github.com/skirlez/nubbys-forgery/releases/tag/10.0.1"
             }
+        },
+        {
+            "name" : "nnfunctions",
+            "contingency_type" : "suggest",
+            "contingency": {
+            "name" : "NNFunctions",
+            "link" : "https://github.com/SeymourSchlong/NNFunctions/releases/tag/0.1"
+            }
         }
     ],
 

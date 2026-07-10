@@ -1,4 +1,5 @@
 #macro forgery global.forgery_9
+#macro nnf global.nnfunctions
 #macro agi asset_get_index
 #macro mod_id "fo"
 

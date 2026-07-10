@@ -66,3 +66,4 @@ g3man/frida-user-config.jsonc
 g3man/__pycache__
 g3man/base/forgery
 vanilla.win
+/g3man/base/nnfunctions
