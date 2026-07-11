@@ -1,6 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-
 function scr_FO_gmail_description() {
 	var _slots = [-1, 0, 0, 0, 0, 0, 0, 0];
     var _number_string = string(global.CurrentRnd);

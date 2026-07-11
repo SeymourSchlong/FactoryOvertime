@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function fo_item_littlepea(){
 	var item_id = "littlepea";
 	var data = {
