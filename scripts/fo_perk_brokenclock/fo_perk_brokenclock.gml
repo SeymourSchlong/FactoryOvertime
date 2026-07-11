@@ -15,7 +15,7 @@ function fo_perk_brokenclock(){
 	forgery.register_perk({
 		display_name: data.name,
 		description: data.desc,
-		description_args: ["\n", 6],
+		description_args: ["\n", 10],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 		tier: data.rarity,

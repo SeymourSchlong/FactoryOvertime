@@ -1,5 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function fo_item_brokenclock(){
 	var item_id = "brokenclock";
 	var data = {
@@ -22,7 +20,7 @@ function fo_item_brokenclock(){
 	forgery.register_item({
 		display_name: data.name,
 		description: data.desc,
-		description_args: ["\n", 6],
+		description_args: ["\n", 10, "0.25"],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,
@@ -43,7 +41,7 @@ function fo_item_brokenclock(){
 	forgery.register_item({
 	    display_name: data.name,
 		description: data.upgr,
-		description_args: ["\n", 13, "0.5"],
+		description_args: ["\n", 25, "0.5"],
 		sprite: agi(data.sprupgr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,

@@ -44,7 +44,7 @@
 
 
 "item_name_FO_brokenclock","Broken Clock",
-"item_desc_FO_brokenclock","[#ffffff]{a}*Time-based items and perks activate {b}% faster.",
+"item_desc_FO_brokenclock","[#ffffff]{a}*Time-based items and perks activate {b}% faster.{a}*The round timer will run for an additional {c}s after Nubby dies.",
 "item_upgr_FO_brokenclock","[#ffffff]{a}*Time-based items and perks activate {b}% faster.{a}*The round timer will run for an additional {c}s after Nubby dies.",
 
 "item_name_FO_toysoldier","Toy Soldier",

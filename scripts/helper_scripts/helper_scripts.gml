@@ -507,7 +507,7 @@ function scr_FO_ClockCount()
 		}
 	}
     
-    var _total_reduction = (_count_reg * 2) + (_count_upgr * 5) + (_count_perk * 2);
+    var _total_reduction = (_count_reg * 3) + (_count_upgr * 8) + (_count_perk * 3);
     return min(_total_reduction, 29);
 }
 
@@ -515,17 +515,28 @@ function scr_FO_ClockPlusTime()
 {
 	var _upg_obj = agi(get_object_from_id("brokenclock_upgrade"));
     var _count_upgr = 0;
+	var _reg_obj = agi(get_object_from_id("brokenclock"));
+	var _upg_obj = agi(get_object_from_id("brokenclock_upgrade"));
+    var _count_reg = 0;
+    var _count_upgr = 0;
+    
+    if (instance_exists(_reg_obj))
+    {
+        with (_reg_obj)
+        {
+            _count_reg += 0.5;
+        }
+    }
     
     if (instance_exists(_upg_obj))
     {
         with (_upg_obj)
         {
-            if (DisableItem == false)
-                _count_upgr += 1;
+            _count_upgr += 1;
         }
     }
     
-    global.fo.clocktime = 30 * _count_upgr;
+    global.fo.clocktime = 30 * (_count_upgr + _count_reg);
 }
 
 function scr_FO_WandCount()
