@@ -513,8 +513,6 @@ function scr_FO_ClockCount()
 
 function scr_FO_ClockPlusTime()
 {
-	var _upg_obj = agi(get_object_from_id("brokenclock_upgrade"));
-    var _count_upgr = 0;
 	var _reg_obj = agi(get_object_from_id("brokenclock"));
 	var _upg_obj = agi(get_object_from_id("brokenclock_upgrade"));
     var _count_reg = 0;

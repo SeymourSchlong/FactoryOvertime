@@ -26,7 +26,7 @@ function fo_perk_brokenclock(){
 		on_create: function(this) {
 			// update description for this perk type
 			with (obj_PerkMGMT.PerkObj[this.MyPerkID]) {
-				var _strength = 6;
+				var _strength = 10;
 				var trigger_condition = obj_PerkMGMT.PerkTrigger[MyPerkID];
 				var perk = this.perk;
 				var perk_count = instance_number(obj_PerkMGMT.PerkObj[MyPerkID]);
