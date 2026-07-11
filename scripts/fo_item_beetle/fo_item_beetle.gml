@@ -36,36 +36,27 @@ function fo_item_beetle(){
 		on_create: function() {},
 		on_trigger: function(this) {
 			var _TargetsHighest = (this.WhatSlot % 2) == 1;
-            var _Target = -1;
-            var _StoreGCell = 0;
-            
-            for (var i = 1; i < 22; i += 1) {
-                var _iTar = instance_position(obj_LvlMGMT.GridX[i], obj_LvlMGMT.GridY[i], obj_ParPeg);
-                
-                if (instance_exists(_iTar) && _iTar.PegDead == false) {
-                    if (_Target == -1) {
-                        _Target = _iTar.PegNum;
-                        _StoreGCell = i;
-                    }
-                    
-                    if (_TargetsHighest) {
-                        if (_iTar.PegNum > _Target) {
-                            _Target = _iTar.PegNum;
-                            _StoreGCell = i;
-                        }
-                    } else if (_iTar.PegNum < _Target && _iTar.PegNum != 1) {
-                        _Target = _iTar.PegNum;
-                        _StoreGCell = i;
-                    }
-                }
-            }
-            
-            var _Tar = instance_position(obj_LvlMGMT.GridX[_StoreGCell], obj_LvlMGMT.GridY[_StoreGCell], obj_ParPeg);
-            
-            if (instance_exists(_Tar) && _Tar.PegDead == false) {
-                scr_HalvePeg(instance_position(obj_LvlMGMT.GridX[_StoreGCell], obj_LvlMGMT.GridY[_StoreGCell], obj_ParPeg), -1, 0);
-                instance_create_depth(obj_LvlMGMT.GridX[_StoreGCell], obj_LvlMGMT.GridY[_StoreGCell] + 60, this.depth + 1, agi("obj_FO_Chunk"));
-            }
+			
+			var _Target = noone;
+			
+			if (_TargetsHighest) {
+				var _highest_peg = nnf.get_highest_peg(1);
+				if (array_length(_highest_peg) > 0)
+					_Target = _highest_peg[0];
+			} else {
+				var _lowest_peg = nnf.get_lowest_peg(1, 2);
+				if (array_length(_lowest_peg) > 0)
+					_Target = _lowest_peg[0];
+			}
+			
+			if (_Target != noone) {
+				if (instance_exists(_Target) && _Target.PegDead == false) {
+					with (_Target) {
+						instance_create_depth(x, y + 60, this.depth + 1, agi("obj_FO_Chunk"));
+						scr_HalvePeg(id, -1, 0);
+					}
+				}
+			}
 		}
 	}, item_id);
 	
@@ -88,78 +79,26 @@ function fo_item_beetle(){
 		on_create: function() {},
 		on_trigger: function(this) {
 			var _TargetsHighest = (this.WhatSlot % 2) == 1;
-            var _Target1 = -1;
-            var _StoreGCell1 = 0;
-            var _Target2 = -1;
-            var _StoreGCell2 = 0;
-            
-            for (var i = 1; i < 22; i += 1) {
-                var _iTar = instance_position(obj_LvlMGMT.GridX[i], obj_LvlMGMT.GridY[i], obj_ParPeg);
-                
-                if (instance_exists(_iTar) && _iTar.PegDead == false) {
-                    if (_Target1 == -1) {
-                        _Target1 = _iTar.PegNum;
-                        _StoreGCell1 = i;
-                    }
-                    
-                    if (_TargetsHighest) {
-                        if (_iTar.PegNum > _Target1) {
-                            _Target1 = _iTar.PegNum;
-                            _StoreGCell1 = i;
-                        }
-                    } else if (_iTar.PegNum < _Target1 && _iTar.PegNum != 1) {
-                        _Target1 = _iTar.PegNum;
-                        _StoreGCell1 = i;
-                    }
-                }
-            }
-            
-            if (instance_number(obj_ParPeg) > 1) {
-                for (var i = 1; i < 22; i += 1) {
-                    var _iTar = instance_position(obj_LvlMGMT.GridX[i], obj_LvlMGMT.GridY[i], obj_ParPeg);
-                    
-                    if (instance_exists(_iTar) && _iTar.PegDead == false) {
-                        if (_Target2 == -1) {
-                            if (i != _StoreGCell1) {
-                                _Target2 = _iTar.PegNum;
-                                _StoreGCell2 = i;
-                            }
-                        }
-                        
-                        if (_TargetsHighest) {
-                            if (_iTar.PegNum > _Target2) {
-                                if (i != _StoreGCell1) {
-                                    _Target2 = _iTar.PegNum;
-                                    _StoreGCell2 = i;
-                                }
-                            }
-                        } else if (_iTar.PegNum < _Target2 && _iTar.PegNum != 1) {
-                            if (i != _StoreGCell1) {
-                                _Target2 = _iTar.PegNum;
-                                _StoreGCell2 = i;
-                            }
-                        }
-                    }
-                }
-            }
-            
-            if (_StoreGCell1 != 0) {
-                var _Tar = instance_position(obj_LvlMGMT.GridX[_StoreGCell1], obj_LvlMGMT.GridY[_StoreGCell1], obj_ParPeg);
-                
-                if (instance_exists(_Tar) && _Tar.PegDead == false) {
-                    scr_HalvePeg(instance_position(obj_LvlMGMT.GridX[_StoreGCell1], obj_LvlMGMT.GridY[_StoreGCell1], obj_ParPeg), -1, 0);
-                    instance_create_depth(obj_LvlMGMT.GridX[_StoreGCell1], obj_LvlMGMT.GridY[_StoreGCell1] + 60, this.depth + 1, agi("obj_FO_BigChunk"));
-                }
-            }
-            
-            if (_StoreGCell2 != 0) {
-                var _Tar = instance_position(obj_LvlMGMT.GridX[_StoreGCell2], obj_LvlMGMT.GridY[_StoreGCell2], obj_ParPeg);
-                
-                if (instance_exists(_Tar) && _Tar.PegDead == false) {
-                    scr_HalvePeg(instance_position(obj_LvlMGMT.GridX[_StoreGCell2], obj_LvlMGMT.GridY[_StoreGCell2], obj_ParPeg), -1, 0);
-                    instance_create_depth(obj_LvlMGMT.GridX[_StoreGCell2], obj_LvlMGMT.GridY[_StoreGCell2] + 60, this.depth + 1, agi("obj_FO_BigChunk"));
-                }
-            }
+			
+			var _Targets = [];
+			
+			if (_TargetsHighest) {
+				_Targets = nnf.get_highest_peg(2);
+			} else {
+				_Targets = nnf.get_lowest_peg(2, 2);
+			}
+			
+			for (var _i = 0; _i < array_length(_Targets); _i++) {
+				var _Target = _Targets[_i];
+				if (_Target != noone) {
+					if (instance_exists(_Target) && _Target.PegDead == false) {
+						with (_Target) {
+							instance_create_depth(x, y + 60, this.depth + 1, agi("obj_FO_BigChunk"));
+							scr_HalvePeg(id, -1, 0);
+						}
+					}
+				}
+			}
 		}
 	}, item_id + "_upgrade");
 }
