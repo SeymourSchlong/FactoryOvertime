@@ -17,7 +17,7 @@ case 150:
     {
         var _Chance = 100 * power(0.9, RndFireNum);
         
-        if (scr_FO_RandomWithLuck(random(100), _Chance))
+        if (nnf_random_chance(random(100), _Chance))
         {
             _Proceed = true;
         }

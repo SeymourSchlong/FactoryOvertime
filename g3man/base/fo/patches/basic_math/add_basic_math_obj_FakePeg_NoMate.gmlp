@@ -5,7 +5,7 @@ critical = true
 patch:
 find_line_with('draw_sprite_ext(sprite_index, image_index, x, y, 1, 1, 0, image_blend, image_alpha)')
 write('
-if (scr_FO_is_challenge("basicmath"))
+if (nnf_is_challenge("fo", "basicmath"))
 {
     var _num_string = string(obj_LvlMGMT.PegImgId[HoldNoMate] + 1);
     draw_set_font(scr_LocalEqualFont(fnt_PegNum));

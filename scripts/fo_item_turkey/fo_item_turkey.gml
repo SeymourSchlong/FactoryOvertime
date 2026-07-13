@@ -38,14 +38,14 @@ function fo_item_turkey(){
 			var _valid = false;
 			
 			var _valid_items = [
-				get_item_number_from_id("brokenclock"),
-				get_item_number_from_id("brokenclock_upgrade"),
-				get_item_number_from_id("clover"),
-				get_item_number_from_id("clover_upgrade"),
-				get_item_number_from_id("magicwand"),
-				get_item_number_from_id("magicwand_upgrade"),
-				get_item_number_from_id("nubup"),
-				get_item_number_from_id("nubup_upgrade")
+				nnf_forgery_get_item_id(mod_id, "brokenclock"),
+				nnf_forgery_get_item_id(mod_id, "brokenclock_upgrade"),
+				nnf_forgery_get_item_id(mod_id, "clover"),
+				nnf_forgery_get_item_id(mod_id, "clover_upgrade"),
+				nnf_forgery_get_item_id(mod_id, "magicwand"),
+				nnf_forgery_get_item_id(mod_id, "magicwand_upgrade"),
+				nnf_forgery_get_item_id(mod_id, "nubup"),
+				nnf_forgery_get_item_id(mod_id, "nubup_upgrade")
 			];
 			var _perks_to_give = [];
 			
@@ -102,7 +102,7 @@ function fo_item_turkey(){
 				with (_perk_giver) {
 					for (var i = 0; i < array_length(_perks_to_give); i++) {
 						//_perks_to_give
-						var _perk_id = get_perk_number_from_id(_perks_to_give[i]);
+						var _perk_id = nnf_forgery_get_perk_id(mod_id, _perks_to_give[i]);
 						
 						array_push(queue, _perk_id);
 					}
@@ -151,14 +151,14 @@ function fo_item_turkey(){
 			var _valid = false;
 			
 			var _valid_items = [
-				get_item_number_from_id("brokenclock"),
-				get_item_number_from_id("brokenclock_upgrade"),
-				get_item_number_from_id("clover"),
-				get_item_number_from_id("clover_upgrade"),
-				get_item_number_from_id("magicwand"),
-				get_item_number_from_id("magicwand_upgrade"),
-				get_item_number_from_id("nubup"),
-				get_item_number_from_id("nubup_upgrade")
+				nnf_forgery_get_item_id(mod_id, "brokenclock"),
+				nnf_forgery_get_item_id(mod_id, "brokenclock_upgrade"),
+				nnf_forgery_get_item_id(mod_id, "clover"),
+				nnf_forgery_get_item_id(mod_id, "clover_upgrade"),
+				nnf_forgery_get_item_id(mod_id, "magicwand"),
+				nnf_forgery_get_item_id(mod_id, "magicwand_upgrade"),
+				nnf_forgery_get_item_id(mod_id, "nubup"),
+				nnf_forgery_get_item_id(mod_id, "nubup_upgrade")
 			];
 			var _perks_to_give = [];
 			
@@ -217,7 +217,7 @@ function fo_item_turkey(){
 				with (_perk_giver) {
 					for (var i = 0; i < array_length(_perks_to_give); i++) {
 						//_perks_to_give
-						var _perk_id = get_perk_number_from_id(_perks_to_give[i]);
+						var _perk_id = nnf_forgery_get_perk_id(mod_id, _perks_to_give[i]);
 						
 						array_push(queue, _perk_id);
 					}

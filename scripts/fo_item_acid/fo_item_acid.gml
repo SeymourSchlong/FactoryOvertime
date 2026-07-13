@@ -42,7 +42,7 @@ function fo_item_acid(){
             
 			for (var i = 1; i <= 7; i++) {
 				if (obj_ItemMGMT.Item[i] == -1) continue;
-				if (obj_ItemMGMT.Item[i] != get_item_number_from_id("catalyst")) continue;
+				if (obj_ItemMGMT.Item[i] != nnf_forgery_get_item_id(mod_id, "catalyst")) continue;
 				
 				catalyst_slot = i;
 				break;
@@ -244,7 +244,7 @@ function fo_item_acid(){
             
 			for (var i = 1; i <= 7; i++) {
 				if (obj_ItemMGMT.Item[i] == -1) continue;
-				if (obj_ItemMGMT.Item[i] != get_item_number_from_id("catalyst")) continue;
+				if (obj_ItemMGMT.Item[i] != nnf_forgery_get_item_id(mod_id, "catalyst")) continue;
 				
 				array_push(catalyst_slots, i);
 			}

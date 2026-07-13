@@ -5,7 +5,7 @@ critical = true
 patch:
 find_line_with('if (instance_exists(obj_CH8Manager))')
 write_before('
-if (scr_FO_is_manager("king"))
+if (nnf_is_supervisor("fo", "king"))
 {
     switch (_Result)
     {

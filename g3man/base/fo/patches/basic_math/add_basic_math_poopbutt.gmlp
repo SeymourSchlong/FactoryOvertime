@@ -7,7 +7,7 @@ find_line_with('case "obj_LvlMGMT.RestockCount"')
 
 find_line_with('obj_ItemMGMT.ItemDescBase[65] = scr_Text("item_desc65", "\\n", 15, obj_LvlMGMT.RestockCount * 15);')
 write('
-if (scr_FO_is_challenge("basicmath"))
+if (nnf_is_challenge("fo", "basicmath"))
 {
     obj_ItemMGMT.ItemDescBase[65] = scr_Text("item_desc65", "\\n", 1, obj_LvlMGMT.RestockCount * 1)
 }
@@ -15,7 +15,7 @@ if (scr_FO_is_challenge("basicmath"))
 
 find_line_with('obj_ItemMGMT.ItemDescBase[133] = scr_Text("item_desc133", "\\n", 40, obj_LvlMGMT.RestockCount * 40);')
 write('
-if (scr_FO_is_challenge("basicmath"))
+if (nnf_is_challenge("fo", "basicmath"))
 {
     obj_ItemMGMT.ItemDescBase[133] = scr_Text("item_desc133", "\\n", 4, obj_LvlMGMT.RestockCount * 4)
 }

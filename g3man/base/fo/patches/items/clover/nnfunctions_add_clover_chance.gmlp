@@ -7,5 +7,5 @@ find_line_with('random_chance(arg0, arg1)')
 find_line_with('return arg0 < arg1')
 
 write_before('
-return scr_FO_RandomWithLuck(arg0, arg1);
+return scr_FO_RandomWithLuck(arg0, arg1, true);
 ')

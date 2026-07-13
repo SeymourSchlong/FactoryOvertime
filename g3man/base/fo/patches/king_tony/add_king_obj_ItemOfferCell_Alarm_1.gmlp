@@ -23,5 +23,5 @@ if (obj_ItemMGMT.ItemTier[OfferHeldItem] == 2)
 find_line_with('if (obj_ItemMGMT.ItemTier[OfferHeldItem] == 2)')
 
 write_replace('
-if (scr_FO_is_manager("king") && obj_ItemMGMT.ItemLevel[OfferHeldItem] == 2)
+if (nnf_is_supervisor("fo", "king") && obj_ItemMGMT.ItemLevel[OfferHeldItem] == 2)
 ')

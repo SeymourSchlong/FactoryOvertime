@@ -6,8 +6,8 @@ patch:
 find_line_with('_BeamFx.InvalidBeam = false;')
 
 write('
-var _rocket_reg = get_item_number_from_id("rocket");
-var _rocket_upg = get_item_number_from_id("rocket_upgrade");
+var _rocket_reg = nnf_forgery_get_item_id("fo", "rocket");
+var _rocket_upg = nnf_forgery_get_item_id("fo", "rocket_upgrade");
 
 if (_Tar.MyItemID == _rocket_reg || _Tar.MyItemID == _rocket_upg) {
     if (_Tar.DisableItem == false) {

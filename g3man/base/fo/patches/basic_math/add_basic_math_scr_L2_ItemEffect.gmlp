@@ -7,7 +7,7 @@ find_line_with('case 91')
 find_line_with('var _Amt = 10')
 
 write('
-if (scr_FO_is_challenge("basicmath"))
+if (nnf_is_challenge("fo", "basicmath"))
 {
     _Amt = 5;
 }
@@ -19,7 +19,7 @@ find_line_with('case 96')
 find_line_with('var _Amt = 5')
 
 write('
-if (scr_FO_is_challenge("basicmath"))
+if (nnf_is_challenge("fo", "basicmath"))
 {
     _Amt = 3;
 }
@@ -31,7 +31,7 @@ find_line_with('case 97')
 find_line_with('_Amt = round(PegNum * 0.3)')
 
 write('
-if (scr_FO_is_challenge("basicmath"))
+if (nnf_is_challenge("fo", "basicmath"))
 {
     _Amt = round(PegNum * 0.5);
 }
@@ -41,7 +41,7 @@ if (scr_FO_is_challenge("basicmath"))
 find_line_with('_Amt = PegNum * 0.3')
 
 write('
-if (scr_FO_is_challenge("basicmath"))
+if (nnf_is_challenge("fo", "basicmath"))
 {
     _Amt = PegNum * 0.5;
 }
@@ -51,7 +51,7 @@ if (scr_FO_is_challenge("basicmath"))
 
 find_line_with('case 112')
 write('
-if (scr_FO_is_challenge("basicmath")) {
+if (nnf_is_challenge("fo", "basicmath")) {
     if (global.CurrentRnd < 30)
     {
         scr_AddNumber(75, id, -1);
@@ -68,7 +68,7 @@ if (scr_FO_is_challenge("basicmath")) {
 find_line_with('case 123')
 find_line_with('if (PegNum > 64)')
 write_before('
-if (scr_FO_is_challenge("basicmath")) {
+if (nnf_is_challenge("fo", "basicmath")) {
     if (PegNum > 11)
     {
         var _Mult = 5;
@@ -89,7 +89,7 @@ else
 find_line_with('case 133')
 find_line_with('var _Amt = 40')
 write('
-if (scr_FO_is_challenge("basicmath"))
+if (nnf_is_challenge("fo", "basicmath"))
 {
     _Amt = 4;
 }

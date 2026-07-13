@@ -28,7 +28,7 @@ function scr_FO_gmail_description() {
         }
     }
 	
-	var _gmail_id = get_perk_number_from_id("gmail");
+	var _gmail_id = nnf_forgery_get_perk_id(mod_id, "gmail");
 	
     var _Part1 = obj_PerkMGMT.PerkTrigText[_gmail_id];
     var _Part2 = scr_Text("perk_desc_FO_gmail", "\n", _text);

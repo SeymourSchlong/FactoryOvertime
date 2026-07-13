@@ -49,7 +49,7 @@ function fo_item_arthur(){
 					
 					forgery.run_delayed(2, this, function(item) {
 						with (item) {
-							scr_MutateItem(0, get_item_number_from_id("ash"));
+							scr_MutateItem(0, nnf_forgery_get_item_id(mod_id, "ash"));
 						}
 					});
 				}
@@ -89,7 +89,7 @@ function fo_item_arthur(){
 				
 					forgery.run_delayed(2, this, function(item) {
 						with (item) {
-							scr_MutateItem(0, get_item_number_from_id("ash"));
+							scr_MutateItem(0, nnf_forgery_get_item_id(mod_id, "ash"));
 						}
 					});
 	            }

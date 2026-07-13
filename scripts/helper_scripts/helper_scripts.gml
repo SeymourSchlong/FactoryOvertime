@@ -1,27 +1,3 @@
-function get_object_from_id(item_id) {
-    return nnf_forgery_get_item_object(mod_id, item_id);
-}
-
-function get_item_number_from_id(item_id) {
-    return nnf_forgery_get_item_id(mod_id, item_id);
-}
-
-function get_perk_from_id(item_id) {
-    return nnf_forgery_get_perk_object(mod_id, item_id);
-}
-
-function get_perk_number_from_id(item_id) {
-    return nnf_forgery_get_perk_id(mod_id, item_id);
-}
-
-function get_challenge_number_from_id(item_id) {
-    return nnf_forgery_get_challenge_id(mod_id, item_id);
-}
-
-function get_manager_number_from_id(item_id) {
-    return nnf_forgery_get_supervisor_id(mod_id, item_id);
-}
-
 function scr_FO_DrawPeas()
 {
     draw_set_halign(fa_left);
@@ -35,24 +11,6 @@ function scr_FO_DrawPeas()
 		_x -= 5;
 		_frame = (_frame + 1) % 4;
 	}
-}
-
-function scr_FO_GetItemID(arg0)
-{
-    for (var _i = 0; _i < array_length(obj_ItemMGMT.ItemObj); _i++)
-    {
-        if (obj_ItemMGMT.ItemObj[_i] == arg0)
-            return _i;
-    }
-}
-
-function scr_FO_GetPerkID(arg0)
-{
-    for (var _i = 0; _i < array_length(obj_PerkMGMT.PerkObj); _i++)
-    {
-        if (obj_PerkMGMT.PerkObj[_i] == arg0)
-            return _i;
-    }
 }
 
 function scr_FO_vanilla_items() {
@@ -128,73 +86,6 @@ function scr_FO_vanilla_perks() {
 	}
 }
 
-function scr_FO_is_challenge(challenge_name) {
-	return get_challenge_number_from_id(challenge_name) == obj_LvlMGMT.ChallengeMode;
-}
-
-function scr_FO_is_manager(manager_name) {
-	return get_manager_number_from_id(manager_name) == obj_LvlMGMT.SVID;
-}
-
-
-
-function scr_FO_GetLowestPeg()
-{
-    var _Lowest = -1;
-    var _Tar = 0;
-    
-    for (var i = 1; i < 22; i += 1)
-    {
-        var _iTar = instance_position(obj_LvlMGMT.GridX[i], obj_LvlMGMT.GridY[i], obj_ParPeg);
-        
-        if (instance_exists(_iTar) && _iTar.PegDead == false)
-        {
-            if (_Lowest == -1)
-            {
-                _Lowest = _iTar.PegNum;
-                _Tar = _iTar;
-            }
-            
-            if (_iTar.PegNum < _Lowest)
-            {
-                _Lowest = _iTar.PegNum;
-                _Tar = _iTar;
-            }
-        }
-    }
-    
-    return _Tar;
-}
-
-function scr_FO_GetHighestPeg()
-{
-    var _Highest = -1;
-    var _Tar = 0;
-    
-    for (var i = 1; i < 22; i += 1)
-    {
-        var _iTar = instance_position(obj_LvlMGMT.GridX[i], obj_LvlMGMT.GridY[i], obj_ParPeg);
-        
-        if (instance_exists(_iTar) && _iTar.PegDead == false)
-        {
-            if (_Lowest == -1)
-            {
-                _Highest = _iTar.PegNum;
-                _Tar = _iTar;
-            }
-            
-            if (_iTar.PegNum > _Highest)
-            {
-                _Highest = _iTar.PegNum;
-                _Tar = _iTar;
-            }
-        }
-    }
-    
-    return _Tar;
-}
-
-
 
 function scr_FO_PassiveSparkle(arg0, arg1) {
     instance_create_depth(arg0, arg1, 1, agi("obj_FO_PassiveFX"));
@@ -205,8 +96,8 @@ function scr_FO_NubUpCount()
     var _count_reg = 0;
     var _count_upgr = 0;
 	
-	var _reg_obj = agi(get_object_from_id("nubup"));
-	var _upg_obj = agi(get_object_from_id("nubup_upgrade"));
+	var _reg_obj = agi(nnf_forgery_get_item_object(mod_id, "nubup"));
+	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "nubup_upgrade"));
     
     if (instance_exists(_reg_obj))
     {
@@ -232,7 +123,7 @@ function scr_FO_NubUpCount()
         }
     }
 	
-	var _perk_obj = agi(get_perk_from_id("nubup"));
+	var _perk_obj = agi(nnf_forgery_get_perk_object(mod_id, "nubup"));
 	var _count_perk = 0;
 	if (instance_exists(_perk_obj))
 	{
@@ -252,8 +143,8 @@ function scr_FO_RandomWithLuck(arg0, arg1, arg2 = true) {
     var _count_reg = 0;
     var _count_upgr = 0;
 	
-	var _reg_obj = agi(get_object_from_id("clover"));
-	var _upg_obj = agi(get_object_from_id("clover_upgrade"));
+	var _reg_obj = agi(nnf_forgery_get_item_object(mod_id, "clover"));
+	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "clover_upgrade"));
     
     if (instance_exists(_reg_obj))
     {
@@ -273,7 +164,7 @@ function scr_FO_RandomWithLuck(arg0, arg1, arg2 = true) {
         }
     }
 	
-	var _perk_obj = agi(get_perk_from_id("clover"));
+	var _perk_obj = agi(nnf_forgery_get_perk_object(mod_id, "clover"));
 	var _count_perk = 0;
 	if (instance_exists(_perk_obj))
 	{
@@ -316,7 +207,7 @@ function scr_FO_RandomWithLuck(arg0, arg1, arg2 = true) {
 
 function scr_FO_UpCloverCount()
 {
-	var _upg_obj = agi(get_object_from_id("clover_upgrade"));
+	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "clover_upgrade"));
     var _count_upgr = 0.2 * instance_number(_upg_obj);
     var _value = 1 + _count_upgr;
     return _value;
@@ -324,7 +215,7 @@ function scr_FO_UpCloverCount()
 
 function scr_FO_UpCloverCountWithSparkle()
 {
-	var _upg_obj = agi(get_object_from_id("clover_upgrade"));
+	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "clover_upgrade"));
     with (_upg_obj)
         scr_FO_PassiveSparkle(x, y);
     
@@ -336,7 +227,7 @@ function scr_FO_ItemRarityPicker()
     var _Picker = random(1000);
     var _HitPool = 0;
     
-    if (scr_FO_is_manager("king"))
+    if (nnf_is_supervisor(mod_id, "king"))
         return 0;
     
     if (_Picker < (obj_LvlMGMT.RareOdds * scr_FO_UpCloverCountWithSparkle()))
@@ -353,7 +244,7 @@ function scr_FO_ItemRarityPickerBM()
     var _Picker = random(1000);
     var _HitPool = 0;
     
-    if (scr_FO_is_manager("king"))
+    if (nnf_is_supervisor(mod_id, "king"))
         return 0;
     
     if (_Picker < (obj_LvlMGMT.RareOdds * scr_FO_UpCloverCountWithSparkle()))
@@ -367,7 +258,7 @@ function scr_FO_PerkRarityPicker()
     var _Picker = random(1000);
     var _HitPool = 0;
     
-    if (scr_FO_is_manager("king"))
+    if (nnf_is_supervisor(mod_id, "king"))
         return 0;
     
     if (_Picker < (obj_LvlMGMT.PerkRareOdds * scr_FO_UpCloverCountWithSparkle()))
@@ -383,9 +274,9 @@ function scr_FO_KingTonyUpgrade(arg0)
 {
     if (obj_ItemMGMT.ItemLevel[arg0] == 1)
     {
-        if (scr_FO_is_manager("king"))
+        if (nnf_is_supervisor(mod_id, "king"))
         {
-            var _will_upgrade = nnf_random_chance(random(100), 20, true);
+            var _will_upgrade = nnf_random_chance(random(100), 20);
             
             if (_will_upgrade)
                 arg0 = obj_ItemMGMT.ItemPair[arg0];
@@ -405,8 +296,8 @@ function scr_FO_IncreasedTriggerCount(arg0)
 
     if (WhatSlot > 1)
     {
-        var _bblock_reg = get_item_number_from_id("bblock");
-        var _bblock_upg = get_item_number_from_id("bblock_upgrade");
+        var _bblock_reg = nnf_forgery_get_item_id(mod_id, "bblock");
+        var _bblock_upg = nnf_forgery_get_item_id(mod_id, "bblock_upgrade");
         
         if (obj_ItemMGMT.ItemInst[WhatSlot - 1] != -1 && instance_exists(obj_ItemMGMT.ItemInst[WhatSlot - 1]))
         {
@@ -429,8 +320,8 @@ function scr_FO_IncreasedTriggerCount(arg0)
 
 function scr_FO_ClockCount()
 {
-	var _reg_obj = agi(get_object_from_id("brokenclock"));
-	var _upg_obj = agi(get_object_from_id("brokenclock_upgrade"));
+	var _reg_obj = agi(nnf_forgery_get_item_object(mod_id, "brokenclock"));
+	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "brokenclock_upgrade"));
     var _count_reg = 0;
     var _count_upgr = 0;
     
@@ -458,7 +349,7 @@ function scr_FO_ClockCount()
         }
     }
 	
-	var _perk_obj = agi(get_perk_from_id("brokenclock"));
+	var _perk_obj = agi(nnf_forgery_get_perk_object(mod_id, "brokenclock"));
 	var _count_perk = 0;
 	if (instance_exists(_perk_obj))
 	{
@@ -477,8 +368,8 @@ function scr_FO_ClockCount()
 
 function scr_FO_ClockPlusTime()
 {
-	var _reg_obj = agi(get_object_from_id("brokenclock"));
-	var _upg_obj = agi(get_object_from_id("brokenclock_upgrade"));
+	var _reg_obj = agi(nnf_forgery_get_item_object(mod_id, "brokenclock"));
+	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "brokenclock_upgrade"));
     var _count_reg = 0;
     var _count_upgr = 0;
     
@@ -504,9 +395,9 @@ function scr_FO_ClockPlusTime()
 function scr_FO_WandCount()
 {
 	// for squid
-	var _wand_id = get_item_number_from_id("magicwand");
-	var _reg_obj = agi(get_object_from_id("magicwand"));
-	var _upg_obj = agi(get_object_from_id("magicwand_upgrade"));
+	var _wand_id = nnf_forgery_get_item_id(mod_id, "magicwand");
+	var _reg_obj = agi(nnf_forgery_get_item_object(mod_id, "magicwand"));
+	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "magicwand_upgrade"));
     var _count_reg = instance_number(_reg_obj);
     var _count_upgr = instance_number(_upg_obj);
     
@@ -542,7 +433,7 @@ function scr_FO_WandCount()
             _last_wand = true;
     }
 	
-	var _perk_obj = agi(get_perk_from_id("magicwand"));
+	var _perk_obj = agi(nnf_forgery_get_perk_object(mod_id, "magicwand"));
 	var _count_perk = 0;
 	if (instance_exists(_perk_obj))
 	{
@@ -562,8 +453,8 @@ function scr_FO_WandCount()
 
 function scr_FO_BookWormEffect()
 {
-	var _reg_obj = agi(get_object_from_id("bookworm"));
-	var _upg_obj = agi(get_object_from_id("bookworm_upgrade"));
+	var _reg_obj = agi(nnf_forgery_get_item_object(mod_id, "bookworm"));
+	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "bookworm_upgrade"));
 	
     var _perks_to_give = 0;
     
@@ -679,8 +570,8 @@ function scr_FO_GivePerk(arg0, arg1 = 950, arg2 = 540)
 
 function scr_FO_MothEggRandomSummon()
 {
-	var _reg_obj = agi(get_object_from_id("mothegg"));
-	var _upg_obj = agi(get_object_from_id("mothegg_upgrade"));
+	var _reg_obj = agi(nnf_forgery_get_item_object(mod_id, "mothegg"));
+	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "mothegg_upgrade"));
     var _count_reg = 0;
     var _count_upgr = 0;
     
@@ -735,8 +626,8 @@ function scr_FO_ResetMults() {
 
 function scr_FO_GlooberIncrease()
 {
-	var _reg_obj = agi(get_object_from_id("gloober"));
-	var _upg_obj = agi(get_object_from_id("gloober_upgrade"));
+	var _reg_obj = agi(nnf_forgery_get_item_object(mod_id, "gloober"));
+	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "gloober_upgrade"));
 	
     if (instance_exists(_reg_obj))
     {
@@ -765,8 +656,8 @@ function scr_FO_GlooberIncrease()
 
 function scr_FO_HeartMonitorIncrease()
 {
-	var _reg_obj = agi(get_object_from_id("heartmonitor"));
-	var _upg_obj = agi(get_object_from_id("heartmonitor_upgrade"));
+	var _reg_obj = agi(nnf_forgery_get_item_object(mod_id, "heartmonitor"));
+	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "heartmonitor_upgrade"));
 	
     if (instance_exists(_reg_obj))
     {
@@ -795,8 +686,8 @@ function scr_FO_HeartMonitorIncrease()
 
 function scr_FO_BoxOfNailsIncrease()
 {
-	var _reg_obj = agi(get_object_from_id("boxofnails"));
-	var _upg_obj = agi(get_object_from_id("boxofnails_upgrade"));
+	var _reg_obj = agi(nnf_forgery_get_item_object(mod_id, "boxofnails"));
+	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "boxofnails_upgrade"));
 	
     if (instance_exists(_reg_obj))
     {
@@ -825,8 +716,8 @@ function scr_FO_BoxOfNailsIncrease()
 
 function scr_FO_PiyoPiyosIncrease()
 {
-	var _reg_obj = agi(get_object_from_id("piyopiyos"));
-	var _upg_obj = agi(get_object_from_id("piyopiyos_upgrade"));
+	var _reg_obj = agi(nnf_forgery_get_item_object(mod_id, "piyopiyos"));
+	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "piyopiyos_upgrade"));
 	
     if (instance_exists(_reg_obj))
     {
@@ -854,7 +745,7 @@ function scr_FO_PiyoPiyosIncrease()
 }
 
 function scr_FO_GetCatalystCount(sparkle = false) {
-	var obj = get_object_from_id("catalyst");
+	var obj = nnf_forgery_get_item_object(mod_id, "catalyst");
 	
 	var _count = 0;
 	

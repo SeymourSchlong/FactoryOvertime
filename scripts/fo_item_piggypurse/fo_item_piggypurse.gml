@@ -107,7 +107,7 @@ function fo_item_piggypurse(){
             }
 			
 			var _mult = 100;
-			if (scr_FO_is_challenge("basicmath")) _mult = 5;
+			if (nnf_is_challenge(mod_id, "basicmath")) _mult = 5;
 			scr_GameEv("fo:PiggyCoin");
             
 	        scr_AddNumber(global.fo.piggy_coins * _mult, this, -1);
@@ -168,7 +168,7 @@ function fo_item_piggypurse(){
             
 			
 			var _mult = 300;
-			if (scr_FO_is_challenge("basicmath")) _mult = 15;
+			if (nnf_is_challenge(mod_id, "basicmath")) _mult = 15;
             
 	        scr_AddNumber(global.fo.piggy_coins * _mult, this, -1);
 			scr_GameEv("fo:PiggyCoin");

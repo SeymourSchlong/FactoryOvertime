@@ -35,7 +35,7 @@ function fo_supervisor_king(){
 		name_color: data.name_color,
 		cost: 0,
 		on_create: function(this) {
-			obj_PerkMGMT.InPerkItemPool[get_perk_number_from_id("treasure")] = 0;
+			obj_PerkMGMT.InPerkItemPool[nnf_forgery_get_perk_id(mod_id, "treasure")] = 0;
 			obj_ItemMGMT.InItemPool[46] = 0;
 			obj_ItemMGMT.InItemPool[137] = 0;
 			obj_ItemMGMT.InItemPool[138] = 0;

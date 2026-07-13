@@ -46,8 +46,8 @@ function fo_challenge_math(){
 				ItemPrice[38] = 0;
 				ItemPrice[159]	= 0;
 				
-				var _piggy = get_item_number_from_id("piggy");
-				var _piggy_s = get_item_number_from_id("piggy_upgrade")
+				var _piggy = nnf_forgery_get_item_id(mod_id, "piggy");
+				var _piggy_s = nnf_forgery_get_item_id(mod_id, "piggy_upgrade")
 
 				// enabling item pools
 				InItemPool[4] = 1;  // lobster claw
@@ -60,8 +60,8 @@ function fo_challenge_math(){
 				InItemPool[47] = 2;	// wingless fly
 				InItemPool[52] = 1;	// laser pointer
 				InItemPool[65] = 1; // poop butt
-				InItemPool[get_item_number_from_id("piggy")] = 1;
-				InItemPool[get_item_number_from_id("arthur")] = 1;
+				InItemPool[nnf_forgery_get_item_id(mod_id, "piggy")] = 1;
+				InItemPool[nnf_forgery_get_item_id(mod_id, "arthur")] = 1;
 			
 				/* total removed point givers:
 				* [ 55/123]	two headed turtle	(1000/10x)	/ (2000/20x) -> turn into (60) 5x / (120) 10x

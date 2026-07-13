@@ -1,4 +1,4 @@
-if (scr_FO_is_challenge("basicmath"))
+if (nnf_is_challenge(mod_id, "basicmath"))
 {
     var _is_negative = sprite_index == agi("spr_3DPegNumsNeg");
     var _num_string = string(image_index + 1);

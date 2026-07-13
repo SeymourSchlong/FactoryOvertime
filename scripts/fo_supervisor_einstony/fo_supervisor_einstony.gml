@@ -85,8 +85,8 @@ function fo_supervisor_einstony(){
 		name_color: data.name_color,
 		cost: 0,
 		on_create: function(this) {
-			obj_ItemMGMT.InItemPool[get_item_number_from_id("catalyst")] = ITEMPOOL.SHOP;
-			obj_ItemMGMT.InItemPool[get_item_number_from_id("acid")] = ITEMPOOL.CAFE;
+			obj_ItemMGMT.InItemPool[nnf_forgery_get_item_id(mod_id, "catalyst")] = ITEMPOOL.SHOP;
+			obj_ItemMGMT.InItemPool[nnf_forgery_get_item_id(mod_id, "acid")] = ITEMPOOL.CAFE;
 
 			with (obj_ItemMGMT) {
 				// iterate through every available item

@@ -36,7 +36,7 @@ function fo_item_toysoldier(){
 		tags: ["forgery:mystery_box_friendly"],
 		on_create: function() {},
 		on_trigger: function(this) {
-			var _soldier_count = instance_number(get_object_from_id("toysoldier")) + instance_number(get_object_from_id("toysoldier_upgrade"));
+			var _soldier_count = instance_number(nnf_forgery_get_item_object(mod_id, "toysoldier")) + instance_number(nnf_forgery_get_item_object(mod_id, "toysoldier_upgrade"));
             
             repeat (_soldier_count) {
                 var _column = irandom(4) + 1;
@@ -99,7 +99,7 @@ function fo_item_toysoldier(){
 		odds_weight_end: 0,
 		on_create: function() {},
 		on_trigger: function(this) {
-			var _soldier_count = instance_number(get_object_from_id("toysoldier")) + instance_number(get_object_from_id("toysoldier_upgrade"));
+			var _soldier_count = instance_number(nnf_forgery_get_item_object(mod_id, "toysoldier")) + instance_number(nnf_forgery_get_item_object(mod_id, "toysoldier_upgrade"));
             
             repeat (_soldier_count) {
                 var _column = irandom(4) + 1;
