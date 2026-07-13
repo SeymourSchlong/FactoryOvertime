@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"on_unload",
+  "%Name":"fo_helper_scripts",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"on_unload",
+  "name":"fo_helper_scripts",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

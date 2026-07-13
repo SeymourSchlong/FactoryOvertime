@@ -207,14 +207,19 @@ function scr_FO_RandomWithLuck(arg0, arg1, arg2 = true) {
 
 function scr_FO_UpCloverCount()
 {
+	var _reg_obj = agi(nnf_forgery_get_item_object(mod_id, "clover"));
 	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "clover_upgrade"));
+    var _count_reg = 0.1 * instance_number(_reg_obj);
     var _count_upgr = 0.2 * instance_number(_upg_obj);
-    var _value = 1 + _count_upgr;
+    var _value = 1 + _count_reg + _count_upgr;
     return _value;
 }
 
 function scr_FO_UpCloverCountWithSparkle()
 {
+	var _reg_obj = agi(nnf_forgery_get_item_object(mod_id, "clover"));
+    with (_reg_obj)
+        scr_FO_PassiveSparkle(x, y);
 	var _upg_obj = agi(nnf_forgery_get_item_object(mod_id, "clover_upgrade"));
     with (_upg_obj)
         scr_FO_PassiveSparkle(x, y);
