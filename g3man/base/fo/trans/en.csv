@@ -56,7 +56,7 @@
 "item_upgr_FO_magicwand","[#ffffff]{a}*Increases Nubby's size by two.",
 
 "item_name_FO_clover","5 Leaf Clover",
-"item_desc_FO_clover","[#ffffff]{a}*Increase the odds of chance-based effects in items and perks by 10%, stacking linearly.{a}(e.g. 50% -> 55%)",
+"item_desc_FO_clover","[#ffffff]{a}*Increase the odds of chance-based effects in items and perks by 10%, stacking linearly.{a}(e.g. 50% -> 55%){a}*Affects rare and ultra-rare chance as well.",
 "item_upgr_FO_clover","[#ffffff]{a}*Increase the odds of chance-based effects in items and perks by 20%, stacking linearly.{a}(e.g. 50% -> 60%){a}*Affects rare and ultra-rare chance as well.",
 
 "item_name_FO_tophat","Top Hat",
