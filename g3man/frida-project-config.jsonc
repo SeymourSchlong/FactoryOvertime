@@ -27,7 +27,8 @@
 
 	"fetch" : {
 		"dependencies" : [
-			"github-tag:skirlez/nubbys-forgery"
+			"github-tag:skirlez/nubbys-forgery",
+			"github-tag:SeymourSchlong/NNFunctions"
 		],
 		"recursive" : true
 	},
