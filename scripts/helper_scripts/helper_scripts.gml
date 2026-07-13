@@ -1,25 +1,25 @@
 function get_object_from_id(item_id) {
-    return nnf.forgery_get_item_object(mod_id, item_id);
+    return nnf_forgery_get_item_object(mod_id, item_id);
 }
 
 function get_item_number_from_id(item_id) {
-    return nnf.forgery_get_item_id(mod_id, item_id);
+    return nnf_forgery_get_item_id(mod_id, item_id);
 }
 
 function get_perk_from_id(item_id) {
-    return nnf.forgery_get_perk_object(mod_id, item_id);
+    return nnf_forgery_get_perk_object(mod_id, item_id);
 }
 
 function get_perk_number_from_id(item_id) {
-    return nnf.forgery_get_perk_id(mod_id, item_id);
+    return nnf_forgery_get_perk_id(mod_id, item_id);
 }
 
 function get_challenge_number_from_id(item_id) {
-    return nnf.forgery_get_challenge_id(mod_id, item_id);
+    return nnf_forgery_get_challenge_id(mod_id, item_id);
 }
 
 function get_manager_number_from_id(item_id) {
-    return nnf.forgery_get_supervisor_id(mod_id, item_id);
+    return nnf_forgery_get_supervisor_id(mod_id, item_id);
 }
 
 function scr_FO_DrawPeas()
@@ -385,7 +385,7 @@ function scr_FO_KingTonyUpgrade(arg0)
     {
         if (scr_FO_is_manager("king"))
         {
-            var _will_upgrade = nnf.random_chance(random(100), 20, true);
+            var _will_upgrade = nnf_random_chance(random(100), 20, true);
             
             if (_will_upgrade)
                 arg0 = obj_ItemMGMT.ItemPair[arg0];
@@ -417,7 +417,7 @@ function scr_FO_IncreasedTriggerCount(arg0)
                 
                 if (obj_ItemMGMT.Item[WhatSlot - 1] == _bblock_upg)
                 {
-                    if (nnf.random_chance(random(100), 25))
+                    if (nnf_random_chance(random(100), 25))
                         _trigger_count++;
                 }
             }
@@ -710,10 +710,10 @@ function scr_FO_MothEggRandomSummon()
     
     var _odds = min((_count_reg * 5) + (_count_upgr * 15), 65);
     
-    if (!nnf.random_chance(random(100), _odds))
+    if (!nnf_random_chance(random(100), _odds))
         exit;
     
-    var _is_upgraded = nnf.random_chance(random(100), _count_upgr * 20);
+    var _is_upgraded = nnf_random_chance(random(100), _count_upgr * 20);
     var _summon_list =			choose(1, 3, 5, 7, 9, 11, 15);
     var _summon_list_upgraded = choose(1, 4, 6, 8, 10, 12, 16);
     var _random_index = _summon_list;

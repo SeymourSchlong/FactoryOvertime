@@ -38,13 +38,13 @@ function fo_item_pocketfrogs() {
 		tags: ["forgery:mystery_box_friendly"],
 		on_create: function() {},
 		on_trigger: function(this) {
-			var _Odds = nnf.random_chance(random(100), 50);
+			var _Odds = nnf_random_chance(random(100), 50);
             
             if (_Odds) {
                 if (global.ItemSfx == true)
                     audio_play_sound(agi("snd_FO_Frog"), 1, 0, global.SFXGain, 0, choose(0.9, 1, 1.1));
                 
-				var _highest_peg = nnf.get_highest_peg(1);
+				var _highest_peg = nnf_get_highest_peg(1);
 				
 				if (array_length(_highest_peg) == 0) return;
 				var _Tar = _highest_peg[0];
@@ -78,13 +78,13 @@ function fo_item_pocketfrogs() {
 		odds_weight_end: 0,
 		on_create: function() {},
 		on_trigger: function(this) {
-			var _Odds = nnf.random_chance(random(100), 50);
+			var _Odds = nnf_random_chance(random(100), 50);
             
             if (_Odds) {
                 if (global.ItemSfx == true)
                     audio_play_sound(agi("snd_FO_Frog"), 1, 0, global.SFXGain, 0, choose(0.9, 1, 1.1));
                 
-				var _highest_peg = nnf.get_highest_peg(2);
+				var _highest_peg = nnf_get_highest_peg(2);
 				
 				for (var _i = 0; _i < array_length(_highest_peg); _i++) {
 					var _Tar = _highest_peg[_i];

@@ -40,11 +40,11 @@ function fo_item_beetle(){
 			var _Target = noone;
 			
 			if (_TargetsHighest) {
-				var _highest_peg = nnf.get_highest_peg(1);
+				var _highest_peg = nnf_get_highest_peg(1);
 				if (array_length(_highest_peg) > 0)
 					_Target = _highest_peg[0];
 			} else {
-				var _lowest_peg = nnf.get_lowest_peg(1, 2);
+				var _lowest_peg = nnf_get_lowest_peg(1, 2);
 				if (array_length(_lowest_peg) > 0)
 					_Target = _lowest_peg[0];
 			}
@@ -83,9 +83,9 @@ function fo_item_beetle(){
 			var _Targets = [];
 			
 			if (_TargetsHighest) {
-				_Targets = nnf.get_highest_peg(2);
+				_Targets = nnf_get_highest_peg(2);
 			} else {
-				_Targets = nnf.get_lowest_peg(2, 2);
+				_Targets = nnf_get_lowest_peg(2, 2);
 			}
 			
 			for (var _i = 0; _i < array_length(_Targets); _i++) {
