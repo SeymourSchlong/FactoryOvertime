@@ -73,6 +73,7 @@
     {"id":{"name":"obj_ParUniqueItem","path":"objects/obj_ParUniqueItem/obj_ParUniqueItem.yy",},},
     {"id":{"name":"g3man_must_exist","path":"rooms/g3man_must_exist/g3man_must_exist.yy",},},
     {"id":{"name":"disable_items_in","path":"scripts/disable_items_in/disable_items_in.yy",},},
+    {"id":{"name":"FactoryOvertime_NNFunctionsDescriptions","path":"scripts/FactoryOvertime_NNFunctionsDescriptions/FactoryOvertime_NNFunctionsDescriptions.yy",},},
     {"id":{"name":"fo_challenge_math","path":"scripts/fo_challenge_math/fo_challenge_math.yy",},},
     {"id":{"name":"fo_item_acid","path":"scripts/fo_item_acid/fo_item_acid.yy",},},
     {"id":{"name":"fo_item_arthur","path":"scripts/fo_item_arthur/fo_item_arthur.yy",},},

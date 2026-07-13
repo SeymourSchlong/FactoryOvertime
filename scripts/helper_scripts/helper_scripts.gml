@@ -1,61 +1,25 @@
 function get_object_from_id(item_id) {
-    var index = forgery.registries_exchange(
-		global.registry,
-		global.index_registry,
-		forgery.resources.item,
-		"fo:"+item_id
-	);
-    return obj_ItemMGMT.ItemObj[index];
+    return nnf.forgery_get_item_object(mod_id, item_id);
 }
 
 function get_item_number_from_id(item_id) {
-    var index = forgery.registries_exchange(
-		global.registry,
-		global.index_registry,
-		forgery.resources.item,
-		"fo:"+item_id
-	);
-    return index;
+    return nnf.forgery_get_item_id(mod_id, item_id);
 }
 
 function get_perk_from_id(item_id) {
-    var index = forgery.registries_exchange(
-		global.registry,
-		global.index_registry,
-		forgery.resources.perk,
-		"fo:"+item_id
-	);
-    return obj_PerkMGMT.PerkObj[index];
+    return nnf.forgery_get_perk_object(mod_id, item_id);
 }
 
 function get_perk_number_from_id(item_id) {
-    var index = forgery.registries_exchange(
-		global.registry,
-		global.index_registry,
-		forgery.resources.perk,
-		"fo:"+item_id
-	);
-    return index;
+    return nnf.forgery_get_perk_id(mod_id, item_id);
 }
 
 function get_challenge_number_from_id(item_id) {
-    var index = forgery.registries_exchange(
-		global.registry,
-		global.index_registry,
-		forgery.resources.challenge,
-		"fo:"+item_id
-	);
-    return index;
+    return nnf.forgery_get_challenge_id(mod_id, item_id);
 }
 
 function get_manager_number_from_id(item_id) {
-    var index = forgery.registries_exchange(
-		global.registry,
-		global.index_registry,
-		forgery.resources.supervisor,
-		"fo:"+item_id
-	);
-    return index;
+    return nnf.forgery_get_supervisor_id(mod_id, item_id);
 }
 
 function scr_FO_DrawPeas()

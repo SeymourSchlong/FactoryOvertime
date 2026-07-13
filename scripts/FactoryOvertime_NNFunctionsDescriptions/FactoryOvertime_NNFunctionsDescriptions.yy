@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"FactoryOvertime_NNFunctionsDescriptions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"FactoryOvertime_NNFunctionsDescriptions",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
