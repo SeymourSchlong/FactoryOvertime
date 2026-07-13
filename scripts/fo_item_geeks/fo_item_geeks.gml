@@ -28,7 +28,7 @@ function fo_item_geeks(){
 	    effect: data.category,
 	    pool: real(data.pool),
 	    offset_price: data.price - (data.rarity > RARITY.COMMON ? 10 : 5),
-		pair_id: "fo:" + item_id + "_upgrade",
+		pair_id: mod_id + ":" + item_id + "_upgrade",
 		food: true,
 		on_create: function() {},
 		on_trigger: function(this) {}
@@ -46,7 +46,7 @@ function fo_item_geeks(){
 	    effect: data.category,
 	    pool: 0,
 	    offset_price: data.price - (data.rarity > RARITY.COMMON ? 10 : 5),
-		pair_id: "fo:" + item_id,
+		pair_id: mod_id + ":" + item_id,
 		food: true,
 		on_create: function() {},
 		on_trigger: function(this) {}

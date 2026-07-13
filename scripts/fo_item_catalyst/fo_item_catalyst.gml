@@ -27,7 +27,7 @@ function fo_item_catalyst(){
 	    effect: data.category,
 	    pool: real(data.pool),
 	    offset_price: data.price - (data.rarity > RARITY.COMMON ? 10 : 5),
-		pair_id: "fo:" + item_id,
+		pair_id: mod_id + ":" + item_id,
 		odds_weight_early: data.weight[0], 
 		odds_weight_mid: data.weight[1], 
 		odds_weight_end: data.weight[2],
