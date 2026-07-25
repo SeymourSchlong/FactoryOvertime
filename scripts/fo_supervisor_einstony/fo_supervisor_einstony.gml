@@ -51,7 +51,7 @@ function fo_supervisor_einstony(){
 	});
 	
 	
-	forgery.subscribe_to_game_event("RestartRun", function(this) {
+	forgery.subscribe_to_game_event("nnf:RestartRun", function(this) {
 		global.fo.einstony_triggers = [
 			"",
 			"HitWall3",
@@ -63,7 +63,7 @@ function fo_supervisor_einstony(){
 			"HitWall2"
 		];
 	});
-	forgery.subscribe_to_game_event("QuitToTitle", function(this) {
+	forgery.subscribe_to_game_event("nnf:QuitToTitle", function(this) {
 		global.fo.einstony_triggers = [
 			"",
 			"HitWall3",
