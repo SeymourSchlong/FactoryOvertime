@@ -3,7 +3,6 @@ image_index = irandom(9);
 dir_x = choose(-1, 1);
 dir_y = choose(-1, 1);
 image_xscale = -dir_x;
-image_yscale = -dir_y;
 alarm_set(0, 40);
 angle = 45;
 
@@ -14,6 +13,8 @@ if (dir_y == -1) {
     if (dir_x == -1)
         angle = 135;
 } else {
+	image_angle += 90 * -dir_x;
+	
     if (dir_x == -1)
         angle = 225;
     
