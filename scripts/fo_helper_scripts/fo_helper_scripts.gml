@@ -494,6 +494,10 @@ function scr_FO_BookWormEffect()
         
         ds_list_add(_ValidPerkList, 2);
         ds_list_add(_ValidPerkList, 30);
+        ds_list_add(_ValidPerkList, nnf_forgery_get_perk_id(mod_id, "brokenclock"));
+        ds_list_add(_ValidPerkList, nnf_forgery_get_perk_id(mod_id, "clover"));
+        ds_list_add(_ValidPerkList, nnf_forgery_get_perk_id(mod_id, "nubup"));
+        ds_list_add(_ValidPerkList, nnf_forgery_get_perk_id(mod_id, "magicwand"));
         
         ds_list_shuffle(_ValidPerkList);
 		var _selected_perk = ds_list_find_value(_ValidPerkList, 0);
