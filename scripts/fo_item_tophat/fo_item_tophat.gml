@@ -21,7 +21,7 @@ function fo_item_tophat(){
 	forgery.register_item({
 		display_name: data.name,
 		description: data.desc,
-		description_args: ["\n", 15],
+		description_args: ["\n", 20],
 		sprite: agi(data.spr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,
@@ -38,7 +38,7 @@ function fo_item_tophat(){
 		on_create: function() {},
 		on_trigger: function(this) {
             if (instance_exists(obj_ParNubby)) {
-                if (irandom(99) < 15) {
+                if (irandom(99) < 20) {
                     var _angle = random(360);
 					var _NubDupe = instance_create_depth(958, 350, instance_find(obj_ParNubby, 0).depth, agi("obj_FO_NubbyBunny"));
 					
@@ -65,7 +65,7 @@ function fo_item_tophat(){
 	forgery.register_item({
 	    display_name: data.name,
 		description: data.upgr,
-		description_args: ["\n", 30],
+		description_args: ["\n", 40],
 		sprite: agi(data.sprupgr),
 		game_event: data.trig,
 	    alt_game_event: data.alttrig,
@@ -83,7 +83,7 @@ function fo_item_tophat(){
 		on_trigger: function(this) {
 			if (instance_exists(obj_ParNubby)) {
                 //with (obj_ParNubby) {
-                    if (irandom(99) < 30) {
+                    if (irandom(99) < 40) {
 	                    var _angle = random(360);
 						var _NubDupe = instance_create_depth(958, 350, instance_find(obj_ParNubby, 0).depth, agi("obj_FO_NubbyBunny"));
 					
