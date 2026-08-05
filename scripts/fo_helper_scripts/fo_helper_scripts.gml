@@ -502,78 +502,12 @@ function scr_FO_BookWormEffect()
         ds_list_shuffle(_ValidPerkList);
 		var _selected_perk = ds_list_find_value(_ValidPerkList, 0);
 		
-		var _perk_queue = [];
 		repeat (_perks_to_give) {
-			array_push(_perk_queue, _selected_perk);
+			nnf_give_perk(_selected_perk);
 		}
 		
-		var _perk_giver = noone;
-		
-		if (instance_exists(agi("obj_FO_PerkHelper"))) {
-			_perk_giver = instance_find(agi("obj_fO_PerkHelper"), 0);
-		} else {
-			_perk_giver = instance_create_depth(0, 0, obj_ItemMGMT.depth, agi("obj_FO_PerkHelper"));
-		}
-			
-		with (_perk_giver) {
-			for (var i = 0; i < array_length(_perk_queue); i++) {
-				//_perks_to_give
-				array_push(queue, _perk_queue[i]);
-			}
-		}
-		
-        
-        ds_list_destroy(_ValidPerkList);
+		ds_list_destroy(_ValidPerkList);
     }
-}
-
-function scr_FO_GivePerk(arg0, arg1 = 950, arg2 = 540)
-{
-    var new_perk = instance_create_layer(arg1, arg2, "UnderCursor", obj_PerkSelMove);
-    new_perk.HeldPerk = arg0;
-    var perk_stacked = 0;
-    var duped_id = -1;
-    
-    if (instance_exists(obj_ParPerk))
-    {
-        for (var i = 0; i < ds_list_size(obj_PerkMGMT.PerkInst); i += 1)
-        {
-            if (ds_list_find_value(obj_PerkMGMT.PerkInst, i).MyPerkID == new_perk.HeldPerk)
-            {
-                perk_stacked = true;
-                duped_id = ds_list_find_value(obj_PerkMGMT.PerkInst, i);
-                break;
-            }
-        }
-    }
-    
-    if (perk_stacked == false)
-    {
-        if (ds_list_size(obj_PerkMGMT.PerkDispList) < 8)
-        {
-            new_perk.TarX = obj_PerkMGMT.PerkX + (59 * ds_list_size(obj_PerkMGMT.PerkDispList));
-            new_perk.TarY = obj_PerkMGMT.PerkY;
-            new_perk.CountAsDispUp = true;
-        }
-        else
-        {
-            var _TtlSize = ds_list_size(obj_PerkMGMT.PerkDispList) + 1;
-            var _Spacing = round((obj_PerkMGMT.PerkEndSpace - obj_PerkMGMT.PerkX) / _TtlSize);
-            new_perk.TarY = obj_PerkMGMT.PerkY;
-            var _TarX = obj_PerkMGMT.PerkX + (_Spacing * _TtlSize);
-            new_perk.TarX = _TarX;
-            new_perk.CountAsDispUp = true;
-        }
-    }
-    else
-    {
-        new_perk.TarX = duped_id.x;
-        new_perk.TarY = duped_id.y;
-        new_perk.CountAsDispUp = false;
-    }
-    
-    new_perk.sprite_index = object_get_sprite(obj_PerkMGMT.PerkObj[arg0]);
-    new_perk.image_alpha = 1;
 }
 
 

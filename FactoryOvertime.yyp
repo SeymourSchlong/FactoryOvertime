@@ -53,7 +53,6 @@
   "name":"FactoryOvertime",
   "resources":[
     {"id":{"name":"g3man_override_obj_PegNumber","path":"objects/g3man_override_obj_PegNumber/g3man_override_obj_PegNumber.yy",},},
-    {"id":{"name":"g3man_override_obj_Unq_SuspiciousKey","path":"objects/g3man_override_obj_Unq_SuspiciousKey/g3man_override_obj_Unq_SuspiciousKey.yy",},},
     {"id":{"name":"obj_FO_BigChunk","path":"objects/obj_FO_BigChunk/obj_FO_BigChunk.yy",},},
     {"id":{"name":"obj_FO_Chunk","path":"objects/obj_FO_Chunk/obj_FO_Chunk.yy",},},
     {"id":{"name":"obj_FO_EinstonyHelper","path":"objects/obj_FO_EinstonyHelper/obj_FO_EinstonyHelper.yy",},},
@@ -62,7 +61,6 @@
     {"id":{"name":"obj_FO_MoleGlasses","path":"objects/obj_FO_MoleGlasses/obj_FO_MoleGlasses.yy",},},
     {"id":{"name":"obj_FO_NubbyBunny","path":"objects/obj_FO_NubbyBunny/obj_FO_NubbyBunny.yy",},},
     {"id":{"name":"obj_FO_PassiveFX","path":"objects/obj_FO_PassiveFX/obj_FO_PassiveFX.yy",},},
-    {"id":{"name":"obj_FO_PerkHelper","path":"objects/obj_FO_PerkHelper/obj_FO_PerkHelper.yy",},},
     {"id":{"name":"obj_FO_PlasticFrog","path":"objects/obj_FO_PlasticFrog/obj_FO_PlasticFrog.yy",},},
     {"id":{"name":"obj_FO_SkipIntroBtn","path":"objects/obj_FO_SkipIntroBtn/obj_FO_SkipIntroBtn.yy",},},
     {"id":{"name":"obj_FO_SoldierShot","path":"objects/obj_FO_SoldierShot/obj_FO_SoldierShot.yy",},},
@@ -70,7 +68,6 @@
     {"id":{"name":"obj_FO_TitleGraphic","path":"objects/obj_FO_TitleGraphic/obj_FO_TitleGraphic.yy",},},
     {"id":{"name":"obj_FO_WarpHat","path":"objects/obj_FO_WarpHat/obj_FO_WarpHat.yy",},},
     {"id":{"name":"obj_ParNubby","path":"objects/obj_ParNubby/obj_ParNubby.yy",},},
-    {"id":{"name":"obj_ParUniqueItem","path":"objects/obj_ParUniqueItem/obj_ParUniqueItem.yy",},},
     {"id":{"name":"g3man_must_exist","path":"rooms/g3man_must_exist/g3man_must_exist.yy",},},
     {"id":{"name":"disable_items_in","path":"scripts/disable_items_in/disable_items_in.yy",},},
     {"id":{"name":"FactoryOvertime_NNFunctionsDescriptions","path":"scripts/FactoryOvertime_NNFunctionsDescriptions/FactoryOvertime_NNFunctionsDescriptions.yy",},},

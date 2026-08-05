@@ -97,15 +97,10 @@ function fo_item_turkey(){
 			if (array_length(_perks_to_give) > 0) {
 				array_sort(_perks_to_give, true);
 				
-				var _perk_giver = instance_create_depth(0, 0, obj_ItemMGMT.depth, agi("obj_FO_PerkHelper"));
-			
-				with (_perk_giver) {
-					for (var i = 0; i < array_length(_perks_to_give); i++) {
-						//_perks_to_give
-						var _perk_id = nnf_forgery_get_perk_id(mod_id, _perks_to_give[i]);
-						
-						array_push(queue, _perk_id);
-					}
+				for (var i = 0; i < array_length(_perks_to_give); i++) {
+					var _perk_id = nnf_forgery_get_perk_id(mod_id, _perks_to_give[i]);
+					
+					nnf_give_perk(_perk_id);
 				}
 			}
 			
@@ -212,15 +207,10 @@ function fo_item_turkey(){
 			if (array_length(_perks_to_give) > 0) {
 				array_sort(_perks_to_give, true);
 				
-				var _perk_giver = instance_create_depth(0, 0, obj_ItemMGMT.depth, agi("obj_FO_PerkHelper"));
-			
-				with (_perk_giver) {
-					for (var i = 0; i < array_length(_perks_to_give); i++) {
-						//_perks_to_give
-						var _perk_id = nnf_forgery_get_perk_id(mod_id, _perks_to_give[i]);
-						
-						array_push(queue, _perk_id);
-					}
+				for (var i = 0; i < array_length(_perks_to_give); i++) {
+					var _perk_id = nnf_forgery_get_perk_id(mod_id, _perks_to_give[i]);
+					
+					nnf_give_perk(_perk_id);
 				}
 			}
 			
