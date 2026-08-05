@@ -11,11 +11,8 @@ var _upg_obj = nnf_forgery_get_item_id("fo", "littlepea_upgrade");
 
 if (HeldPrice > 0 && global.fo.littlepeas > 0 && IOCId != _reg_obj && IOCId != _upg_obj)
 {
-    for (var i = 0; i < floor(HeldPrice / 2); i += 1)
-    {
-        var _NewGC = instance_create_depth(940 + irandom_range(-64, 64), 563 + irandom_range(-64, 64), obj_ItemMGMT.depth - 1, asset_get_index("obj_GhostCoin"));
-        _NewGC.GCSpd = 40;
-    }
+    var _coins_to_give = floor(HeldPrice / 2);
+    nnf_give_coins(_coins_to_give);
     
     global.fo.littlepeas -= 1;
 }
